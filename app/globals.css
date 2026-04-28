@@ -1,26 +1,575 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Merriweather:wght@400;700&display=swap');
+@import 'leaflet/dist/leaflet.css';
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* WhatsApp Palette */
+  --color-primary:      #075e54;
+  --color-primary-mid:  #128c7e;
+  --color-accent:       #25d366;
+  --color-accent-light: #dcf8c6;
+  --color-bg:           #f0f2f5;
+  --color-surface:      #ffffff;
+  --color-text:         #111b21;
+  --color-muted:        #667781;
+
+  /* Legacy aliases (keep for compatibility) */
+  --green-primary: #128c7e;
+  --green-light:   #25d366;
+  --green-bright:  #25d366;
+  --green-dim:     #075e54;
+
+  /* Dark BG */
+  --bg-dark:  #075e54;
+  --bg-card:  #054d44;
+  --bg-card2: #043d37;
+
+  /* Text */
+  --text-primary: #ffffff;
+  --text-muted:   rgba(255,255,255,0.75);
+
+  /* Teal & Navy Palette */
+  --color-teal-dark: #0F766E;
+  --color-teal-main: #14B8A6;
+  --color-teal-light: #2DD4BF;
+  --color-navy-dark: #0F172A;
+  --color-navy-main: #1E293B;
+  --color-navy-light: #334155;
+  --color-cyan: #06B6D4;
+  --color-cyan-light: #22D3EE;
+  
+  /* Neutrals */
+  --color-white: #FFFFFF;
+  --color-cream: #F0F9FA;
+  --color-gray-50: #F9FAFB;
+  --color-gray-100: #F3F4F6;
+  --color-gray-200: #E5E7EB;
+  --color-gray-300: #D1D5DB;
+  --color-gray-600: #4B5563;
+  --color-gray-800: #1F2937;
+  
+  /* Semantic */
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+button:focus-visible {
+  outline: 2px solid #25d366;
+  outline-offset: 2px;
+}
+
+a { transition: color 150ms ease; }
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--color-bg, #f0f2f5);
+  color: var(--color-text, #111b21);
+  line-height: 1.6;
+  font-size: 14px;
+  overflow-x: hidden;
+  min-height: 100vh;
 }
+
+/* ── Typography ── */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-navy-dark);
+}
+
+h1 {
+  font-size: 3.5rem;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 2.25rem;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  color: var(--color-gray-800);
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-teal-main);
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-teal-dark);
+}
+
+/* ── Glassmorphism ── */
+.glass {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(20, 184, 166, 0.2);
+  box-shadow: 0 8px 32px rgba(15, 118, 110, 0.1);
+}
+
+.glass-dark {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(20, 184, 166, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* ── Gradient Text ── */
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-teal-dark) 0%, var(--color-teal-main) 50%, var(--color-cyan) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Buttons ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: white;
+  box-shadow: 0 4px 15px rgba(7,94,84,0.3);
+}
+
+.btn-primary:hover {
+  background: var(--color-primary-mid);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 25px rgba(7,94,84,0.4);
+}
+
+.btn-secondary {
+  background: var(--color-cream);
+  color: var(--color-teal-dark);
+  border: 2px solid var(--color-teal-main);
+}
+
+.btn-secondary:hover {
+  background: var(--color-teal-light);
+  color: white;
+}
+
+/* ── Cards ── */
+.card {
+  background: var(--color-white);
+  border-radius: 16px;
+  padding: var(--spacing-lg);
+  border: 1px solid var(--color-gray-200);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(20, 184, 166, 0.1), transparent);
+  transition: left 0.6s ease;
+}
+
+.card:hover::before {
+  left: 100%;
+}
+
+.card:hover {
+  border-color: var(--color-teal-main);
+  box-shadow: 0 12px 24px rgba(15, 118, 110, 0.15);
+  transform: translateY(-4px);
+}
+
+/* ── Badge ── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.375rem var(--spacing-md);
+  border-radius: 99px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.badge-primary {
+  background: linear-gradient(135deg, rgba(15, 118, 110, 0.1) 0%, rgba(20, 184, 166, 0.1) 100%);
+  color: var(--color-teal-dark);
+  border: 1px solid var(--color-teal-light);
+}
+
+.badge-success {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--color-success);
+  border: 1px solid var(--color-success);
+}
+
+/* ── Progress Bar ── */
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: var(--color-gray-200);
+  border-radius: 99px;
+  overflow: hidden;
+  margin-top: var(--spacing-sm);
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: var(--color-accent);
+  border-radius: 99px;
+  animation: barDolum 700ms ease-out forwards;
+}
+
+@keyframes barDolum {
+  from { width: 0% !important; }
+}
+
+/* İlçe kart hover */
+.ilce-kart {
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+.ilce-kart:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* Skor dairesi animasyonu */
+@keyframes skorCiz {
+  from { stroke-dashoffset: 251.2; }
+}
+.skor-daire {
+  animation: skorCiz 1s ease-out forwards;
+}
+
+/* ── Animations ── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(20, 184, 166, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(20, 184, 166, 0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.6s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.6s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Stagger delays */
+.animation-delay-1 { animation-delay: 0.1s; }
+.animation-delay-2 { animation-delay: 0.2s; }
+.animation-delay-3 { animation-delay: 0.3s; }
+.animation-delay-4 { animation-delay: 0.4s; }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 1.875rem;
+  }
+}
+
+/* ── Utilities ── */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+/* ── Custom Cursor ── */
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--color-teal-main);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.cursor-ring {
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--color-teal-main);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* ── Navbar specific ── */
+nav {
+  padding: var(--spacing-md) 0;
+}
+
+nav a {
+  color: var(--color-navy-main);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-teal-main);
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--color-teal-main);
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Leaflet — Tailwind Preflight override */
+.leaflet-container {
+  background: #e0e0e0;
+}
+.leaflet-container img,
+.leaflet-tile-container img {
+  max-width: none !important;
+  display: inline !important;
+}
+
+/* Navbar search placeholder */
+nav input::placeholder { color: rgba(255,255,255,0.45); }
+
+/* Custom range slider */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 99px;
+  background: #e9edef;
+  outline: none;
+  cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: white;
+  border: 2.5px solid currentColor;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: white;
+  border: 2.5px solid currentColor;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+/* Quiz genel animasyonlar */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Quiz seçenek giriş animasyonu */
+@keyframes secenekGir {
+  from { opacity: 0; transform: translateX(-12px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+.secenekGir-animasyon {
+  animation: secenekGir 250ms ease-out both;
+}
+
+/* Spinner */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Slide-up panel animation */
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}
+
+/* Navbar neon pulse */
+@keyframes neonPulse {
+  0%, 100% { box-shadow: 0 0 6px rgba(37,211,102,0.6); }
+  50%       { box-shadow: 0 0 14px rgba(37,211,102,0.9); }
+}
+
+/* Hero float animations */
+@keyframes float1 {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+@keyframes float2 {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
+
+/* District list animations */
+@keyframes barAc {
+  from { width: 0%; }
+}
+@keyframes skorGoster {
+  from { stroke-dashoffset: 226; }
+}
+@keyframes kartGir {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.kart-animasyon,
+.kartGir-animasyon {
+  animation: kartGir 400ms ease-out forwards;
+  opacity: 0;
+}
+.kart-animasyon:nth-child(1), .kartGir-animasyon:nth-child(1) { animation-delay: 0ms; }
+.kart-animasyon:nth-child(2), .kartGir-animasyon:nth-child(2) { animation-delay: 80ms; }
+.kart-animasyon:nth-child(3), .kartGir-animasyon:nth-child(3) { animation-delay: 160ms; }
+.kart-animasyon:nth-child(4), .kartGir-animasyon:nth-child(4) { animation-delay: 240ms; }
+.kart-animasyon:nth-child(5), .kartGir-animasyon:nth-child(5) { animation-delay: 320ms; }

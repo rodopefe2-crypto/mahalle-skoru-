@@ -1,0 +1,90 @@
+import { KarsilastirmaBoyutu } from './karsilastirmaTypes'
+
+export const BOYUTLAR: KarsilastirmaBoyutu[] = [
+  {
+    key: 'ulasim',
+    label: 'Ulaşım',
+    ikon: '🚇',
+    renk: '#3b82f6',
+    aciklama: 'Metro, otobüs ve toplu taşıma erişimi',
+    kategori: 'temel',
+  },
+  {
+    key: 'guvenlik',
+    label: 'Güvenlik',
+    ikon: '🛡️',
+    renk: '#f59e0b',
+    aciklama: 'Genel güvenlik algısı ve suç oranı',
+    kategori: 'temel',
+  },
+  {
+    key: 'imkanlar',
+    label: 'Sosyal İmkanlar',
+    ikon: '🏪',
+    renk: '#10b981',
+    aciklama: 'Kafe, restoran, sosyal mekan çeşitliliği',
+    kategori: 'temel',
+  },
+  {
+    key: 'egitim',
+    label: 'Eğitim',
+    ikon: '📚',
+    renk: '#8b5cf6',
+    aciklama: 'Okul, üniversite ve eğitim kurumları',
+    kategori: 'yasam',
+  },
+  {
+    key: 'saglik',
+    label: 'Sağlık',
+    ikon: '🏥',
+    renk: '#ef4444',
+    aciklama: 'Hastane, klinik ve sağlık erişimi',
+    kategori: 'yasam',
+  },
+  {
+    key: 'deprem_direnci',
+    label: 'Deprem Güvenliği',
+    ikon: '⚠️',
+    renk: '#f97316',
+    aciklama: 'Deprem riski ve yapı güvenliği',
+    kategori: 'yasam',
+  },
+  {
+    key: 'yasam_maliyeti',
+    label: 'Yaşam Maliyeti',
+    ikon: '💰',
+    renk: '#ec4899',
+    aciklama: 'Kira, market ve genel yaşam giderleri',
+    kategori: 'profil',
+  },
+  {
+    key: 'sakin_memnuniyeti',
+    label: 'Sakin Memnuniyeti',
+    ikon: '😊',
+    renk: '#06b6d4',
+    aciklama: 'Bölge sakinlerinin genel memnuniyeti',
+    kategori: 'profil',
+  },
+  {
+    key: 'yesil_alan',
+    label: 'Yeşil Alan',
+    ikon: '🌳',
+    renk: '#22c55e',
+    aciklama: 'Park, spor alanı ve açık yeşil alanlar',
+    kategori: 'yasam',
+  },
+  {
+    key: 'kultur',
+    label: 'Kültür & Sanat',
+    ikon: '🎭',
+    renk: '#f59e0b',
+    aciklama: 'Sinema, tiyatro, müze ve sanat mekanları',
+    kategori: 'yasam',
+  },
+]
+
+export const KATEGORI_ETIKETLERI: Record<KarsilastirmaBoyutu['kategori'], string> = {
+  temel:  'Temel Kriterler',
+  yasam:  'Yaşam Kalitesi',
+  profil: 'Bölge Profili',
+}
