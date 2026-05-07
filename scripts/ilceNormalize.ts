@@ -40,7 +40,7 @@ async function main() {
       if (!skor || skor <= 0) continue
       const yeni = Math.round(20 + ((skor - mn) / (mx - mn)) * 80)
       ;(ilce as any)[`_${param}`] = yeni  // cache normalized value
-      await supabase.from('ilceler').update({ [param]: yeni }).eq('id', ilce.id)
+      await supabase.from('ilceler').update({ [param]: yeni }).eq('id', (ilce as any).id)
     }
   }
 
