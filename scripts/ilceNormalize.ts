@@ -21,26 +21,38 @@ function kiraLogSkor(kira: number | null): number {
 }
 
 async function main() {
+  type Ilce = {
+    id: string
+    isim: string
+    ulasim_skoru: number | null
+    saglik_skoru: number | null
+    egitim_skoru: number | null
+    imkanlar_skoru: number | null
+    yesil_alan_skoru: number | null
+    kultur_skoru: number | null
+    guvenlik_skoru: number | null
+    deprem_skoru: number | null
+  }
+
   const { data: ilceler } = await supabase
     .from('ilceler')
-    .select('id, isim, ' + PARAMETRELER.join(', '))
+    .select('id, isim, ulasim_skoru, saglik_skoru, egitim_skoru, imkanlar_skoru, yesil_alan_skoru, kultur_skoru, guvenlik_skoru, deprem_skoru') as { data: Ilce[] | null }
 
   if (!ilceler?.length) { console.error('Veri yok'); return }
 
   // ── Her parametre için 20-100 normalizasyon ───────
   for (const param of PARAMETRELER) {
-    const vals = ilceler.map(i => (i as any)[param] as number).filter(v => v > 0)
+    const vals = ilceler.map(i => i[param] as number).filter(v => v > 0)
     if (!vals.length) continue
     const mn = Math.min(...vals)
     const mx = Math.max(...vals)
     console.log(`${param.padEnd(20)} min:${mn} max:${mx}`)
 
     for (const ilce of ilceler) {
-      const skor = (ilce as any)[param] as number
+      const skor = ilce[param] as number
       if (!skor || skor <= 0) continue
       const yeni = Math.round(20 + ((skor - mn) / (mx - mn)) * 80)
-      ;(ilce as any)[`_${param}`] = yeni  // cache normalized value
-      await supabase.from('ilceler').update({ [param]: yeni }).eq('id', (ilce as any).id)
+      await supabase.from('ilceler').update({ [param]: yeni }).eq('id', ilce.id)
     }
   }
 
