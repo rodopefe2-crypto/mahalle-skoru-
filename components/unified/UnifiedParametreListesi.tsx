@@ -62,6 +62,9 @@ const ALT_KAT_ESLEME: Record<string, string> = {
   bar:              'imkanlar',
   firin:            'imkanlar',
   'fırın':          'imkanlar',
+  bakery:           'imkanlar',
+  shopping_mall:    'imkanlar',
+  night_club:       'imkanlar',
 
   // ── YEŞİL ALAN ── (park/spor imkanlar'dan gelir, buraya taşı)
   park:             'yesil',
@@ -129,12 +132,15 @@ const ALT_KAT_TANIM: Record<string, {
     { key: 'kutuphane',    label: 'Kütüphane',   ikon: '📖' },
   ],
   imkanlar: [
-    { key: 'restoran', label: 'Restoran',  ikon: '🍽️', vurgulu: true },
-    { key: 'cafe',     label: 'Kafe',      ikon: '☕',  vurgulu: true },
-    { key: 'bar',      label: 'Bar / Pub', ikon: '🍺' },
-    { key: 'market',   label: 'Market',    ikon: '🛒' },
-    { key: 'fırın',    label: 'Fırın',     ikon: '🥐' },
-    { key: 'firin',    label: 'Fırın',     ikon: '🥐' },
+    { key: 'restoran',     label: 'Restoran',     ikon: '🍽️', vurgulu: true },
+    { key: 'cafe',         label: 'Kafe',         ikon: '☕',  vurgulu: true },
+    { key: 'bar',          label: 'Bar / Pub',    ikon: '🍺' },
+    { key: 'market',       label: 'Market',       ikon: '🛒' },
+    { key: 'fırın',        label: 'Fırın',        ikon: '🥐' },
+    { key: 'firin',        label: 'Fırın',        ikon: '🥐' },
+    { key: 'bakery',       label: 'Fırın',        ikon: '🥐' },
+    { key: 'shopping_mall',label: 'AVM',          ikon: '🏬' },
+    { key: 'night_club',   label: 'Gece Kulübü',  ikon: '🎵' },
   ],
   yesil: [
     { key: 'park',         label: 'Park',          ikon: '🌳', vurgulu: true },
@@ -163,14 +169,15 @@ const ALT_KAT_TANIM: Record<string, {
 const KATEGORI_META: Record<string, {
   baslik: string; ikon: string; renk: string; acikRenk: string; skorKey: string
 }> = {
-  ulasim:          { baslik: 'Ulaşım',          ikon: '🚇', renk: '#3b82f6', acikRenk: '#eff6ff', skorKey: 'ulasim_skoru'     },
-  saglik:          { baslik: 'Sağlık',           ikon: '🏥', renk: '#ef4444', acikRenk: '#fef2f2', skorKey: 'saglik_skoru'     },
-  egitim:          { baslik: 'Eğitim',           ikon: '📚', renk: '#8b5cf6', acikRenk: '#f5f3ff', skorKey: 'egitim_skoru'     },
-  imkanlar:        { baslik: 'Sosyal İmkanlar',  ikon: '🏪', renk: '#10b981', acikRenk: '#ecfdf5', skorKey: 'imkanlar_skoru'   },
-  yesil:           { baslik: 'Yeşil Alan',       ikon: '🌳', renk: '#22c55e', acikRenk: '#f0fdf4', skorKey: 'yesil_alan_skoru' },
-  kultur:          { baslik: 'Kültür & Sanat',   ikon: '🎭', renk: '#f59e0b', acikRenk: '#fffbeb', skorKey: 'kultur_skoru'     },
-  deprem_direnci:  { baslik: 'Deprem Güvenliği', ikon: '⚠️', renk: '#f97316', acikRenk: '#fff7ed', skorKey: 'deprem_skoru'            },
-  nufus_yogunlugu: { baslik: 'Sakinlik',          ikon: '🏘️', renk: '#8b5cf6', acikRenk: '#f5f3ff', skorKey: 'nufus_yogunlugu_skoru' },
+  ulasim:          { baslik: 'Ulaşım',          ikon: '🚇', renk: '#3b82f6', acikRenk: '#eff6ff', skorKey: 'ulasim_skoru'          },
+  saglik:          { baslik: 'Sağlık',           ikon: '🏥', renk: '#ef4444', acikRenk: '#fef2f2', skorKey: 'saglik_skoru'          },
+  egitim:          { baslik: 'Eğitim',           ikon: '📚', renk: '#8b5cf6', acikRenk: '#f5f3ff', skorKey: 'egitim_skoru'          },
+  imkanlar:        { baslik: 'Sosyal İmkanlar',  ikon: '🏪', renk: '#10b981', acikRenk: '#ecfdf5', skorKey: 'imkanlar_skoru'        },
+  guvenlik:        { baslik: 'Güvenlik',         ikon: '🛡️', renk: '#06b6d4', acikRenk: '#ecfeff', skorKey: 'guvenlik_skoru'        },
+  yesil:           { baslik: 'Yeşil Alan',       ikon: '🌳', renk: '#22c55e', acikRenk: '#f0fdf4', skorKey: 'yesil_alan_skoru'      },
+  kultur:          { baslik: 'Kültür & Sanat',   ikon: '🎭', renk: '#f59e0b', acikRenk: '#fffbeb', skorKey: 'kultur_skoru'          },
+  deprem_direnci:  { baslik: 'Deprem Güvenliği', ikon: '⚠️', renk: '#f97316', acikRenk: '#fff7ed', skorKey: 'deprem_skoru'          },
+  nufus_yogunlugu: { baslik: 'Sakinlik',         ikon: '🏘️', renk: '#8b5cf6', acikRenk: '#f5f3ff', skorKey: 'nufus_yogunlugu_skoru' },
 }
 
 interface DepremVeri {

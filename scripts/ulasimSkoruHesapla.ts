@@ -9,11 +9,11 @@ const supabase = createClient(
 
 // ── PUAN SİSTEMİ ─────────────────────────────────
 const PUAN_TABLOSU: Record<string, number> = {
-  bus_stop:        1,
-  subway_entrance: 10,
-  tram_stop:       5,
-  ferry_terminal:  10,
-  metrobus:        10,
+  subway_entrance: 25,
+  tram_stop:       15,
+  ferry_terminal:  20,
+  bus_stop:         1,
+  metrobus:        20,
 }
 
 // ── MERKEZİYET FAKTÖRÜ ───────────────────────────
@@ -36,16 +36,17 @@ function mesafeKm(
 
 function merkeziyetCarpani(lat: number, lng: number): number {
   const km = mesafeKm(lat, lng, MERKEZ.lat, MERKEZ.lng)
-  if (km <= 5)  return 1.30
-  if (km <= 10) return 1.20
-  if (km <= 15) return 1.15
-  if (km <= 20) return 1.10
-  if (km <= 25) return 1.05
-  if (km <= 30) return 1.00
-  if (km <= 35) return 0.95
-  if (km <= 40) return 0.90
-  if (km <= 50) return 0.82
-  return 0.70
+  if (km <= 3)  return 1.50
+  if (km <= 6)  return 1.45
+  if (km <= 10) return 1.38
+  if (km <= 15) return 1.30
+  if (km <= 20) return 1.20
+  if (km <= 25) return 1.10
+  if (km <= 30) return 0.98
+  if (km <= 35) return 0.85
+  if (km <= 45) return 0.72
+  if (km <= 55) return 0.58
+  return 0.45
 }
 
 // ── HAM PUAN HESABI ───────────────────────────────
@@ -63,55 +64,64 @@ function hamPuanHesapla(
     metrobus:        { sayi: 0, puan: 0 },
   }
 
-  let hamPuan = 0
-
   for (const t of tesisler) {
     const altKat    = t.alt_kategori
     const birimPuan = PUAN_TABLOSU[altKat]
     if (!birimPuan) continue
-
     if (!detay[altKat]) detay[altKat] = { sayi: 0, puan: 0 }
     detay[altKat].sayi++
     detay[altKat].puan += birimPuan
-    hamPuan += birimPuan
   }
 
-  // Otobüs için üst tavan: max otobüs katkısı diğerlerin 2/3'ü
-  const otobusKatkisi = detay['bus_stop'].puan
-  const digerKatkisi  = hamPuan - otobusKatkisi
-  const maxOtobus     = digerKatkisi * 0.67
+  // Raylı sistem puanı (metro + tramvay + vapur + metrobüs)
+  const raylıPuan = (detay.subway_entrance.puan + detay.tram_stop.puan +
+                     detay.ferry_terminal.puan  + detay.metrobus.puan)
 
-  if (otobusKatkisi > maxOtobus && digerKatkisi > 0) {
-    hamPuan = digerKatkisi + maxOtobus
-    detay['bus_stop'].puan = Math.round(maxOtobus)
-  }
+  // Otobüs cap: raylı varsa raylının %50'si, yoksa max 30
+  const maxOtobusPuan = raylıPuan > 0 ? Math.round(raylıPuan * 0.5) : 30
+  const otobusCount   = detay.bus_stop.sayi
+  const otobusPuan    = Math.min(otobusCount, maxOtobusPuan)
+  detay.bus_stop.puan = otobusPuan
 
+  const hamPuan = otobusPuan + raylıPuan
   return { hamPuan, detay }
 }
 
 // ── NORMALİZASYON ────────────────────────────────
-function normalizasyonUygula(
-  puanlar: Record<string, number>
-): Record<string, number> {
-  const values  = Object.values(puanlar)
-  const maxPuan = Math.max(...values)
-  const minPuan = Math.min(...values)
-  const logMax  = Math.log(maxPuan + 1)
-  const logMin  = Math.log(minPuan + 1)
-
-  const normalize: Record<string, number> = {}
-
+function logNorm(puanlar: Record<string, number>): Record<string, number> {
+  const values = Object.values(puanlar)
+  const max    = Math.max(...values)
+  const min    = Math.min(...values)
+  const logMax = Math.log(max + 1)
+  const logMin = Math.log(min + 1)
+  const result: Record<string, number> = {}
   for (const [slug, puan] of Object.entries(puanlar)) {
-    if (maxPuan === minPuan) {
-      normalize[slug] = 50
-      continue
-    }
-    const logPuan  = Math.log(puan + 1)
-    const normSkor = ((logPuan - logMin) / (logMax - logMin)) * 100
-    normalize[slug] = Math.round(normSkor)
+    if (max === min) { result[slug] = 50; continue }
+    result[slug] = Math.round(((Math.log(puan + 1) - logMin) / (logMax - logMin)) * 100)
   }
+  return result
+}
 
-  return normalize
+// Merkeziyet çarpanını 0-100 skoruna dönüştür
+// Çarpan aralığı: 0.45 (en uzak) → 1.50 (merkez)
+const CARPAN_MIN = 0.45
+const CARPAN_MAX = 1.50
+function carpanToSkor(carpan: number): number {
+  return Math.round(((carpan - CARPAN_MIN) / (CARPAN_MAX - CARPAN_MIN)) * 100)
+}
+
+function normalizasyonUygula(
+  hamPuanlar:  Record<string, number>,
+  carpanlar:   Record<string, number>
+): Record<string, number> {
+  const tesisSkorlar = logNorm(hamPuanlar)
+  const result: Record<string, number> = {}
+  for (const slug of Object.keys(hamPuanlar)) {
+    const tesisSkor = tesisSkorlar[slug] ?? 0
+    const merkezSkor = carpanToSkor(carpanlar[slug] ?? 1.0)
+    result[slug] = Math.round(tesisSkor * 0.50 + merkezSkor * 0.50)
+  }
+  return result
 }
 
 // ── ANA FONKSİYON ────────────────────────────────
@@ -134,8 +144,9 @@ async function main() {
     return
   }
 
-  const ilcePuanlari: Record<string, number> = {}
-  const ilceDetaylari: Record<string, any>   = {}
+  const ilceHamPuanlar: Record<string, number> = {}
+  const ilceCarpanlar:  Record<string, number> = {}
+  const ilceDetaylari:  Record<string, any>    = {}
 
   for (const ilce of ilceler) {
     const { data: tesisler } = await supabase
@@ -148,11 +159,11 @@ async function main() {
 
     const { hamPuan, detay } = hamPuanHesapla(tesisler)
     const carpan             = merkeziyetCarpani(ilce.koordinat_lat, ilce.koordinat_lng)
-    const agirlikliPuan      = hamPuan * carpan
     const km                 = mesafeKm(ilce.koordinat_lat, ilce.koordinat_lng, MERKEZ.lat, MERKEZ.lng)
 
-    ilcePuanlari[ilce.slug]  = agirlikliPuan
-    ilceDetaylari[ilce.slug] = { ilceId: ilce.id, hamPuan, carpan, agirlikliPuan, detay, km }
+    ilceHamPuanlar[ilce.slug] = hamPuan
+    ilceCarpanlar[ilce.slug]  = carpan
+    ilceDetaylari[ilce.slug]  = { ilceId: ilce.id, hamPuan, carpan, detay, km }
 
     console.log(`\n── ${ilce.isim} ──`)
     console.log(`  Otobüs:  ${detay.bus_stop?.sayi || 0} durak`)
@@ -160,12 +171,31 @@ async function main() {
     console.log(`  Tramvay: ${detay.tram_stop?.sayi || 0} durak`)
     console.log(`  Vapur:   ${detay.ferry_terminal?.sayi || 0} iskele`)
     console.log(`  Ham puan: ${Math.round(hamPuan)}`)
-    console.log(`  Merkeziyet: x${carpan} (${Math.round(km)} km)`)
-    console.log(`  Ağırlıklı: ${Math.round(agirlikliPuan)}`)
+    console.log(`  Merkeziyet: x${carpan} (${Math.round(km)} km) → merkezSkor: ${carpanToSkor(carpan)}`)
   }
 
-  console.log('\n\nNormalizasyon uygulanıyor...')
-  const normalPuanlar = normalizasyonUygula(ilcePuanlari)
+  console.log('\n\nNormalizasyon uygulanıyor... (tesisSkor 50% + merkezSkor 50%)')
+  const normalPuanlar = normalizasyonUygula(ilceHamPuanlar, ilceCarpanlar)
+  const tesisSkorlar  = logNorm(ilceHamPuanlar)
+
+  // Detaylı log (tüm ilçeler — grep ile filtrele)
+  for (const ilce of ilceler) {
+    const d             = ilceDetaylari[ilce.slug]
+    if (!d) continue
+    const tesisSkor     = tesisSkorlar[ilce.slug] ?? 0
+    const merkezSkor    = carpanToSkor(d.carpan)
+    const finalSkor     = normalPuanlar[ilce.slug] ?? 0
+    console.log(`\n── ${ilce.isim} DETAY ──`)
+    console.log(`  Otobüs:              ${d.detay.bus_stop?.sayi || 0}`)
+    console.log(`  Metro:               ${d.detay.subway_entrance?.sayi || 0}`)
+    console.log(`  Tramvay:             ${d.detay.tram_stop?.sayi || 0}`)
+    console.log(`  Vapur:               ${d.detay.ferry_terminal?.sayi || 0}`)
+    console.log(`  Ham puan:            ${Math.round(d.hamPuan)}`)
+    console.log(`  Merkeziyet:          x${d.carpan} (${Math.round(d.km)} km)`)
+    console.log(`  Merkeziyet skoru:    ${merkezSkor}`)
+    console.log(`  Tesis norm skoru:    ${tesisSkor}`)
+    console.log(`  Final ulaşım skoru:  ${finalSkor}`)
+  }
 
   const sirali = Object.entries(normalPuanlar).sort(([, a], [, b]) => b - a)
 

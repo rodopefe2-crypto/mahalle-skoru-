@@ -82,7 +82,7 @@ async function main() {
 
   // Veri çek
   const [{ data: ilceler }, { data: mahalleler }, tesisler] = await Promise.all([
-    supabase.from('ilceler').select('id, slug, deprem_skoru, nufus_yogunlugu_skoru'),
+    supabase.from('ilceler').select('id, slug, deprem_skoru, nufus_yogunlugu_skoru, guvenlik_skoru'),
     supabase.from('mahalleler').select('id, ilce_id, isim, koordinat_lat, koordinat_lng, deprem_skoru'),
     tumTesisleriCek(),
   ])
@@ -163,13 +163,16 @@ async function main() {
     const imkanlar = skorlar['imkanlar'] ?? 0
     const nufusYog = ilce?.nufus_yogunlugu_skoru || 0
 
+    const guvenlikSkoru = ilce?.guvenlik_skoru || 50
+
     const genel = Math.round(
-      ulasim   * 0.22 +
-      saglik   * 0.17 +
-      egitim   * 0.17 +
-      imkanlar * 0.13 +
-      depremSkoru * 0.10 +
-      nufusYog * 0.07
+      ulasim          * 0.22 +
+      saglik          * 0.15 +
+      egitim          * 0.15 +
+      imkanlar        * 0.11 +
+      guvenlikSkoru   * 0.18 +
+      depremSkoru     * 0.10 +
+      nufusYog        * 0.09
     )
 
     const { error } = await supabase
@@ -179,6 +182,7 @@ async function main() {
         saglik_skoru:   saglik,
         egitim_skoru:   egitim,
         imkanlar_skoru: imkanlar,
+        guvenlik_skoru: guvenlikSkoru,
         genel_skor:     genel,
       })
       .eq('id', mah.id)

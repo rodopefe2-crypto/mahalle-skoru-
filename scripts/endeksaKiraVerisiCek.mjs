@@ -52,35 +52,34 @@ function normalize(s) {
     }, [token, countyId, skip, take]);
   };
 
-  // İlk sorgu — tüm unique CountyId'leri ve mahalleleri topla
+  // Adım 1: CountyId=0 ile CountyId listesini topla
   const allData = new Map(); // DistrictId → properties
   const countyIds = new Set();
 
-  const first = await fetchNeighborhoods(15, 0, 500);
-  if (first?.features) {
-    first.features.forEach(f => {
-      allData.set(f.id, f.properties);
-      if (f.properties?.CountyId) countyIds.add(f.properties.CountyId);
-    });
-  }
-  console.log(`İlk batch: ${allData.size} mahalle, ${countyIds.size} unique CountyId`);
+  const seed = await fetchNeighborhoods(0, 0, 500);
+  seed?.features?.forEach(f => {
+    allData.set(f.id, f.properties);
+    if (f.properties?.CountyId) countyIds.add(f.properties.CountyId);
+  });
+  console.log(`Seed: ${allData.size} mahalle, ${countyIds.size} CountyId bulundu`);
   console.log('CountyId\'ler:', [...countyIds].sort((a, b) => a - b).join(', '));
 
-  // Adım 2: Her CountyId için ayrı sorgu yap
-  let yeniMahalle = 0;
+  // Adım 2: Her CountyId için tüm mahalleleri çek (skip ile paginate)
   for (const cid of countyIds) {
-    await page.waitForTimeout(400 + Math.random() * 300);
-    const result = await fetchNeighborhoods(cid, 0, 500);
-    if (!result?.features) continue;
-    result.features.forEach(f => {
-      if (!allData.has(f.id) && f.properties?.PriceForRent > 0) {
-        allData.set(f.id, f.properties);
-        yeniMahalle++;
-      }
-    });
+    let cidCount = 0;
+    for (let skip = 0; skip < 5000; skip += 500) {
+      await page.waitForTimeout(300 + Math.random() * 200);
+      const result = await fetchNeighborhoods(cid, skip, 500);
+      if (!result?.features?.length) break;
+      result.features.forEach(f => {
+        allData.set(f.id, f.properties); // overwrite — taze veri
+        cidCount++;
+      });
+      if (result.features.length < 500) break;
+    }
+    process.stdout.write(`\r  CountyId ${cid}: ${cidCount} kayıt, toplam: ${allData.size}   `);
   }
-  console.log(`CountyId sorguları: ${yeniMahalle} yeni mahalle eklendi`);
-  console.log(`Toplam: ${allData.size} unique mahalle`);
+  console.log(`\nToplam: ${allData.size} unique mahalle`);
 
   await browser.close();
 

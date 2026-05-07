@@ -36,7 +36,8 @@ export default function MahalleDetay() {
   }, [slug])
 
   useEffect(() => {
-    fetch('/api/mahalle?ilce=kagithane')
+    if (!mahalle?.ilce?.slug) return
+    fetch(`/api/mahalle?ilce=${mahalle.ilce.slug}`)
       .then(r => r.json())
       .then(d => {
         const liste = (d.mahalleler || [])
@@ -44,7 +45,7 @@ export default function MahalleDetay() {
         const sira = liste.findIndex((m: any) => m.slug === slug) + 1
         setMahalleSira(sira)
       })
-  }, [slug])
+  }, [slug, mahalle?.ilce?.slug])
 
   if (yukleniyor) return (
     <div style={{ minHeight: '100vh', paddingTop: 64, display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#f8fafb' }}>
@@ -61,10 +62,10 @@ export default function MahalleDetay() {
         <div style={{ fontSize: 32, marginBottom: 12 }}>😕</div>
         <div style={{ fontSize: 15, color: '#667781' }}>Mahalle bulunamadı</div>
         <button
-          onClick={() => router.push('/ilce/kagithane')}
+          onClick={() => router.push('/')}
           style={{ marginTop: 16, padding: '10px 20px', background: '#075e54', color: 'white', border: 'none', borderRadius: 10, cursor: 'pointer', fontSize: 14 }}
         >
-          Kağıthane&apos;ye Dön
+          Ana Sayfaya Dön
         </button>
       </div>
     </div>
@@ -123,7 +124,7 @@ export default function MahalleDetay() {
 
           {/* Geri butonu */}
           <button
-            onClick={() => router.push('/ilce/kagithane')}
+            onClick={() => router.push(mahalle?.ilce?.slug ? `/ilce/${mahalle.ilce.slug}` : '/')}
             style={{
               display: 'flex', alignItems: 'center', gap: 6,
               background: 'none', border: 'none',
@@ -132,7 +133,7 @@ export default function MahalleDetay() {
             }}
           >
             <ArrowLeft size={14}/>
-            Kağıthane İlçesine Dön
+            {mahalle?.ilce?.isim ? `${mahalle.ilce.isim} İlçesine Dön` : 'Geri Dön'}
           </button>
 
           <div style={{
@@ -152,7 +153,7 @@ export default function MahalleDetay() {
               }}>
                 <MapPin size={13} color="rgba(255,255,255,0.5)"/>
                 <span style={{ fontSize: 12, color: 'rgba(255,255,255,0.55)' }}>
-                  Kağıthane · İstanbul
+                  {mahalle?.ilce?.isim || ''} · İstanbul
                 </span>
               </div>
 
@@ -333,10 +334,10 @@ export default function MahalleDetay() {
 
         <div style={{ textAlign: 'center', marginTop: 32 }}>
           <button
-            onClick={() => router.push('/ilce/kagithane')}
+            onClick={() => router.push(mahalle?.ilce?.slug ? `/ilce/${mahalle.ilce.slug}` : '/')}
             style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'white', border: '1.5px solid #e9edef', borderRadius: 12, padding: '12px 24px', fontSize: 14, fontWeight: 500, color: '#374151', cursor: 'pointer' }}
           >
-            <ArrowLeft size={15}/> Kağıthane İlçesine Dön
+            <ArrowLeft size={15}/> {mahalle?.ilce?.isim ? `${mahalle.ilce.isim} İlçesine Dön` : 'Geri Dön'}
           </button>
         </div>
       </div>

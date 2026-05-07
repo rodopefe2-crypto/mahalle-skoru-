@@ -7,7 +7,7 @@ import {
   Train, ShoppingBag,
   BookOpen, HeartPulse,
   Shield, Flame, AlertTriangle,
-  Trees, Palette, Banknote, Users,
+  Trees, Palette, Banknote, Smile,
 } from 'lucide-react'
 import { KIRA_VERISI, kiraRengi } from '@/lib/kiraVerisi'
 
@@ -32,9 +32,8 @@ interface IlceKartiProps {
     deprem_yorum?:           string | null
     yasam_maliyeti_skoru:    number
     sakin_memnuniyeti_skoru: number
-    yesil_alan_skoru?:       number
-    kultur_skoru?:           number
-    nufus_yogunlugu_skoru?:  number
+    yesil_alan_skoru:        number
+    kultur_skoru:            number
   }
   sira:              number
   karsilastirmaModu?: boolean
@@ -43,14 +42,15 @@ interface IlceKartiProps {
 }
 
 const PARAMETRELER = [
-  { key: 'ulasim_skoru',     label: 'Ulaşım',     Ikon: Train,         renk: '#3b82f6', bg: '#eff6ff' },
-  { key: 'imkanlar_skoru',   label: 'İmkanlar',   Ikon: ShoppingBag,   renk: '#10b981', bg: '#ecfdf5' },
-  { key: 'egitim_skoru',     label: 'Eğitim',     Ikon: BookOpen,      renk: '#8b5cf6', bg: '#f5f3ff' },
-  { key: 'saglik_skoru',     label: 'Sağlık',     Ikon: HeartPulse,    renk: '#ef4444', bg: '#fef2f2' },
-  { key: 'deprem_skoru',     label: 'Deprem',     Ikon: AlertTriangle, renk: '#f97316', bg: '#fff7ed' },
-  { key: 'yesil_alan_skoru',     label: 'Yeşil Alan', Ikon: Trees,         renk: '#22c55e', bg: '#f0fdf4' },
-  { key: 'kultur_skoru',         label: 'Kültür',     Ikon: Palette,       renk: '#f59e0b', bg: '#fffbeb' },
-  { key: 'nufus_yogunlugu_skoru',label: 'Sakinlik',   Ikon: Users,         renk: '#8b5cf6', bg: '#f5f3ff' },
+  { key: 'ulasim_skoru',          label: 'Ulaşım',     Ikon: Train,         renk: '#3b82f6', bg: '#eff6ff' },
+  { key: 'saglik_skoru',          label: 'Sağlık',     Ikon: HeartPulse,    renk: '#ef4444', bg: '#fef2f2' },
+  { key: 'egitim_skoru',          label: 'Eğitim',     Ikon: BookOpen,      renk: '#8b5cf6', bg: '#f5f3ff' },
+  { key: 'imkanlar_skoru',        label: 'İmkanlar',   Ikon: ShoppingBag,   renk: '#10b981', bg: '#ecfdf5' },
+  { key: 'deprem_skoru',          label: 'Deprem',     Ikon: AlertTriangle, renk: '#f97316', bg: '#fff7ed' },
+  { key: 'yesil_alan_skoru',      label: 'Yeşil Alan', Ikon: Trees,         renk: '#22c55e', bg: '#f0fdf4' },
+  { key: 'kultur_skoru',          label: 'Kültür',     Ikon: Palette,       renk: '#f59e0b', bg: '#fffbeb' },
+  { key: 'guvenlik_skoru',        label: 'Güvenlik',   Ikon: Shield,        renk: '#0ea5e9', bg: '#f0f9ff' },
+  { key: 'sakin_memnuniyeti_skoru', label: 'Sakinlik', Ikon: Smile,         renk: '#ec4899', bg: '#fdf2f8' },
 ]
 
 function skorRengi(skor: number): string {
@@ -266,7 +266,7 @@ export function IlceKarti({
           return (
             <div key={param.key} style={{
               display: 'flex', alignItems: 'center', gap: 10,
-              marginBottom: idx < PARAMETRELER.length - 1 ? 10 : 0,
+              marginBottom: idx < PARAMETRELER.length - 1 ? 6 : 0,
             }}>
               <div style={{
                 width: 28, height: 28, borderRadius: 8, background: param.bg,

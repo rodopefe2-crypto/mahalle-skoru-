@@ -8,7 +8,6 @@ import { ilceSirala } from '@/lib/skorHesapla'
 import { supabase } from '@/lib/supabase'
 import { TrendingUp, MapPin, Database, BarChart2, Users, Play, Heart, Search, GitCompare, ArrowRight, Star, X, TrendingDown, Minus, AlertTriangle } from 'lucide-react'
 import FiltrePaneli, { FiltreState } from '@/components/FiltrePaneli'
-import { AramaPaneli } from '@/components/AramaPaneli'
 import KarsilastirmaPanel from '@/components/KarsilastirmaPanel'
 import { IlceKarti } from '@/components/IlceKarti'
 import { MahalleKarti, MahalleKartiData } from '@/components/MahalleKarti'
@@ -60,6 +59,12 @@ const defaultWeights: Parametreler = {
   yesil_alan:5, kultur:5,
 }
 
+function formatSayi(sayi: number): string {
+  if (sayi >= 1000000) return (sayi / 1000000).toFixed(1) + 'M+'
+  if (sayi >= 1000)    return (sayi / 1000).toFixed(0) + 'K+'
+  return sayi.toString()
+}
+
 /* ── Küçük skor dairesi (hero mockup) ── */
 function MiniSkorDairesi() {
   const r = 30, c = 2 * Math.PI * r   // 188.5
@@ -86,6 +91,9 @@ export default function Home() {
   const [ilceler, setIlceler]   = useState<Ilce[]>(mockIlceler)
   const [weights]  = useState<Parametreler>(defaultWeights)
   const [mounted, setMounted]   = useState(false)
+  const [ilceCount,    setIlceCount]    = useState(39)
+  const [mahalleCount, setMahalleCount] = useState(961)
+  const [tesisCount,   setTesisCount]   = useState(128366)
 
   // District list state
   const [aramaMetni, setAramaMetni]                     = useState('')
@@ -106,6 +114,15 @@ export default function Home() {
   const [ilceFiltreMahalle, setIlceFiltreMahalle] = useState<string>('')
 
   useEffect(() => {
+    supabase.from('ilceler').select('*', { count: 'exact', head: true })
+      .then(({ count }) => { if (count) setIlceCount(count) })
+    supabase.from('mahalleler').select('*', { count: 'exact', head: true })
+      .then(({ count }) => { if (count) setMahalleCount(count) })
+    supabase.from('mahalle_tesisler').select('*', { count: 'exact', head: true })
+      .then(({ count }) => { if (count) setTesisCount(count) })
+  }, [])
+
+  useEffect(() => {
     setMounted(true)
     supabase
       .from('ilceler')
@@ -119,7 +136,6 @@ export default function Home() {
         sakin_memnuniyeti_skoru,
         yesil_alan_skoru,
         kultur_skoru,
-        nufus_yogunlugu_skoru,
         genel_skor,
         deprem_fay_mesafe,
         deprem_son_yil,
@@ -143,6 +159,8 @@ export default function Home() {
         id, isim, slug, genel_skor,
         ulasim_skoru, saglik_skoru, egitim_skoru,
         imkanlar_skoru, deprem_skoru, kira_ortalama,
+        yesil_alan_skoru, kultur_skoru,
+        guvenlik_skoru, sakin_memnuniyeti_skoru,
         ilceler!inner(isim, slug)
       `)
       .order('genel_skor', { ascending: false })
@@ -158,9 +176,13 @@ export default function Home() {
             ulasim_skoru:   m.ulasim_skoru   || 0,
             saglik_skoru:   m.saglik_skoru   || 0,
             egitim_skoru:   m.egitim_skoru   || 0,
-            imkanlar_skoru: m.imkanlar_skoru || 0,
-            deprem_skoru:   m.deprem_skoru   || 0,
-            kira_ortalama:  m.kira_ortalama  || null,
+            imkanlar_skoru:          m.imkanlar_skoru          || 0,
+            deprem_skoru:            m.deprem_skoru            || 0,
+            yesil_alan_skoru:        m.yesil_alan_skoru        || 0,
+            kultur_skoru:            m.kultur_skoru            || 0,
+            guvenlik_skoru:          m.guvenlik_skoru          || 0,
+            sakin_memnuniyeti_skoru: m.sakin_memnuniyeti_skoru || 0,
+            kira_ortalama:           m.kira_ortalama           || null,
           })))
         }
         setMahalleYukleniyor(false)
@@ -179,15 +201,16 @@ export default function Home() {
   }, [])
 
   const SIRALAMA_PARAMETRELER = [
-    { key: 'genel_skor',           label: 'Genel'    },
-    { key: 'ulasim_skoru',         label: 'Ulaşım'   },
-    { key: 'imkanlar_skoru',       label: 'İmkanlar' },
-    { key: 'egitim_skoru',         label: 'Eğitim'   },
-    { key: 'saglik_skoru',         label: 'Sağlık'   },
-    { key: 'deprem_skoru',     label: 'Deprem'    },
-    { key: 'yesil_alan_skoru',     label: 'Yeşil Alan'},
-    { key: 'kultur_skoru',         label: 'Kültür'    },
-    { key: 'nufus_yogunlugu_skoru',label: 'Sakinlik'  },
+    { key: 'genel_skor',              label: 'Genel'     },
+    { key: 'ulasim_skoru',            label: 'Ulaşım'    },
+    { key: 'guvenlik_skoru',          label: 'Güvenlik'  },
+    { key: 'imkanlar_skoru',          label: 'İmkanlar'  },
+    { key: 'egitim_skoru',            label: 'Eğitim'    },
+    { key: 'saglik_skoru',            label: 'Sağlık'    },
+    { key: 'deprem_skoru',            label: 'Deprem'    },
+    { key: 'yesil_alan_skoru',        label: 'Yeşil Alan'},
+    { key: 'kultur_skoru',            label: 'Kültür'    },
+    { key: 'sakin_memnuniyeti_skoru', label: 'Sakinlik'  },
   ]
 
   const overallSiralama = useMemo(() => {
@@ -515,18 +538,18 @@ export default function Home() {
           gap: 'clamp(24px, 5vw, 64px)', flexWrap:'wrap',
         }}>
           {[
-            { Icon: MapPin,    sayi:'5+',    etiket:'İlçe Analiz Edildi'  },
-            { Icon: Database,  sayi:'1.062', etiket:'Tesis Haritalandı'   },
-            { Icon: BarChart2, sayi:'8',     etiket:'Parametre'           },
-            { Icon: Users,     sayi:'500+',  etiket:'Aktif Kullanıcı'     },
-          ].map(({ Icon, sayi, etiket }) => (
+            { ikon: '🏙️', sayi: formatSayi(ilceCount),    etiket: 'İlçe'      },
+            { ikon: '🏘️', sayi: formatSayi(mahalleCount), etiket: 'Mahalle'   },
+            { ikon: '📍', sayi: formatSayi(tesisCount),   etiket: 'Tesis'     },
+            { ikon: '📊', sayi: '8',                      etiket: 'Parametre' },
+          ].map(({ ikon, sayi, etiket }) => (
             <div key={etiket} style={{ display:'flex', alignItems:'center', gap:12 }}>
-              <div style={{ width:36, height:36, borderRadius:8, background:'rgba(37,211,102,0.12)', display:'flex', alignItems:'center', justifyContent:'center' }}>
-                <Icon size={16} color="#25d366" />
+              <div style={{ width:40, height:40, borderRadius:10, background:'rgba(37,211,102,0.12)', display:'flex', alignItems:'center', justifyContent:'center', fontSize:20 }}>
+                {ikon}
               </div>
               <div>
-                <div style={{ color:'white', fontSize:18, fontWeight:700, lineHeight:1 }}>{sayi}</div>
-                <div style={{ color:'rgba(255,255,255,0.5)', fontSize:12, marginTop:2 }}>{etiket}</div>
+                <div style={{ color:'white', fontSize:20, fontWeight:800, lineHeight:1 }}>{sayi}</div>
+                <div style={{ color:'rgba(255,255,255,0.5)', fontSize:12, marginTop:3 }}>{etiket}</div>
               </div>
             </div>
           ))}
@@ -536,9 +559,6 @@ export default function Home() {
       {/* ─── İLÇELER ─── */}
       <section id="districts" style={{ background:'var(--color-bg)', paddingBottom:80 }}>
         <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
-
-          {/* ── ARAMA PANELİ ── */}
-          <AramaPaneli ilceler={ilceler} />
 
           {/* ── QUIZ BANNER ── */}
           <div

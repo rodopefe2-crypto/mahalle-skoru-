@@ -5,22 +5,27 @@ import { useRouter } from 'next/navigation'
 import {
   Train, HeartPulse, BookOpen, ShoppingBag,
   AlertTriangle, ArrowRight, Banknote,
+  Trees, Palette, Shield, Smile,
 } from 'lucide-react'
 import { KIRA_VERISI, kiraRengi } from '@/lib/kiraVerisi'
 
 export interface MahalleKartiData {
-  id:              string
-  slug:            string
-  isim:            string
-  ilce_slug:       string
-  ilce_isim:       string
-  genel_skor:      number
-  ulasim_skoru:    number
-  saglik_skoru:    number
-  egitim_skoru:    number
-  imkanlar_skoru:  number
-  deprem_skoru:    number
-  kira_ortalama?:  number | null
+  id:                      string
+  slug:                    string
+  isim:                    string
+  ilce_slug:               string
+  ilce_isim:               string
+  genel_skor:              number
+  ulasim_skoru:            number
+  saglik_skoru:            number
+  egitim_skoru:            number
+  imkanlar_skoru:          number
+  deprem_skoru:            number
+  yesil_alan_skoru:        number
+  kultur_skoru:            number
+  guvenlik_skoru:          number
+  sakin_memnuniyeti_skoru: number
+  kira_ortalama?:          number | null
 }
 
 interface Props {
@@ -30,11 +35,15 @@ interface Props {
 }
 
 const PARAMETRELER = [
-  { key: 'ulasim_skoru',   label: 'Ulaşım',  Ikon: Train,          renk: '#3b82f6', bg: '#eff6ff' },
-  { key: 'saglik_skoru',   label: 'Sağlık',  Ikon: HeartPulse,     renk: '#ef4444', bg: '#fef2f2' },
-  { key: 'egitim_skoru',   label: 'Eğitim',  Ikon: BookOpen,       renk: '#8b5cf6', bg: '#f5f3ff' },
-  { key: 'imkanlar_skoru', label: 'İmkanlar',Ikon: ShoppingBag,    renk: '#10b981', bg: '#ecfdf5' },
-  { key: 'deprem_skoru',   label: 'Deprem',  Ikon: AlertTriangle,  renk: '#f97316', bg: '#fff7ed' },
+  { key: 'ulasim_skoru',            label: 'Ulaşım',     Ikon: Train,         renk: '#3b82f6', bg: '#eff6ff' },
+  { key: 'saglik_skoru',            label: 'Sağlık',     Ikon: HeartPulse,    renk: '#ef4444', bg: '#fef2f2' },
+  { key: 'egitim_skoru',            label: 'Eğitim',     Ikon: BookOpen,      renk: '#8b5cf6', bg: '#f5f3ff' },
+  { key: 'imkanlar_skoru',          label: 'İmkanlar',   Ikon: ShoppingBag,   renk: '#10b981', bg: '#ecfdf5' },
+  { key: 'deprem_skoru',            label: 'Deprem',     Ikon: AlertTriangle, renk: '#f97316', bg: '#fff7ed' },
+  { key: 'yesil_alan_skoru',        label: 'Yeşil Alan', Ikon: Trees,         renk: '#22c55e', bg: '#f0fdf4' },
+  { key: 'kultur_skoru',            label: 'Kültür',     Ikon: Palette,       renk: '#f59e0b', bg: '#fffbeb' },
+  { key: 'guvenlik_skoru',          label: 'Güvenlik',   Ikon: Shield,        renk: '#0ea5e9', bg: '#f0f9ff' },
+  { key: 'sakin_memnuniyeti_skoru', label: 'Sakinlik',   Ikon: Smile,         renk: '#ec4899', bg: '#fdf2f8' },
 ]
 
 function skorRengi(s: number) {
@@ -150,7 +159,7 @@ export function MahalleKarti({ mahalle, sira, aktifSiralama }: Props) {
         {PARAMETRELER.map((p, idx) => {
           const skor = (mahalle as any)[p.key] as number || 0
           return (
-            <div key={p.key} style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: idx < 4 ? 8 : 0 }}>
+            <div key={p.key} style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: idx < PARAMETRELER.length - 1 ? 6 : 0 }}>
               <div style={{ width: 26, height: 26, borderRadius: 7, background: p.bg, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                 <p.Ikon size={13} color={p.renk} strokeWidth={2.2}/>
               </div>

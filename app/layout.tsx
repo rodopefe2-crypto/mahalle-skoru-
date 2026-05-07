@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import SmoothScroll from "@/components/SmoothScroll";
 import CustomCursor from "@/components/CustomCursor";
+import { AuthProvider } from "@/lib/AuthContext";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,13 +27,15 @@ export default function RootLayout({
       className={`${inter.className} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-slate-50">
-        <SmoothScroll>
-          <CustomCursor />
-          <Navbar />
-          <main className="flex-1" style={{ paddingTop: 64 }}>
-            {children}
-          </main>
-        </SmoothScroll>
+        <AuthProvider>
+          <SmoothScroll>
+            <CustomCursor />
+            <Navbar />
+            <main className="flex-1" style={{ paddingTop: 64 }}>
+              {children}
+            </main>
+          </SmoothScroll>
+        </AuthProvider>
       </body>
     </html>
   );

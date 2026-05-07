@@ -10,14 +10,15 @@ const supabase = createClient(
 // ── SABİT AĞIRLIKLAR ─────────────────────────────
 // Son güncelleme: Nisan 2026
 const AGIRLIKLAR = {
-  ulasim:            0.22,
-  saglik:            0.17,
-  egitim:            0.17,
-  imkanlar:          0.13,
-  yesil_alan:        0.09,
-  kultur:            0.05,
-  deprem:            0.10,  // artırıldı: 0.03 → 0.10
-  nufus_yogunlugu:   0.07,  // yeni: sakinlik/yoğunluk
+  ulasim:            0.17,
+  saglik:            0.13,
+  egitim:            0.13,
+  imkanlar:          0.10,
+  guvenlik:          0.16,
+  yesil_alan:        0.07,
+  kultur:            0.06,
+  deprem:            0.08,
+  kira:              0.10,
 }
 
 async function main() {
@@ -29,7 +30,7 @@ async function main() {
 
   const { data, error: fetchErr } = await supabase
     .from('ilceler')
-    .select('id, ulasim_skoru, saglik_skoru, egitim_skoru, imkanlar_skoru, yesil_alan_skoru, kultur_skoru, deprem_skoru, nufus_yogunlugu_skoru')
+    .select('id, ulasim_skoru, saglik_skoru, egitim_skoru, imkanlar_skoru, guvenlik_skoru, yesil_alan_skoru, kultur_skoru, deprem_skoru, kira_skoru')
 
   if (fetchErr || !data) {
     console.error('Veri alınamadı:', fetchErr)
@@ -38,14 +39,15 @@ async function main() {
 
   for (const ilce of data) {
     const genel = Math.round(
-      (ilce.ulasim_skoru           || 0) * AGIRLIKLAR.ulasim           +
-      (ilce.saglik_skoru           || 0) * AGIRLIKLAR.saglik           +
-      (ilce.egitim_skoru           || 0) * AGIRLIKLAR.egitim           +
-      (ilce.imkanlar_skoru         || 0) * AGIRLIKLAR.imkanlar         +
-      (ilce.yesil_alan_skoru       || 0) * AGIRLIKLAR.yesil_alan       +
-      (ilce.kultur_skoru           || 0) * AGIRLIKLAR.kultur           +
-      (ilce.deprem_skoru           || 0) * AGIRLIKLAR.deprem           +
-      (ilce.nufus_yogunlugu_skoru  || 0) * AGIRLIKLAR.nufus_yogunlugu
+      (ilce.ulasim_skoru     || 0) * AGIRLIKLAR.ulasim    +
+      (ilce.saglik_skoru     || 0) * AGIRLIKLAR.saglik    +
+      (ilce.egitim_skoru     || 0) * AGIRLIKLAR.egitim    +
+      (ilce.imkanlar_skoru   || 0) * AGIRLIKLAR.imkanlar  +
+      (ilce.guvenlik_skoru   || 0) * AGIRLIKLAR.guvenlik  +
+      (ilce.yesil_alan_skoru || 0) * AGIRLIKLAR.yesil_alan+
+      (ilce.kultur_skoru     || 0) * AGIRLIKLAR.kultur    +
+      (ilce.deprem_skoru     || 0) * AGIRLIKLAR.deprem    +
+      (ilce.kira_skoru       || 0) * AGIRLIKLAR.kira
     )
     await supabase
       .from('ilceler')

@@ -24,7 +24,19 @@
     "veri:mahalle-poligon": "python3 scripts/mahallePoligonSkorla.py",
     "sahibinden:login": "node scripts/sahibinden_login.mjs",
     "sahibinden:cek": "node scripts/sahibindenKiraVerisiCek.mjs",
-    "endeksa:kira": "node scripts/endeksaKiraVerisiCek.mjs"
+    "endeksa:kira": "node scripts/endeksaKiraVerisiCek.mjs",
+    "veri:guvenlik-skor": "npx tsx scripts/guvenlikSkoruHesapla.ts",
+    "veri:mahalle-guvenlik": "npx tsx scripts/mahalleGuvenlikSkoruHesapla.ts",
+    "veri:mahalle-tesis": "npx tsx scripts/googlePlacesMahalleTesis.ts",
+    "veri:mahalle-skor-v2": "npx tsx scripts/mahalleSkorlarHesaplaV2.ts",
+    "veri:kira-skor": "npx tsx scripts/kiraSkoruHesapla.ts",
+    "veri:mahalle-skor": "npx tsx scripts/mahalleSkoruGuncelle.ts",
+    "veri:eksik-tip": "npx tsx scripts/googlePlacesEksikTipCek.ts",
+    "veri:osm-imkanlar": "npx tsx scripts/osmImkanlarTamamla.ts",
+    "veri:guvenlik-mahalle": "npx tsx scripts/guvenlikSkoru.ts",
+    "veri:osm-mahalle": "npx tsx scripts/osm_mahalle_saglik_egitim.ts",
+    "veri:osm-skor": "npx tsx scripts/osmSaglikEgitimSkor.ts",
+    "veri:mesafe-skor": "npx tsx scripts/mesafeBazliSkorHesapla.ts"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

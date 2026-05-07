@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, Suspense } from 'react'
 import { useSearchParams, useRouter } from 'next/navigation'
 import {
   Trophy, ArrowRight, RotateCcw,
@@ -22,7 +22,7 @@ const YUKLEME_ADIMLAR = [
   'Sonuçlar hazırlanıyor',
 ]
 
-export default function SonucPage() {
+function SonucIcerik() {
   const [yukleniyor, setYukleniyor] = useState(true)
   const [sonuclar, setSonuclar]     = useState<IlceUyumSkoru[]>([])
   const [paylasild, setPaylasild]   = useState(false)
@@ -359,5 +359,20 @@ export default function SonucPage() {
         </div>
       </div>
     </div>
+  )
+}
+
+export default function SonucPage() {
+  return (
+    <Suspense fallback={
+      <div style={{ minHeight: '100vh', paddingTop: 64, display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#f8fafb' }}>
+        <div style={{ textAlign: 'center' }}>
+          <div style={{ fontSize: 40, marginBottom: 16 }}>🏆</div>
+          <div style={{ fontSize: 16, fontWeight: 600, color: '#374151' }}>Sonuçlar hesaplanıyor...</div>
+        </div>
+      </div>
+    }>
+      <SonucIcerik />
+    </Suspense>
   )
 }

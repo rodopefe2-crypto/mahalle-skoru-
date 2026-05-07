@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect, useMemo, Suspense } from 'react'
 import { useSearchParams, useRouter } from 'next/navigation'
 import {
   Trophy, ArrowLeft, Share2,
@@ -31,7 +31,7 @@ function skorEtiketi(skor: number): string {
   return 'Zayıf'
 }
 
-export default function KarsilastirPage() {
+function KarsilastirIcerik() {
   const [ilceler, setIlceler]           = useState<IlceKarsilastirma[]>([])
   const [tumIlceler, setTumIlceler]     = useState<any[]>([])
   const [yukleniyor, setYukleniyor]     = useState(true)
@@ -345,5 +345,20 @@ export default function KarsilastirPage() {
 
       </div>
     </div>
+  )
+}
+
+export default function KarsilastirPage() {
+  return (
+    <Suspense fallback={
+      <div style={{ minHeight: '100vh', paddingTop: 64, display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#f8fafb' }}>
+        <div style={{ textAlign: 'center' }}>
+          <div style={{ fontSize: 40, marginBottom: 16 }}>⚖️</div>
+          <div style={{ fontSize: 16, fontWeight: 600, color: '#374151' }}>Karşılaştırma hazırlanıyor...</div>
+        </div>
+      </div>
+    }>
+      <KarsilastirIcerik />
+    </Suspense>
   )
 }

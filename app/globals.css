@@ -573,3 +573,13 @@ input[type="range"]::-moz-range-thumb {
 .kart-animasyon:nth-child(3), .kartGir-animasyon:nth-child(3) { animation-delay: 160ms; }
 .kart-animasyon:nth-child(4), .kartGir-animasyon:nth-child(4) { animation-delay: 240ms; }
 .kart-animasyon:nth-child(5), .kartGir-animasyon:nth-child(5) { animation-delay: 320ms; }
+
+/* Navbar responsive */
+@media (max-width: 768px) {
+  .navbar-desktop { display: none !important; }
+  .navbar-mobile  { display: flex !important; }
+}
+@media (min-width: 769px) {
+  .navbar-desktop { display: flex !important; }
+  .navbar-mobile  { display: none !important; }
+}

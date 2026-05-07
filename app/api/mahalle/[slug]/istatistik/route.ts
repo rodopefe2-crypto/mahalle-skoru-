@@ -14,7 +14,7 @@ export async function GET(
 
   const { data: mahalle } = await supabase
     .from('mahalleler')
-    .select('id, isim')
+    .select('id, isim, koordinat_lat, koordinat_lng')
     .eq('slug', slug)
     .single()
 
@@ -25,32 +25,49 @@ export async function GET(
     )
   }
 
-  const tumTesisler: { kategori: string; alt_kategori: string }[] = []
-  let offset = 0
-  while (true) {
-    const { data } = await supabase
-      .from('mahalle_tesisler')
-      .select('kategori, alt_kategori')
-      .eq('mahalle_id', mahalle.id)
-      .range(offset, offset + 999)
+  const mLat = mahalle.koordinat_lat as number
+  const mLng = mahalle.koordinat_lng as number
 
-    if (!data || data.length === 0) break
-    tumTesisler.push(...data)
-    if (data.length < 1000) break
-    offset += 1000
+  const [{ data: saglikTesisler }, { data: egitimTesisler }] = await Promise.all([
+    supabase.rpc('mahalle_tesisler_yakin', {
+      p_mahalle_id: mahalle.id,
+      p_lat:        mLat,
+      p_lng:        mLng,
+      p_kategori:   'saglik',
+      p_max_km:     0.5,
+    }),
+    supabase.rpc('mahalle_tesisler_yakin', {
+      p_mahalle_id: mahalle.id,
+      p_lat:        mLat,
+      p_lng:        mLng,
+      p_kategori:   'egitim',
+      p_max_km:     0.5,
+    }),
+  ])
+
+  function sayilaraGrup(
+    tesisler: { alt_kategori: string; sayi?: number }[] | null
+  ): Record<string, number> {
+    if (!tesisler) return {}
+    return tesisler.reduce((acc: Record<string, number>, t) => {
+      acc[t.alt_kategori] = (acc[t.alt_kategori] || 0) + (t.sayi ? Number(t.sayi) : 1)
+      return acc
+    }, {})
   }
 
-  const gruplar: Record<string, Record<string, number>> = {}
-  tumTesisler.forEach(t => {
-    const kat    = t.kategori     || 'diger'
-    const altKat = t.alt_kategori || 'diger'
-    if (!gruplar[kat]) gruplar[kat] = {}
-    gruplar[kat][altKat] = (gruplar[kat][altKat] || 0) + 1
-  })
+  const istatistikler: Record<string, Record<string, number>> = {
+    saglik: sayilaraGrup(saglikTesisler),
+    egitim: sayilaraGrup(egitimTesisler),
+  }
+
+  const toplam = Object.values(istatistikler).reduce(
+    (sum, kat) => sum + Object.values(kat).reduce((s, v) => s + v, 0),
+    0
+  )
 
   return NextResponse.json({
     mahalle:       mahalle.isim,
-    istatistikler: gruplar,
-    toplam:        tumTesisler.length,
+    istatistikler,
+    toplam,
   })
 }

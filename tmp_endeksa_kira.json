@@ -1,2940 +1,2958 @@
 {
-  "tarih": "2026-04-28T08:06:51.672Z",
-  "toplam": 495,
+  "tarih": "2026-05-06T16:04:01.674Z",
+  "toplam": 497,
   "mahalleler": [
-    {
-      "isim": "Karaağaç",
-      "ilce": "Büyükçekmece",
-      "kira": 227558,
-      "ilanSayisi": 38
-    },
     {
       "isim": "Hüseyinli",
       "ilce": "Çekmeköy",
-      "kira": 183717,
+      "kira": 286171,
       "ilanSayisi": 1
     },
     {
-      "isim": "Kumköy",
-      "ilce": "Sarıyer",
-      "kira": 175661,
-      "ilanSayisi": 23
+      "isim": "Karaağaç",
+      "ilce": "Büyükçekmece",
+      "kira": 231497,
+      "ilanSayisi": 52
     },
     {
       "isim": "Ömerli",
       "ilce": "Çekmeköy",
-      "kira": 171174,
-      "ilanSayisi": 25
-    },
-    {
-      "isim": "Acarlar",
-      "ilce": "Beykoz",
-      "kira": 166474,
-      "ilanSayisi": 105
-    },
-    {
-      "isim": "Kandilli",
-      "ilce": "Üsküdar",
-      "kira": 158496,
-      "ilanSayisi": 10
-    },
-    {
-      "isim": "Demirciköy",
-      "ilce": "Sarıyer",
-      "kira": 156534,
-      "ilanSayisi": 17
-    },
-    {
-      "isim": "Tepeören",
-      "ilce": "Tuzla",
-      "kira": 155778,
-      "ilanSayisi": 52
+      "kira": 178853,
+      "ilanSayisi": 26
     },
     {
       "isim": "Kazlıçeşme",
       "ilce": "Zeytinburnu",
-      "kira": 153293,
-      "ilanSayisi": 107
+      "kira": 163560,
+      "ilanSayisi": 123
+    },
+    {
+      "isim": "Acarlar",
+      "ilce": "Beykoz",
+      "kira": 161372,
+      "ilanSayisi": 119
+    },
+    {
+      "isim": "Kandilli",
+      "ilce": "Üsküdar",
+      "kira": 159530,
+      "ilanSayisi": 13
     },
     {
       "isim": "Görele",
       "ilce": "Beykoz",
-      "kira": 148941,
-      "ilanSayisi": 9
+      "kira": 158537,
+      "ilanSayisi": 10
+    },
+    {
+      "isim": "Kumköy",
+      "ilce": "Sarıyer",
+      "kira": 156440,
+      "ilanSayisi": 26
+    },
+    {
+      "isim": "Demirciköy",
+      "ilce": "Sarıyer",
+      "kira": 154990,
+      "ilanSayisi": 23
+    },
+    {
+      "isim": "Tepeören",
+      "ilce": "Tuzla",
+      "kira": 153612,
+      "ilanSayisi": 57
     },
     {
       "isim": "Uskumruköy",
       "ilce": "Sarıyer",
-      "kira": 147000,
-      "ilanSayisi": 81
-    },
-    {
-      "isim": "Harbiye",
-      "ilce": "Şişli",
-      "kira": 130431,
-      "ilanSayisi": 47
-    },
-    {
-      "isim": "Sırapınar",
-      "ilce": "Çekmeköy",
-      "kira": 128399,
-      "ilanSayisi": 2
-    },
-    {
-      "isim": "Öğümce",
-      "ilce": "Beykoz",
-      "kira": 127592,
-      "ilanSayisi": 3
-    },
-    {
-      "isim": "Akören",
-      "ilce": "Silivri",
-      "kira": 121404,
-      "ilanSayisi": 1
+      "kira": 147384,
+      "ilanSayisi": 84
     },
     {
       "isim": "Rumelikavağı",
       "ilce": "Sarıyer",
-      "kira": 120428,
-      "ilanSayisi": 9
+      "kira": 141182,
+      "ilanSayisi": 8
     },
     {
-      "isim": "Ulus",
-      "ilce": "Beşiktaş",
-      "kira": 119902,
-      "ilanSayisi": 102
-    },
-    {
-      "isim": "Basınköy",
-      "ilce": "Bakırköy",
-      "kira": 118780,
-      "ilanSayisi": 23
-    },
-    {
-      "isim": "Reşadiye",
-      "ilce": "Çekmeköy",
-      "kira": 117135,
-      "ilanSayisi": 23
-    },
-    {
-      "isim": "Fenerbahçe",
-      "ilce": "Kadıköy",
-      "kira": 117007,
-      "ilanSayisi": 170
-    },
-    {
-      "isim": "Ataköy 2 5 6. Kısım",
-      "ilce": "Bakırköy",
-      "kira": 113810,
-      "ilanSayisi": 46
+      "isim": "Harbiye",
+      "ilce": "Şişli",
+      "kira": 139533,
+      "ilanSayisi": 48
     },
     {
       "isim": "Levent",
       "ilce": "Beşiktaş",
-      "kira": 112822,
-      "ilanSayisi": 107
+      "kira": 133824,
+      "ilanSayisi": 94
     },
     {
-      "isim": "Caddebostan",
+      "isim": "Sırapınar",
+      "ilce": "Çekmeköy",
+      "kira": 132806,
+      "ilanSayisi": 5
+    },
+    {
+      "isim": "Basınköy",
+      "ilce": "Bakırköy",
+      "kira": 129732,
+      "ilanSayisi": 23
+    },
+    {
+      "isim": "Ulus",
+      "ilce": "Beşiktaş",
+      "kira": 120452,
+      "ilanSayisi": 115
+    },
+    {
+      "isim": "Akören",
+      "ilce": "Silivri",
+      "kira": 119538,
+      "ilanSayisi": 1
+    },
+    {
+      "isim": "Fenerbahçe",
       "ilce": "Kadıköy",
-      "kira": 109069,
-      "ilanSayisi": 186
-    },
-    {
-      "isim": "Rumelifeneri",
-      "ilce": "Sarıyer",
-      "kira": 106677,
-      "ilanSayisi": 6
+      "kira": 114041,
+      "ilanSayisi": 202
     },
     {
       "isim": "Zekeriyaköy",
       "ilce": "Sarıyer",
-      "kira": 106293,
-      "ilanSayisi": 284
+      "kira": 112929,
+      "ilanSayisi": 296
+    },
+    {
+      "isim": "Reşadiye",
+      "ilce": "Çekmeköy",
+      "kira": 112672,
+      "ilanSayisi": 22
+    },
+    {
+      "isim": "Caddebostan",
+      "ilce": "Kadıköy",
+      "kira": 111154,
+      "ilanSayisi": 206
+    },
+    {
+      "isim": "Öğümce",
+      "ilce": "Beykoz",
+      "kira": 110962,
+      "ilanSayisi": 3
     },
     {
       "isim": "Ataköy 1. Kısım",
       "ilce": "Bakırköy",
-      "kira": 105420,
-      "ilanSayisi": 7
+      "kira": 110842,
+      "ilanSayisi": 10
     },
     {
-      "isim": "Maslak",
-      "ilce": "Sarıyer",
-      "kira": 103383,
-      "ilanSayisi": 712
-    },
-    {
-      "isim": "Balmumcu",
-      "ilce": "Beşiktaş",
-      "kira": 102744,
-      "ilanSayisi": 25
-    },
-    {
-      "isim": "Şenlikköy",
-      "ilce": "Bakırköy",
-      "kira": 102627,
-      "ilanSayisi": 197
+      "isim": "Büyük Kılıçlı",
+      "ilce": "Silivri",
+      "kira": 110002,
+      "ilanSayisi": 1
     },
     {
       "isim": "Yeşilyurt",
       "ilce": "Bakırköy",
-      "kira": 99305,
-      "ilanSayisi": 19
+      "kira": 109833,
+      "ilanSayisi": 18
     },
     {
-      "isim": "Riva",
-      "ilce": "Beykoz",
-      "kira": 98254,
-      "ilanSayisi": 40
+      "isim": "Ataköy 2 5 6. Kısım",
+      "ilce": "Bakırköy",
+      "kira": 109576,
+      "ilanSayisi": 55
     },
     {
       "isim": "Yeşilköy",
       "ilce": "Bakırköy",
-      "kira": 98187,
-      "ilanSayisi": 93
+      "kira": 107328,
+      "ilanSayisi": 103
     },
     {
-      "isim": "Suadiye",
-      "ilce": "Kadıköy",
-      "kira": 97868,
-      "ilanSayisi": 258
+      "isim": "Şenlikköy",
+      "ilce": "Bakırköy",
+      "kira": 105871,
+      "ilanSayisi": 215
     },
     {
-      "isim": "Kuruçeşme",
-      "ilce": "Beşiktaş",
-      "kira": 97094,
-      "ilanSayisi": 21
-    },
-    {
-      "isim": "Huzur",
+      "isim": "Maslak",
       "ilce": "Sarıyer",
-      "kira": 92751,
-      "ilanSayisi": 319
+      "kira": 103069,
+      "ilanSayisi": 781
     },
     {
-      "isim": "Kabakoz",
-      "ilce": "Şile",
-      "kira": 92415,
-      "ilanSayisi": 1
+      "isim": "Rumelifeneri",
+      "ilce": "Sarıyer",
+      "kira": 102877,
+      "ilanSayisi": 7
     },
     {
-      "isim": "Kavaklı Hürriyet",
-      "ilce": "Silivri",
-      "kira": 92327,
-      "ilanSayisi": 3
-    },
-    {
-      "isim": "Levazım",
-      "ilce": "Beşiktaş",
-      "kira": 92164,
-      "ilanSayisi": 78
-    },
-    {
-      "isim": "Göztepe",
-      "ilce": "Kadıköy",
-      "kira": 91958,
-      "ilanSayisi": 278
-    },
-    {
-      "isim": "Bebek",
-      "ilce": "Beşiktaş",
-      "kira": 91082,
-      "ilanSayisi": 82
+      "isim": "Riva",
+      "ilce": "Beykoz",
+      "kira": 102595,
+      "ilanSayisi": 47
     },
     {
       "isim": "Kültür",
       "ilce": "Beşiktaş",
-      "kira": 90987,
-      "ilanSayisi": 30
+      "kira": 99431,
+      "ilanSayisi": 40
     },
     {
-      "isim": "Fatih Sultan Mehmet",
-      "ilce": "Ümraniye",
-      "kira": 90048,
-      "ilanSayisi": 23
-    },
-    {
-      "isim": "Teşvikiye",
-      "ilce": "Şişli",
-      "kira": 89530,
-      "ilanSayisi": 249
-    },
-    {
-      "isim": "Göktürk Merkez",
-      "ilce": "Eyüpsultan",
-      "kira": 89505,
-      "ilanSayisi": 484
-    },
-    {
-      "isim": "Erenköy",
+      "isim": "Suadiye",
       "ilce": "Kadıköy",
-      "kira": 89074,
-      "ilanSayisi": 222
+      "kira": 99185,
+      "ilanSayisi": 275
     },
     {
-      "isim": "Akat",
+      "isim": "Bebek",
       "ilce": "Beşiktaş",
-      "kira": 87926,
-      "ilanSayisi": 104
+      "kira": 99139,
+      "ilanSayisi": 89
+    },
+    {
+      "isim": "Levazım",
+      "ilce": "Beşiktaş",
+      "kira": 96915,
+      "ilanSayisi": 88
     },
     {
       "isim": "Müeyyetzade",
       "ilce": "Beyoğlu",
-      "kira": 87662,
-      "ilanSayisi": 12
+      "kira": 96880,
+      "ilanSayisi": 13
     },
     {
-      "isim": "Akfırat",
-      "ilce": "Tuzla",
-      "kira": 87662,
+      "isim": "Kuruçeşme",
+      "ilce": "Beşiktaş",
+      "kira": 96775,
+      "ilanSayisi": 28
+    },
+    {
+      "isim": "Göztepe",
+      "ilce": "Kadıköy",
+      "kira": 93714,
+      "ilanSayisi": 326
+    },
+    {
+      "isim": "Huzur",
+      "ilce": "Sarıyer",
+      "kira": 93633,
+      "ilanSayisi": 308
+    },
+    {
+      "isim": "Kavaklı Hürriyet",
+      "ilce": "Silivri",
+      "kira": 91369,
       "ilanSayisi": 2
     },
     {
       "isim": "Etiler",
       "ilce": "Beşiktaş",
-      "kira": 86563,
-      "ilanSayisi": 166
-    },
-    {
-      "isim": "Şahkulu",
-      "ilce": "Beyoğlu",
-      "kira": 86258,
-      "ilanSayisi": 24
-    },
-    {
-      "isim": "Acıbadem",
-      "ilce": "Üsküdar",
-      "kira": 85550,
-      "ilanSayisi": 183
-    },
-    {
-      "isim": "Ömer Avni",
-      "ilce": "Beyoğlu",
-      "kira": 84424,
-      "ilanSayisi": 56
-    },
-    {
-      "isim": "Baklacı",
-      "ilce": "Beykoz",
-      "kira": 84403,
-      "ilanSayisi": 7
-    },
-    {
-      "isim": "Soğuksu",
-      "ilce": "Beykoz",
-      "kira": 83196,
-      "ilanSayisi": 48
-    },
-    {
-      "isim": "Çayırbaşı",
-      "ilce": "Şile",
-      "kira": 81932,
-      "ilanSayisi": 14
+      "kira": 91340,
+      "ilanSayisi": 181
     },
     {
       "isim": "Nisbetiye",
       "ilce": "Beşiktaş",
-      "kira": 80484,
+      "kira": 91317,
+      "ilanSayisi": 158
+    },
+    {
+      "isim": "Balmumcu",
+      "ilce": "Beşiktaş",
+      "kira": 90477,
+      "ilanSayisi": 26
+    },
+    {
+      "isim": "Büyük Sinekli",
+      "ilce": "Silivri",
+      "kira": 90379,
+      "ilanSayisi": 1
+    },
+    {
+      "isim": "Erenköy",
+      "ilce": "Kadıköy",
+      "kira": 89373,
+      "ilanSayisi": 245
+    },
+    {
+      "isim": "Teşvikiye",
+      "ilce": "Şişli",
+      "kira": 88220,
+      "ilanSayisi": 284
+    },
+    {
+      "isim": "Çayırbaşı",
+      "ilce": "Şile",
+      "kira": 87625,
+      "ilanSayisi": 20
+    },
+    {
+      "isim": "Fatih Sultan Mehmet",
+      "ilce": "Ümraniye",
+      "kira": 87608,
+      "ilanSayisi": 26
+    },
+    {
+      "isim": "Göktürk Merkez",
+      "ilce": "Eyüpsultan",
+      "kira": 87565,
+      "ilanSayisi": 516
+    },
+    {
+      "isim": "Acıbadem",
+      "ilce": "Üsküdar",
+      "kira": 87154,
+      "ilanSayisi": 184
+    },
+    {
+      "isim": "Akat",
+      "ilce": "Beşiktaş",
+      "kira": 86950,
+      "ilanSayisi": 111
+    },
+    {
+      "isim": "Alkent 2000",
+      "ilce": "Büyükçekmece",
+      "kira": 86802,
+      "ilanSayisi": 70
+    },
+    {
+      "isim": "Şahkulu",
+      "ilce": "Beyoğlu",
+      "kira": 85753,
+      "ilanSayisi": 21
+    },
+    {
+      "isim": "Çeltik",
+      "ilce": "Silivri",
+      "kira": 84693,
+      "ilanSayisi": 1
+    },
+    {
+      "isim": "Kılıçali Paşa",
+      "ilce": "Beyoğlu",
+      "kira": 83196,
+      "ilanSayisi": 49
+    },
+    {
+      "isim": "Ömer Avni",
+      "ilce": "Beyoğlu",
+      "kira": 81977,
+      "ilanSayisi": 59
+    },
+    {
+      "isim": "Soğuksu",
+      "ilce": "Beykoz",
+      "kira": 81475,
+      "ilanSayisi": 59
+    },
+    {
+      "isim": "Ayazağa",
+      "ilce": "Sarıyer",
+      "kira": 81193,
+      "ilanSayisi": 350
+    },
+    {
+      "isim": "Feneryolu",
+      "ilce": "Kadıköy",
+      "kira": 79035,
       "ilanSayisi": 148
     },
     {
       "isim": "Finanskent",
       "ilce": "Ümraniye",
-      "kira": 79094,
-      "ilanSayisi": 186
+      "kira": 78575,
+      "ilanSayisi": 214
     },
     {
       "isim": "Darüşşafaka",
       "ilce": "Sarıyer",
-      "kira": 79006,
-      "ilanSayisi": 23
+      "kira": 78386,
+      "ilanSayisi": 27
     },
     {
-      "isim": "Feneryolu",
-      "ilce": "Kadıköy",
-      "kira": 77257,
-      "ilanSayisi": 124
+      "isim": "Akfırat",
+      "ilce": "Tuzla",
+      "kira": 77652,
+      "ilanSayisi": null
     },
     {
       "isim": "Konaklar",
       "ilce": "Beşiktaş",
-      "kira": 76830,
+      "kira": 76972,
       "ilanSayisi": 59
-    },
-    {
-      "isim": "Alkent 2000",
-      "ilce": "Büyükçekmece",
-      "kira": 74966,
-      "ilanSayisi": 70
     },
     {
       "isim": "Bostancı",
       "ilce": "Kadıköy",
-      "kira": 74875,
-      "ilanSayisi": 220
-    },
-    {
-      "isim": "Ayazağa",
-      "ilce": "Sarıyer",
-      "kira": 74660,
-      "ilanSayisi": 302
-    },
-    {
-      "isim": "Bahçelievler",
-      "ilce": "Bahçelievler",
-      "kira": 73417,
-      "ilanSayisi": 287
+      "kira": 76422,
+      "ilanSayisi": 245
     },
     {
       "isim": "Maden",
       "ilce": "Sarıyer",
-      "kira": 73106,
-      "ilanSayisi": 123
+      "kira": 75974,
+      "ilanSayisi": 118
+    },
+    {
+      "isim": "Bahçelievler",
+      "ilce": "Bahçelievler",
+      "kira": 75631,
+      "ilanSayisi": 319
     },
     {
       "isim": "Kuleli",
       "ilce": "Üsküdar",
-      "kira": 72864,
-      "ilanSayisi": 3
-    },
-    {
-      "isim": "Kozyatağı",
-      "ilce": "Kadıköy",
-      "kira": 72832,
-      "ilanSayisi": 200
-    },
-    {
-      "isim": "İstiklal",
-      "ilce": "Beyoğlu",
-      "kira": 72000,
-      "ilanSayisi": 31
-    },
-    {
-      "isim": "Kılıçali Paşa",
-      "ilce": "Beyoğlu",
-      "kira": 71547,
-      "ilanSayisi": 44
-    },
-    {
-      "isim": "Kavaklı İstiklal",
-      "ilce": "Silivri",
-      "kira": 71392,
+      "kira": 74067,
       "ilanSayisi": 6
     },
     {
-      "isim": "Atatürk",
-      "ilce": "Ataşehir",
-      "kira": 69988,
-      "ilanSayisi": 329
-    },
-    {
-      "isim": "Bereketzade",
-      "ilce": "Beyoğlu",
-      "kira": 69727,
-      "ilanSayisi": 20
-    },
-    {
-      "isim": "Emirgan",
-      "ilce": "Sarıyer",
-      "kira": 69038,
-      "ilanSayisi": 43
-    },
-    {
-      "isim": "Barbaros",
-      "ilce": "Ataşehir",
-      "kira": 68572,
-      "ilanSayisi": 233
-    },
-    {
-      "isim": "Arnavutköy",
-      "ilce": "Beşiktaş",
-      "kira": 68515,
-      "ilanSayisi": 50
-    },
-    {
-      "isim": "Zühtüpaşa",
-      "ilce": "Kadıköy",
-      "kira": 68405,
-      "ilanSayisi": 66
-    },
-    {
-      "isim": "Yalıköy",
-      "ilce": "Çatalca",
-      "kira": 68388,
-      "ilanSayisi": null
-    },
-    {
-      "isim": "19 Mayıs",
-      "ilce": "Kadıköy",
-      "kira": 68320,
-      "ilanSayisi": 102
-    },
-    {
-      "isim": "Cumhuriyet",
-      "ilce": "Şişli",
-      "kira": 68107,
-      "ilanSayisi": 310
-    },
-    {
-      "isim": "Mimar Sinan",
-      "ilce": "Eyüpsultan",
-      "kira": 67555,
-      "ilanSayisi": 63
+      "isim": "Kabakoz",
+      "ilce": "Şile",
+      "kira": 73873,
+      "ilanSayisi": 2
     },
     {
       "isim": "Halaskargazi",
       "ilce": "Şişli",
-      "kira": 66868,
+      "kira": 73243,
       "ilanSayisi": 38
+    },
+    {
+      "isim": "19 Mayıs",
+      "ilce": "Kadıköy",
+      "kira": 72490,
+      "ilanSayisi": 121
+    },
+    {
+      "isim": "Mimar Sinan",
+      "ilce": "Eyüpsultan",
+      "kira": 72066,
+      "ilanSayisi": 67
+    },
+    {
+      "isim": "Emirgan",
+      "ilce": "Sarıyer",
+      "kira": 72009,
+      "ilanSayisi": 47
+    },
+    {
+      "isim": "Kavaklı İstiklal",
+      "ilce": "Silivri",
+      "kira": 71342,
+      "ilanSayisi": 8
+    },
+    {
+      "isim": "Kozyatağı",
+      "ilce": "Kadıköy",
+      "kira": 70666,
+      "ilanSayisi": 196
+    },
+    {
+      "isim": "Zühtüpaşa",
+      "ilce": "Kadıköy",
+      "kira": 70560,
+      "ilanSayisi": 76
+    },
+    {
+      "isim": "Cumhuriyet",
+      "ilce": "Şişli",
+      "kira": 70250,
+      "ilanSayisi": 308
     },
     {
       "isim": "Sahrayıcedit",
       "ilce": "Kadıköy",
-      "kira": 65908,
-      "ilanSayisi": 120
-    },
-    {
-      "isim": "Çeltik",
-      "ilce": "Silivri",
-      "kira": 65470,
-      "ilanSayisi": 1
-    },
-    {
-      "isim": "Göztepe",
-      "ilce": "Beykoz",
-      "kira": 65447,
-      "ilanSayisi": 66
-    },
-    {
-      "isim": "Pürtelaş Hasan Efendi",
-      "ilce": "Beyoğlu",
-      "kira": 65178,
-      "ilanSayisi": 41
+      "kira": 69705,
+      "ilanSayisi": 140
     },
     {
       "isim": "Zuhuratbaba",
       "ilce": "Bakırköy",
-      "kira": 64814,
-      "ilanSayisi": 43
+      "kira": 69113,
+      "ilanSayisi": 50
+    },
+    {
+      "isim": "Atatürk",
+      "ilce": "Ataşehir",
+      "kira": 68797,
+      "ilanSayisi": 351
+    },
+    {
+      "isim": "Arnavutköy",
+      "ilce": "Beşiktaş",
+      "kira": 68768,
+      "ilanSayisi": 67
     },
     {
       "isim": "Sahilköy",
       "ilce": "Şile",
-      "kira": 64635,
+      "kira": 68647,
+      "ilanSayisi": 6
+    },
+    {
+      "isim": "Barbaros",
+      "ilce": "Ataşehir",
+      "kira": 68512,
+      "ilanSayisi": 258
+    },
+    {
+      "isim": "İstiklal",
+      "ilce": "Beyoğlu",
+      "kira": 67785,
+      "ilanSayisi": 37
+    },
+    {
+      "isim": "Bereketzade",
+      "ilce": "Beyoğlu",
+      "kira": 67135,
+      "ilanSayisi": 23
+    },
+    {
+      "isim": "İmrendere",
+      "ilce": "Şile",
+      "kira": 67050,
+      "ilanSayisi": 6
+    },
+    {
+      "isim": "Koşuyolu",
+      "ilce": "Kadıköy",
+      "kira": 66840,
+      "ilanSayisi": 40
+    },
+    {
+      "isim": "Mithatpaşa",
+      "ilce": "Eyüpsultan",
+      "kira": 66743,
+      "ilanSayisi": 124
+    },
+    {
+      "isim": "Göztepe",
+      "ilce": "Beykoz",
+      "kira": 65949,
+      "ilanSayisi": 72
+    },
+    {
+      "isim": "Baklacı",
+      "ilce": "Beykoz",
+      "kira": 65716,
       "ilanSayisi": 7
     },
     {
       "isim": "Altunizade",
       "ilce": "Üsküdar",
-      "kira": 64009,
-      "ilanSayisi": 74
-    },
-    {
-      "isim": "Mithatpaşa",
-      "ilce": "Eyüpsultan",
-      "kira": 63755,
-      "ilanSayisi": 112
-    },
-    {
-      "isim": "Fikirtepe",
-      "ilce": "Kadıköy",
-      "kira": 63700,
-      "ilanSayisi": 164
+      "kira": 65698,
+      "ilanSayisi": 78
     },
     {
       "isim": "Gayrettepe",
       "ilce": "Beşiktaş",
-      "kira": 63478,
-      "ilanSayisi": 113
-    },
-    {
-      "isim": "Seyitnizam",
-      "ilce": "Zeytinburnu",
-      "kira": 62740,
-      "ilanSayisi": 65
-    },
-    {
-      "isim": "Doğancılı",
-      "ilce": "Şile",
-      "kira": 62593,
-      "ilanSayisi": 1
-    },
-    {
-      "isim": "Burgazada",
-      "ilce": "Adalar",
-      "kira": 62473,
-      "ilanSayisi": 5
-    },
-    {
-      "isim": "Ataköy 3 4 11. Kısım",
-      "ilce": "Bakırköy",
-      "kira": 61687,
-      "ilanSayisi": 19
-    },
-    {
-      "isim": "Kordonboyu",
-      "ilce": "Kartal",
-      "kira": 61507,
-      "ilanSayisi": 141
-    },
-    {
-      "isim": "Koşuyolu",
-      "ilce": "Kadıköy",
-      "kira": 61216,
-      "ilanSayisi": 34
-    },
-    {
-      "isim": "Merdivenköy",
-      "ilce": "Kadıköy",
-      "kira": 61075,
-      "ilanSayisi": 159
-    },
-    {
-      "isim": "Dumlupınar",
-      "ilce": "Kadıköy",
-      "kira": 60736,
-      "ilanSayisi": 274
-    },
-    {
-      "isim": "Tarabya",
-      "ilce": "Sarıyer",
-      "kira": 60542,
-      "ilanSayisi": 226
-    },
-    {
-      "isim": "Kumbaba",
-      "ilce": "Şile",
-      "kira": 60044,
-      "ilanSayisi": 33
-    },
-    {
-      "isim": "Bahçeşehir 1. Kısım",
-      "ilce": "Başakşehir",
-      "kira": 59637,
-      "ilanSayisi": 387
-    },
-    {
-      "isim": "Hacımimi",
-      "ilce": "Beyoğlu",
-      "kira": 59496,
-      "ilanSayisi": 22
-    },
-    {
-      "isim": "Barbaros",
-      "ilce": "Üsküdar",
-      "kira": 59473,
-      "ilanSayisi": 71
-    },
-    {
-      "isim": "Çınar",
-      "ilce": "Maltepe",
-      "kira": 59411,
-      "ilanSayisi": 121
-    },
-    {
-      "isim": "İdealtepe",
-      "ilce": "Maltepe",
-      "kira": 59053,
-      "ilanSayisi": 135
-    },
-    {
-      "isim": "Çakıl",
-      "ilce": "Çatalca",
-      "kira": 58688,
-      "ilanSayisi": 7
-    },
-    {
-      "isim": "Esentepe",
-      "ilce": "Şişli",
-      "kira": 58667,
-      "ilanSayisi": 127
-    },
-    {
-      "isim": "Tantavi",
-      "ilce": "Ümraniye",
-      "kira": 58249,
-      "ilanSayisi": 56
-    },
-    {
-      "isim": "Merkez",
-      "ilce": "Şişli",
-      "kira": 57961,
-      "ilanSayisi": 262
-    },
-    {
-      "isim": "Yamanevler",
-      "ilce": "Ümraniye",
-      "kira": 57909,
-      "ilanSayisi": 128
-    },
-    {
-      "isim": "Vişnezade",
-      "ilce": "Beşiktaş",
-      "kira": 57591,
-      "ilanSayisi": 97
+      "kira": 65144,
+      "ilanSayisi": 122
     },
     {
       "isim": "Anadolu Hisarı",
       "ilce": "Beykoz",
-      "kira": 57048,
+      "kira": 64595,
+      "ilanSayisi": 26
+    },
+    {
+      "isim": "Ataköy 3 4 11. Kısım",
+      "ilce": "Bakırköy",
+      "kira": 64352,
       "ilanSayisi": 23
     },
     {
-      "isim": "Yeniköy",
-      "ilce": "Sarıyer",
-      "kira": 56866,
-      "ilanSayisi": 62
+      "isim": "Burgazada",
+      "ilce": "Adalar",
+      "kira": 64182,
+      "ilanSayisi": 10
     },
     {
-      "isim": "Salacak",
-      "ilce": "Üsküdar",
-      "kira": 56575,
-      "ilanSayisi": 60
-    },
-    {
-      "isim": "Yalı",
-      "ilce": "Maltepe",
-      "kira": 56161,
-      "ilanSayisi": 66
-    },
-    {
-      "isim": "Caferağa",
-      "ilce": "Kadıköy",
-      "kira": 56009,
-      "ilanSayisi": 200
-    },
-    {
-      "isim": "Çengelköy",
-      "ilce": "Üsküdar",
-      "kira": 55494,
-      "ilanSayisi": 137
-    },
-    {
-      "isim": "Karayolları",
-      "ilce": "Gaziosmanpaşa",
-      "kira": 55377,
-      "ilanSayisi": 130
-    },
-    {
-      "isim": "Ataköy 7 8 9 10. Kısım",
-      "ilce": "Bakırköy",
-      "kira": 55277,
-      "ilanSayisi": 206
-    },
-    {
-      "isim": "Cami",
-      "ilce": "Tuzla",
-      "kira": 55212,
-      "ilanSayisi": 55
-    },
-    {
-      "isim": "Cihangir",
+      "isim": "Hacımimi",
       "ilce": "Beyoğlu",
-      "kira": 55179,
-      "ilanSayisi": 115
+      "kira": 64076,
+      "ilanSayisi": 26
     },
     {
-      "isim": "Marmara",
-      "ilce": "Beylikdüzü",
-      "kira": 55097,
-      "ilanSayisi": 160
+      "isim": "Çakıl",
+      "ilce": "Çatalca",
+      "kira": 63600,
+      "ilanSayisi": 6
     },
     {
-      "isim": "Hamidiye",
-      "ilce": "Kağıthane",
-      "kira": 54621,
-      "ilanSayisi": 463
+      "isim": "Pürtelaş Hasan Efendi",
+      "ilce": "Beyoğlu",
+      "kira": 63380,
+      "ilanSayisi": 36
     },
     {
-      "isim": "Yenişehir",
-      "ilce": "Ataşehir",
-      "kira": 54486,
-      "ilanSayisi": 66
+      "isim": "Fikirtepe",
+      "ilce": "Kadıköy",
+      "kira": 63282,
+      "ilanSayisi": 194
     },
     {
-      "isim": "Dikilitaş",
-      "ilce": "Beşiktaş",
-      "kira": 54309,
-      "ilanSayisi": 199
+      "isim": "Merdivenköy",
+      "ilce": "Kadıköy",
+      "kira": 63256,
+      "ilanSayisi": 174
+    },
+    {
+      "isim": "Barbaros",
+      "ilce": "Üsküdar",
+      "kira": 63147,
+      "ilanSayisi": 82
+    },
+    {
+      "isim": "Kordonboyu",
+      "ilce": "Kartal",
+      "kira": 62610,
+      "ilanSayisi": 143
+    },
+    {
+      "isim": "Esentepe",
+      "ilce": "Şişli",
+      "kira": 61943,
+      "ilanSayisi": 151
+    },
+    {
+      "isim": "Seyitnizam",
+      "ilce": "Zeytinburnu",
+      "kira": 61697,
+      "ilanSayisi": 64
+    },
+    {
+      "isim": "Kumbaba",
+      "ilce": "Şile",
+      "kira": 61324,
+      "ilanSayisi": 35
+    },
+    {
+      "isim": "Dumlupınar",
+      "ilce": "Kadıköy",
+      "kira": 61057,
+      "ilanSayisi": 347
+    },
+    {
+      "isim": "İdealtepe",
+      "ilce": "Maltepe",
+      "kira": 60349,
+      "ilanSayisi": 157
     },
     {
       "isim": "İzzettin",
       "ilce": "Çatalca",
-      "kira": 54126,
+      "kira": 60089,
       "ilanSayisi": 2
     },
     {
-      "isim": "Bahçelievler",
-      "ilce": "Büyükçekmece",
-      "kira": 54087,
-      "ilanSayisi": 31
-    },
-    {
-      "isim": "İnceğiz",
-      "ilce": "Çatalca",
-      "kira": 53831,
-      "ilanSayisi": null
-    },
-    {
-      "isim": "Bahçelievler",
-      "ilce": "Üsküdar",
-      "kira": 53776,
-      "ilanSayisi": 160
-    },
-    {
-      "isim": "Halil Rıfat Paşa",
-      "ilce": "Şişli",
-      "kira": 53584,
-      "ilanSayisi": 40
-    },
-    {
-      "isim": "Ünalan",
-      "ilce": "Üsküdar",
-      "kira": 53548,
-      "ilanSayisi": 245
-    },
-    {
-      "isim": "Yıldız",
-      "ilce": "Beşiktaş",
-      "kira": 53169,
-      "ilanSayisi": 112
-    },
-    {
-      "isim": "Kireçburnu",
-      "ilce": "Sarıyer",
-      "kira": 52861,
-      "ilanSayisi": 64
-    },
-    {
-      "isim": "Feyzullah",
+      "isim": "Çınar",
       "ilce": "Maltepe",
-      "kira": 52786,
-      "ilanSayisi": 104
+      "kira": 60036,
+      "ilanSayisi": 130
     },
     {
-      "isim": "Postane",
+      "isim": "Fatih",
       "ilce": "Tuzla",
-      "kira": 52768,
-      "ilanSayisi": 132
+      "kira": 60003,
+      "ilanSayisi": 14
     },
     {
-      "isim": "Ferahevler",
+      "isim": "Caferağa",
+      "ilce": "Kadıköy",
+      "kira": 59948,
+      "ilanSayisi": 223
+    },
+    {
+      "isim": "Tarabya",
       "ilce": "Sarıyer",
-      "kira": 52570,
-      "ilanSayisi": 75
+      "kira": 59947,
+      "ilanSayisi": 263
     },
     {
-      "isim": "Esentepe",
-      "ilce": "Kartal",
-      "kira": 52498,
-      "ilanSayisi": 140
+      "isim": "Heybeliada",
+      "ilce": "Adalar",
+      "kira": 59524,
+      "ilanSayisi": 13
     },
     {
-      "isim": "Emin Sinan",
-      "ilce": "Fatih",
-      "kira": 52387,
-      "ilanSayisi": null
+      "isim": "Salacak",
+      "ilce": "Üsküdar",
+      "kira": 59278,
+      "ilanSayisi": 68
+    },
+    {
+      "isim": "Vişnezade",
+      "ilce": "Beşiktaş",
+      "kira": 59071,
+      "ilanSayisi": 117
+    },
+    {
+      "isim": "Bahçeşehir 1. Kısım",
+      "ilce": "Başakşehir",
+      "kira": 58629,
+      "ilanSayisi": 425
     },
     {
       "isim": "Beylerbeyi",
       "ilce": "Üsküdar",
-      "kira": 52338,
+      "kira": 58353,
       "ilanSayisi": 30
     },
     {
-      "isim": "15 Temmuz",
-      "ilce": "Esenler",
-      "kira": 52250,
-      "ilanSayisi": 25
+      "isim": "Tantavi",
+      "ilce": "Ümraniye",
+      "kira": 57762,
+      "ilanSayisi": 60
     },
     {
-      "isim": "Acıbadem",
-      "ilce": "Kadıköy",
-      "kira": 52084,
-      "ilanSayisi": 165
-    },
-    {
-      "isim": "Türkoba",
-      "ilce": "Büyükçekmece",
-      "kira": 51933,
-      "ilanSayisi": 45
-    },
-    {
-      "isim": "Güzelce",
-      "ilce": "Büyükçekmece",
-      "kira": 51570,
-      "ilanSayisi": 52
-    },
-    {
-      "isim": "Ziya Gökalp",
-      "ilce": "Başakşehir",
-      "kira": 51489,
-      "ilanSayisi": 228
-    },
-    {
-      "isim": "Kirazlıtepe",
+      "isim": "Çengelköy",
       "ilce": "Üsküdar",
-      "kira": 51425,
-      "ilanSayisi": 56
+      "kira": 57529,
+      "ilanSayisi": 152
     },
     {
-      "isim": "Yeni",
-      "ilce": "Sarıyer",
-      "kira": 51298,
-      "ilanSayisi": 11
-    },
-    {
-      "isim": "Çengeldere",
-      "ilce": "Beykoz",
-      "kira": 51063,
-      "ilanSayisi": 11
-    },
-    {
-      "isim": "Sakızağacı",
-      "ilce": "Bakırköy",
-      "kira": 51040,
-      "ilanSayisi": 46
-    },
-    {
-      "isim": "Semizkumlar",
-      "ilce": "Silivri",
-      "kira": 51033,
-      "ilanSayisi": 40
-    },
-    {
-      "isim": "Petrol İş",
-      "ilce": "Kartal",
-      "kira": 50969,
-      "ilanSayisi": 78
-    },
-    {
-      "isim": "Altayçeşme",
+      "isim": "Yalı",
       "ilce": "Maltepe",
-      "kira": 50709,
-      "ilanSayisi": 135
+      "kira": 57529,
+      "ilanSayisi": 80
     },
     {
-      "isim": "Nişantepe",
-      "ilce": "Çekmeköy",
-      "kira": 50704,
-      "ilanSayisi": 102
+      "isim": "Ataköy 7 8 9 10. Kısım",
+      "ilce": "Bakırköy",
+      "kira": 57477,
+      "ilanSayisi": 233
+    },
+    {
+      "isim": "Yenişehir",
+      "ilce": "Ataşehir",
+      "kira": 57439,
+      "ilanSayisi": 99
+    },
+    {
+      "isim": "Merkez",
+      "ilce": "Şişli",
+      "kira": 57175,
+      "ilanSayisi": 311
+    },
+    {
+      "isim": "Marmara",
+      "ilce": "Beylikdüzü",
+      "kira": 57092,
+      "ilanSayisi": 167
     },
     {
       "isim": "Merkezefendi",
       "ilce": "Zeytinburnu",
-      "kira": 50557,
-      "ilanSayisi": 41
+      "kira": 57038,
+      "ilanSayisi": 40
     },
     {
-      "isim": "Atalar",
-      "ilce": "Kartal",
-      "kira": 50377,
-      "ilanSayisi": 115
+      "isim": "Dikilitaş",
+      "ilce": "Beşiktaş",
+      "kira": 56697,
+      "ilanSayisi": 229
     },
     {
-      "isim": "Kaptanpaşa",
+      "isim": "Kireçburnu",
+      "ilce": "Sarıyer",
+      "kira": 55489,
+      "ilanSayisi": 67
+    },
+    {
+      "isim": "Karayolları",
+      "ilce": "Gaziosmanpaşa",
+      "kira": 55428,
+      "ilanSayisi": 141
+    },
+    {
+      "isim": "Ferahevler",
+      "ilce": "Sarıyer",
+      "kira": 55364,
+      "ilanSayisi": 88
+    },
+    {
+      "isim": "Hamidiye",
+      "ilce": "Kağıthane",
+      "kira": 55297,
+      "ilanSayisi": 505
+    },
+    {
+      "isim": "Yıldız",
+      "ilce": "Beşiktaş",
+      "kira": 55292,
+      "ilanSayisi": 119
+    },
+    {
+      "isim": "Yamanevler",
+      "ilce": "Ümraniye",
+      "kira": 55037,
+      "ilanSayisi": 135
+    },
+    {
+      "isim": "Feyzullah",
+      "ilce": "Maltepe",
+      "kira": 54952,
+      "ilanSayisi": 104
+    },
+    {
+      "isim": "Acıbadem",
+      "ilce": "Kadıköy",
+      "kira": 54714,
+      "ilanSayisi": 184
+    },
+    {
+      "isim": "Cihangir",
+      "ilce": "Beyoğlu",
+      "kira": 54646,
+      "ilanSayisi": 131
+    },
+    {
+      "isim": "Kızılca",
+      "ilce": "Şile",
+      "kira": 54508,
+      "ilanSayisi": 2
+    },
+    {
+      "isim": "Halil Rıfat Paşa",
       "ilce": "Şişli",
-      "kira": 50343,
-      "ilanSayisi": 18
+      "kira": 54382,
+      "ilanSayisi": 50
+    },
+    {
+      "isim": "Yeniköy",
+      "ilce": "Sarıyer",
+      "kira": 54230,
+      "ilanSayisi": 80
+    },
+    {
+      "isim": "Bahçelievler",
+      "ilce": "Üsküdar",
+      "kira": 54150,
+      "ilanSayisi": 211
+    },
+    {
+      "isim": "Postane",
+      "ilce": "Tuzla",
+      "kira": 53890,
+      "ilanSayisi": 152
+    },
+    {
+      "isim": "Ünalan",
+      "ilce": "Üsküdar",
+      "kira": 53769,
+      "ilanSayisi": 261
+    },
+    {
+      "isim": "Yalıköy",
+      "ilce": "Çatalca",
+      "kira": 53642,
+      "ilanSayisi": 1
+    },
+    {
+      "isim": "İnceğiz",
+      "ilce": "Çatalca",
+      "kira": 53557,
+      "ilanSayisi": null
+    },
+    {
+      "isim": "Semizkumlar",
+      "ilce": "Silivri",
+      "kira": 53332,
+      "ilanSayisi": 53
     },
     {
       "isim": "Ortaköy",
       "ilce": "Beşiktaş",
-      "kira": 50337,
-      "ilanSayisi": 102
+      "kira": 53267,
+      "ilanSayisi": 105
     },
     {
-      "isim": "İmrendere",
+      "isim": "Sümer",
+      "ilce": "Zeytinburnu",
+      "kira": 53266,
+      "ilanSayisi": 75
+    },
+    {
+      "isim": "Asmalı Mescit",
+      "ilce": "Beyoğlu",
+      "kira": 53180,
+      "ilanSayisi": 5
+    },
+    {
+      "isim": "15 Temmuz",
+      "ilce": "Esenler",
+      "kira": 52800,
+      "ilanSayisi": 15
+    },
+    {
+      "isim": "Küçüksu",
+      "ilce": "Üsküdar",
+      "kira": 52716,
+      "ilanSayisi": 127
+    },
+    {
+      "isim": "Emin Sinan",
+      "ilce": "Fatih",
+      "kira": 52390,
+      "ilanSayisi": null
+    },
+    {
+      "isim": "Altayçeşme",
+      "ilce": "Maltepe",
+      "kira": 52317,
+      "ilanSayisi": 146
+    },
+    {
+      "isim": "Esentepe",
+      "ilce": "Kartal",
+      "kira": 52185,
+      "ilanSayisi": 148
+    },
+    {
+      "isim": "Kaptanpaşa",
+      "ilce": "Şişli",
+      "kira": 52163,
+      "ilanSayisi": 19
+    },
+    {
+      "isim": "Cami",
+      "ilce": "Tuzla",
+      "kira": 52121,
+      "ilanSayisi": 63
+    },
+    {
+      "isim": "Osmaniye",
+      "ilce": "Bakırköy",
+      "kira": 51792,
+      "ilanSayisi": 42
+    },
+    {
+      "isim": "Sakızağacı",
+      "ilce": "Bakırköy",
+      "kira": 51783,
+      "ilanSayisi": 39
+    },
+    {
+      "isim": "Petrol İş",
+      "ilce": "Kartal",
+      "kira": 51616,
+      "ilanSayisi": 76
+    },
+    {
+      "isim": "Batı",
+      "ilce": "Pendik",
+      "kira": 51464,
+      "ilanSayisi": 98
+    },
+    {
+      "isim": "Küçükyalı Merkez",
+      "ilce": "Maltepe",
+      "kira": 51437,
+      "ilanSayisi": 186
+    },
+    {
+      "isim": "Nizam",
+      "ilce": "Adalar",
+      "kira": 51428,
+      "ilanSayisi": 29
+    },
+    {
+      "isim": "Çengeldere",
+      "ilce": "Beykoz",
+      "kira": 51204,
+      "ilanSayisi": 10
+    },
+    {
+      "isim": "Şerifali",
+      "ilce": "Ümraniye",
+      "kira": 51109,
+      "ilanSayisi": 101
+    },
+    {
+      "isim": "Kurna",
       "ilce": "Şile",
-      "kira": 50317,
+      "kira": 51046,
+      "ilanSayisi": 2
+    },
+    {
+      "isim": "Ziya Gökalp",
+      "ilce": "Başakşehir",
+      "kira": 50957,
+      "ilanSayisi": 258
+    },
+    {
+      "isim": "Küçükbakkalköy",
+      "ilce": "Ataşehir",
+      "kira": 50688,
+      "ilanSayisi": 208
+    },
+    {
+      "isim": "Altıntepe",
+      "ilce": "Maltepe",
+      "kira": 50596,
+      "ilanSayisi": 247
+    },
+    {
+      "isim": "Topçular",
+      "ilce": "Eyüpsultan",
+      "kira": 50569,
+      "ilanSayisi": 89
+    },
+    {
+      "isim": "Doğancılı",
+      "ilce": "Şile",
+      "kira": 50414,
+      "ilanSayisi": 2
+    },
+    {
+      "isim": "Eğitim",
+      "ilce": "Kadıköy",
+      "kira": 50257,
+      "ilanSayisi": 91
+    },
+    {
+      "isim": "Yeni",
+      "ilce": "Sarıyer",
+      "kira": 50139,
+      "ilanSayisi": 16
+    },
+    {
+      "isim": "Mehmet Akif Ersoy",
+      "ilce": "Üsküdar",
+      "kira": 49960,
+      "ilanSayisi": 212
+    },
+    {
+      "isim": "Atalar",
+      "ilce": "Kartal",
+      "kira": 49608,
+      "ilanSayisi": 97
+    },
+    {
+      "isim": "Kirazlıtepe",
+      "ilce": "Üsküdar",
+      "kira": 49577,
+      "ilanSayisi": 48
+    },
+    {
+      "isim": "Ahmetli",
+      "ilce": "Şile",
+      "kira": 49361,
+      "ilanSayisi": 44
+    },
+    {
+      "isim": "Kuzguncuk",
+      "ilce": "Üsküdar",
+      "kira": 49334,
+      "ilanSayisi": 21
+    },
+    {
+      "isim": "Kartaltepe",
+      "ilce": "Bakırköy",
+      "kira": 49319,
+      "ilanSayisi": 56
+    },
+    {
+      "isim": "Kanlıca",
+      "ilce": "Beykoz",
+      "kira": 49094,
+      "ilanSayisi": 25
+    },
+    {
+      "isim": "Gümüşsuyu",
+      "ilce": "Beyoğlu",
+      "kira": 49063,
+      "ilanSayisi": 83
+    },
+    {
+      "isim": "Nişantepe",
+      "ilce": "Çekmeköy",
+      "kira": 48670,
+      "ilanSayisi": 116
+    },
+    {
+      "isim": "Fulya",
+      "ilce": "Şişli",
+      "kira": 48352,
+      "ilanSayisi": 282
+    },
+    {
+      "isim": "Veliefendi",
+      "ilce": "Zeytinburnu",
+      "kira": 48343,
+      "ilanSayisi": 52
+    },
+    {
+      "isim": "Başakşehir",
+      "ilce": "Başakşehir",
+      "kira": 48286,
+      "ilanSayisi": 273
+    },
+    {
+      "isim": "Tatlısu",
+      "ilce": "Ümraniye",
+      "kira": 48160,
+      "ilanSayisi": 216
+    },
+    {
+      "isim": "Aziz Mahmut Hüdayi",
+      "ilce": "Üsküdar",
+      "kira": 48091,
+      "ilanSayisi": 64
+    },
+    {
+      "isim": "Sultantepe",
+      "ilce": "Üsküdar",
+      "kira": 47832,
+      "ilanSayisi": 73
+    },
+    {
+      "isim": "Güzeltepe",
+      "ilce": "Üsküdar",
+      "kira": 47708,
+      "ilanSayisi": 116
+    },
+    {
+      "isim": "Firuzağa",
+      "ilce": "Beyoğlu",
+      "kira": 47672,
+      "ilanSayisi": 88
+    },
+    {
+      "isim": "Tomtom",
+      "ilce": "Beyoğlu",
+      "kira": 47648,
+      "ilanSayisi": 47
+    },
+    {
+      "isim": "Güzelce",
+      "ilce": "Büyükçekmece",
+      "kira": 47605,
+      "ilanSayisi": 62
+    },
+    {
+      "isim": "Maltepe",
+      "ilce": "Zeytinburnu",
+      "kira": 47383,
+      "ilanSayisi": 167
+    },
+    {
+      "isim": "Yeşilvadi",
+      "ilce": "Şile",
+      "kira": 47355,
+      "ilanSayisi": null
+    },
+    {
+      "isim": "Esenkent",
+      "ilce": "Maltepe",
+      "kira": 47330,
+      "ilanSayisi": 43
+    },
+    {
+      "isim": "Çavuşoğlu",
+      "ilce": "Kartal",
+      "kira": 47122,
+      "ilanSayisi": 28
+    },
+    {
+      "isim": "Meşrutiyet",
+      "ilce": "Şişli",
+      "kira": 46652,
+      "ilanSayisi": 160
+    },
+    {
+      "isim": "Orhantepe",
+      "ilce": "Kartal",
+      "kira": 46347,
+      "ilanSayisi": 107
+    },
+    {
+      "isim": "Burhaniye",
+      "ilce": "Üsküdar",
+      "kira": 46292,
+      "ilanSayisi": 92
+    },
+    {
+      "isim": "Cevizli",
+      "ilce": "Maltepe",
+      "kira": 46189,
+      "ilanSayisi": 324
+    },
+    {
+      "isim": "Kuloğlu",
+      "ilce": "Beyoğlu",
+      "kira": 46122,
+      "ilanSayisi": 48
+    },
+    {
+      "isim": "İsmet Paşa",
+      "ilce": "Bayrampaşa",
+      "kira": 46075,
+      "ilanSayisi": 43
+    },
+    {
+      "isim": "Ekinoba",
+      "ilce": "Büyükçekmece",
+      "kira": 45896,
+      "ilanSayisi": 76
+    },
+    {
+      "isim": "Başıbüyük",
+      "ilce": "Maltepe",
+      "kira": 45825,
+      "ilanSayisi": 99
+    },
+    {
+      "isim": "Sahil",
+      "ilce": "Beylikdüzü",
+      "kira": 45813,
+      "ilanSayisi": 106
+    },
+    {
+      "isim": "Merkez",
+      "ilce": "Kağıthane",
+      "kira": 45777,
+      "ilanSayisi": 457
+    },
+    {
+      "isim": "Beştelsiz",
+      "ilce": "Zeytinburnu",
+      "kira": 45743,
+      "ilanSayisi": 18
+    },
+    {
+      "isim": "İstinye",
+      "ilce": "Sarıyer",
+      "kira": 45628,
+      "ilanSayisi": 116
+    },
+    {
+      "isim": "Bahçelievler",
+      "ilce": "Büyükçekmece",
+      "kira": 45559,
+      "ilanSayisi": 35
+    },
+    {
+      "isim": "İstasyon",
+      "ilce": "Tuzla",
+      "kira": 45521,
+      "ilanSayisi": 195
+    },
+    {
+      "isim": "Rumelihisarı",
+      "ilce": "Sarıyer",
+      "kira": 45480,
+      "ilanSayisi": 68
+    },
+    {
+      "isim": "Bağlarbaşı",
+      "ilce": "Maltepe",
+      "kira": 45227,
+      "ilanSayisi": 149
+    },
+    {
+      "isim": "19 Mayıs",
+      "ilce": "Şişli",
+      "kira": 44838,
+      "ilanSayisi": 210
+    },
+    {
+      "isim": "Mimaroba",
+      "ilce": "Büyükçekmece",
+      "kira": 44399,
+      "ilanSayisi": 105
+    },
+    {
+      "isim": "Soğanlık Yeni",
+      "ilce": "Kartal",
+      "kira": 44274,
+      "ilanSayisi": 162
+    },
+    {
+      "isim": "Çayırbaşı",
+      "ilce": "Sarıyer",
+      "kira": 44253,
+      "ilanSayisi": 22
+    },
+    {
+      "isim": "Fatih",
+      "ilce": "Küçükçekmece",
+      "kira": 44228,
+      "ilanSayisi": 80
+    },
+    {
+      "isim": "Atakent",
+      "ilce": "Küçükçekmece",
+      "kira": 44122,
+      "ilanSayisi": 792
+    },
+    {
+      "isim": "Yenibosna Merkez",
+      "ilce": "Bahçelievler",
+      "kira": 43981,
+      "ilanSayisi": 160
+    },
+    {
+      "isim": "Muradiye",
+      "ilce": "Beşiktaş",
+      "kira": 43940,
+      "ilanSayisi": 85
+    },
+    {
+      "isim": "Mecidiye",
+      "ilce": "Beşiktaş",
+      "kira": 43892,
+      "ilanSayisi": 126
+    },
+    {
+      "isim": "Bahçeköy Merkez",
+      "ilce": "Sarıyer",
+      "kira": 43776,
+      "ilanSayisi": 19
+    },
+    {
+      "isim": "Kayabaşı",
+      "ilce": "Başakşehir",
+      "kira": 43645,
+      "ilanSayisi": 556
+    },
+    {
+      "isim": "Doğu",
+      "ilce": "Pendik",
+      "kira": 43511,
+      "ilanSayisi": 90
+    },
+    {
+      "isim": "Harmandere",
+      "ilce": "Pendik",
+      "kira": 43240,
+      "ilanSayisi": 142
+    },
+    {
+      "isim": "Zeytinlik",
+      "ilce": "Bakırköy",
+      "kira": 43154,
+      "ilanSayisi": 28
+    },
+    {
+      "isim": "Necip Fazıl",
+      "ilce": "Ümraniye",
+      "kira": 43020,
+      "ilanSayisi": 103
+    },
+    {
+      "isim": "Yenimahalle",
+      "ilce": "Bağcılar",
+      "kira": 42958,
+      "ilanSayisi": 121
+    },
+    {
+      "isim": "Abbasağa",
+      "ilce": "Beşiktaş",
+      "kira": 42917,
+      "ilanSayisi": 106
+    },
+    {
+      "isim": "Osmanağa",
+      "ilce": "Kadıköy",
+      "kira": 42653,
+      "ilanSayisi": 140
+    },
+    {
+      "isim": "Reşitpaşa",
+      "ilce": "Sarıyer",
+      "kira": 42644,
+      "ilanSayisi": 78
+    },
+    {
+      "isim": "Karlıktepe",
+      "ilce": "Kartal",
+      "kira": 42550,
+      "ilanSayisi": 135
+    },
+    {
+      "isim": "Abdurrahman Nafiz Gürman",
+      "ilce": "Güngören",
+      "kira": 42528,
+      "ilanSayisi": 45
+    },
+    {
+      "isim": "Seyrantepe",
+      "ilce": "Kağıthane",
+      "kira": 42508,
+      "ilanSayisi": 270
+    },
+    {
+      "isim": "Cevizli",
+      "ilce": "Kartal",
+      "kira": 42481,
+      "ilanSayisi": 82
+    },
+    {
+      "isim": "Yenidoğan",
+      "ilce": "Zeytinburnu",
+      "kira": 42409,
+      "ilanSayisi": 15
+    },
+    {
+      "isim": "Yeşilbağlar",
+      "ilce": "Pendik",
+      "kira": 42321,
+      "ilanSayisi": 28
+    },
+    {
+      "isim": "Selimiye",
+      "ilce": "Üsküdar",
+      "kira": 42318,
+      "ilanSayisi": 32
+    },
+    {
+      "isim": "Bahçeşehir 2. Kısım",
+      "ilce": "Başakşehir",
+      "kira": 42291,
+      "ilanSayisi": 737
+    },
+    {
+      "isim": "Tahtakale",
+      "ilce": "Avcılar",
+      "kira": 42048,
+      "ilanSayisi": 709
+    },
+    {
+      "isim": "Sinanpaşa",
+      "ilce": "Beşiktaş",
+      "kira": 41946,
+      "ilanSayisi": 46
+    },
+    {
+      "isim": "Sinanoba",
+      "ilce": "Büyükçekmece",
+      "kira": 41941,
+      "ilanSayisi": 76
+    },
+    {
+      "isim": "Ulupelit",
+      "ilce": "Şile",
+      "kira": 41912,
+      "ilanSayisi": 1
+    },
+    {
+      "isim": "İnkılap",
+      "ilce": "Ümraniye",
+      "kira": 41814,
+      "ilanSayisi": 142
+    },
+    {
+      "isim": "Türkoba",
+      "ilce": "Büyükçekmece",
+      "kira": 41672,
+      "ilanSayisi": 50
+    },
+    {
+      "isim": "Rasimpaşa",
+      "ilce": "Kadıköy",
+      "kira": 41625,
+      "ilanSayisi": 115
+    },
+    {
+      "isim": "Küçük Ayasofya",
+      "ilce": "Fatih",
+      "kira": 41554,
+      "ilanSayisi": 2
+    },
+    {
+      "isim": "Bahçeköy Yeni",
+      "ilce": "Sarıyer",
+      "kira": 41498,
+      "ilanSayisi": 14
+    },
+    {
+      "isim": "Yalı",
+      "ilce": "Kartal",
+      "kira": 41489,
+      "ilanSayisi": 60
+    },
+    {
+      "isim": "Kabakça",
+      "ilce": "Çatalca",
+      "kira": 41348,
+      "ilanSayisi": 2
+    },
+    {
+      "isim": "Çamlıtepe",
+      "ilce": "Sarıyer",
+      "kira": 41307,
+      "ilanSayisi": 26
+    },
+    {
+      "isim": "Barış",
+      "ilce": "Beylikdüzü",
+      "kira": 41286,
+      "ilanSayisi": 244
+    },
+    {
+      "isim": "Cevizlik",
+      "ilce": "Bakırköy",
+      "kira": 41235,
+      "ilanSayisi": 26
+    },
+    {
+      "isim": "Mehmet Akif",
+      "ilce": "Ümraniye",
+      "kira": 41073,
+      "ilanSayisi": 121
+    },
+    {
+      "isim": "Meşrutiyet",
+      "ilce": "Şile",
+      "kira": 41024,
+      "ilanSayisi": 19
+    },
+    {
+      "isim": "Cihannüma",
+      "ilce": "Beşiktaş",
+      "kira": 40903,
+      "ilanSayisi": 74
+    },
+    {
+      "isim": "Örnek",
+      "ilce": "Ataşehir",
+      "kira": 40808,
+      "ilanSayisi": 200
+    },
+    {
+      "isim": "Yakacık Yeni",
+      "ilce": "Kartal",
+      "kira": 40587,
+      "ilanSayisi": 78
+    },
+    {
+      "isim": "Kavacık",
+      "ilce": "Beykoz",
+      "kira": 40498,
+      "ilanSayisi": 174
+    },
+    {
+      "isim": "Şehit Muhtar",
+      "ilce": "Beyoğlu",
+      "kira": 40493,
+      "ilanSayisi": 31
+    },
+    {
+      "isim": "Kocatepe",
+      "ilce": "Beyoğlu",
+      "kira": 40481,
+      "ilanSayisi": 25
+    },
+    {
+      "isim": "Küçükçekmece İkitelliosb",
+      "ilce": "Küçükçekmece",
+      "kira": 40472,
       "ilanSayisi": 5
     },
     {
       "isim": "Maden",
       "ilce": "Adalar",
-      "kira": 50000,
-      "ilanSayisi": 23
-    },
-    {
-      "isim": "Küçüksu",
-      "ilce": "Üsküdar",
-      "kira": 49916,
-      "ilanSayisi": 124
-    },
-    {
-      "isim": "Topçular",
-      "ilce": "Eyüpsultan",
-      "kira": 49597,
-      "ilanSayisi": 87
-    },
-    {
-      "isim": "Ulupelit",
-      "ilce": "Şile",
-      "kira": 49554,
-      "ilanSayisi": 1
-    },
-    {
-      "isim": "Kurna",
-      "ilce": "Şile",
-      "kira": 49537,
-      "ilanSayisi": 1
-    },
-    {
-      "isim": "Sümer",
-      "ilce": "Zeytinburnu",
-      "kira": 49505,
-      "ilanSayisi": 89
-    },
-    {
-      "isim": "Şerifali",
-      "ilce": "Ümraniye",
-      "kira": 49401,
-      "ilanSayisi": 93
-    },
-    {
-      "isim": "Nizam",
-      "ilce": "Adalar",
-      "kira": 49211,
-      "ilanSayisi": 24
-    },
-    {
-      "isim": "Altıntepe",
-      "ilce": "Maltepe",
-      "kira": 49174,
-      "ilanSayisi": 208
-    },
-    {
-      "isim": "Akçakese",
-      "ilce": "Şile",
-      "kira": 49108,
-      "ilanSayisi": 7
-    },
-    {
-      "isim": "Küçükbakkalköy",
-      "ilce": "Ataşehir",
-      "kira": 49074,
-      "ilanSayisi": 190
-    },
-    {
-      "isim": "Batı",
-      "ilce": "Pendik",
-      "kira": 49069,
-      "ilanSayisi": 88
-    },
-    {
-      "isim": "Heybeliada",
-      "ilce": "Adalar",
-      "kira": 49000,
-      "ilanSayisi": 10
-    },
-    {
-      "isim": "Fulya",
-      "ilce": "Şişli",
-      "kira": 48624,
-      "ilanSayisi": 255
-    },
-    {
-      "isim": "Kanlıca",
-      "ilce": "Beykoz",
-      "kira": 48580,
-      "ilanSayisi": 21
-    },
-    {
-      "isim": "Ahmetli",
-      "ilce": "Şile",
-      "kira": 48467,
-      "ilanSayisi": 38
-    },
-    {
-      "isim": "Asmalı Mescit",
-      "ilce": "Beyoğlu",
-      "kira": 48153,
-      "ilanSayisi": 7
-    },
-    {
-      "isim": "Eğitim",
-      "ilce": "Kadıköy",
-      "kira": 48137,
-      "ilanSayisi": 82
-    },
-    {
-      "isim": "Küçükyalı Merkez",
-      "ilce": "Maltepe",
-      "kira": 47850,
-      "ilanSayisi": 169
-    },
-    {
-      "isim": "Orhantepe",
-      "ilce": "Kartal",
-      "kira": 47685,
-      "ilanSayisi": 99
-    },
-    {
-      "isim": "Kuzguncuk",
-      "ilce": "Üsküdar",
-      "kira": 47625,
-      "ilanSayisi": 18
-    },
-    {
-      "isim": "Tomtom",
-      "ilce": "Beyoğlu",
-      "kira": 47530,
-      "ilanSayisi": 39
-    },
-    {
-      "isim": "Kuloğlu",
-      "ilce": "Beyoğlu",
-      "kira": 47493,
-      "ilanSayisi": 49
-    },
-    {
-      "isim": "Firuzağa",
-      "ilce": "Beyoğlu",
-      "kira": 47373,
-      "ilanSayisi": 84
-    },
-    {
-      "isim": "Gümüşsuyu",
-      "ilce": "Beyoğlu",
-      "kira": 47188,
-      "ilanSayisi": 82
-    },
-    {
-      "isim": "Mehmet Akif Ersoy",
-      "ilce": "Üsküdar",
-      "kira": 47187,
-      "ilanSayisi": 202
-    },
-    {
-      "isim": "Sahil",
-      "ilce": "Beylikdüzü",
-      "kira": 46666,
-      "ilanSayisi": 77
-    },
-    {
-      "isim": "Fatih",
-      "ilce": "Tuzla",
-      "kira": 46604,
-      "ilanSayisi": 14
-    },
-    {
-      "isim": "Başakşehir",
-      "ilce": "Başakşehir",
-      "kira": 46145,
-      "ilanSayisi": 250
-    },
-    {
-      "isim": "Tatlısu",
-      "ilce": "Ümraniye",
-      "kira": 46099,
-      "ilanSayisi": 195
-    },
-    {
-      "isim": "Güzeltepe",
-      "ilce": "Üsküdar",
-      "kira": 45942,
-      "ilanSayisi": 82
-    },
-    {
-      "isim": "Bağlarbaşı",
-      "ilce": "Maltepe",
-      "kira": 45914,
-      "ilanSayisi": 138
-    },
-    {
-      "isim": "Meşrutiyet",
-      "ilce": "Şişli",
-      "kira": 45896,
-      "ilanSayisi": 149
-    },
-    {
-      "isim": "Cevizli",
-      "ilce": "Maltepe",
-      "kira": 45801,
-      "ilanSayisi": 293
-    },
-    {
-      "isim": "Başıbüyük",
-      "ilce": "Maltepe",
-      "kira": 45750,
-      "ilanSayisi": 78
-    },
-    {
-      "isim": "Osmaniye",
-      "ilce": "Bakırköy",
-      "kira": 45636,
-      "ilanSayisi": 43
-    },
-    {
-      "isim": "Maltepe",
-      "ilce": "Zeytinburnu",
-      "kira": 45336,
-      "ilanSayisi": 158
-    },
-    {
-      "isim": "Burhaniye",
-      "ilce": "Üsküdar",
-      "kira": 45309,
-      "ilanSayisi": 84
-    },
-    {
-      "isim": "Kartaltepe",
-      "ilce": "Bakırköy",
-      "kira": 45285,
-      "ilanSayisi": 52
-    },
-    {
-      "isim": "Bahçeköy Merkez",
-      "ilce": "Sarıyer",
-      "kira": 45126,
-      "ilanSayisi": 14
-    },
-    {
-      "isim": "İstasyon",
-      "ilce": "Tuzla",
-      "kira": 45098,
-      "ilanSayisi": 189
-    },
-    {
-      "isim": "İsmet Paşa",
-      "ilce": "Bayrampaşa",
-      "kira": 45060,
-      "ilanSayisi": 43
-    },
-    {
-      "isim": "Yeşilvadi",
-      "ilce": "Şile",
-      "kira": 45022,
-      "ilanSayisi": null
-    },
-    {
-      "isim": "Atakent",
-      "ilce": "Küçükçekmece",
-      "kira": 44567,
-      "ilanSayisi": 709
-    },
-    {
-      "isim": "Küçük Ayasofya",
-      "ilce": "Fatih",
-      "kira": 44226,
-      "ilanSayisi": 2
-    },
-    {
-      "isim": "Çavuşoğlu",
-      "ilce": "Kartal",
-      "kira": 44122,
-      "ilanSayisi": 30
-    },
-    {
-      "isim": "Aziz Mahmut Hüdayi",
-      "ilce": "Üsküdar",
-      "kira": 44029,
-      "ilanSayisi": 54
-    },
-    {
-      "isim": "Sultantepe",
-      "ilce": "Üsküdar",
-      "kira": 44021,
-      "ilanSayisi": 74
-    },
-    {
-      "isim": "Rumelihisarı",
-      "ilce": "Sarıyer",
-      "kira": 43657,
-      "ilanSayisi": 64
-    },
-    {
-      "isim": "Merkez",
-      "ilce": "Kağıthane",
-      "kira": 43556,
-      "ilanSayisi": 378
-    },
-    {
-      "isim": "Yenibosna Merkez",
-      "ilce": "Bahçelievler",
-      "kira": 43394,
-      "ilanSayisi": 170
-    },
-    {
-      "isim": "Necip Fazıl",
-      "ilce": "Ümraniye",
-      "kira": 43393,
-      "ilanSayisi": 96
-    },
-    {
-      "isim": "Kocatepe",
-      "ilce": "Beyoğlu",
-      "kira": 43315,
-      "ilanSayisi": 24
-    },
-    {
-      "isim": "Çayırbaşı",
-      "ilce": "Sarıyer",
-      "kira": 43186,
-      "ilanSayisi": 21
-    },
-    {
-      "isim": "Meşrutiyet",
-      "ilce": "Şile",
-      "kira": 43125,
-      "ilanSayisi": 17
-    },
-    {
-      "isim": "19 Mayıs",
-      "ilce": "Şişli",
-      "kira": 43099,
-      "ilanSayisi": 202
-    },
-    {
-      "isim": "Mimaroba",
-      "ilce": "Büyükçekmece",
-      "kira": 43034,
-      "ilanSayisi": 97
-    },
-    {
-      "isim": "Bahçeköy Yeni",
-      "ilce": "Sarıyer",
-      "kira": 43010,
-      "ilanSayisi": 19
-    },
-    {
-      "isim": "Soğanlık Yeni",
-      "ilce": "Kartal",
-      "kira": 42934,
-      "ilanSayisi": 141
-    },
-    {
-      "isim": "Esenkent",
-      "ilce": "Maltepe",
-      "kira": 42675,
-      "ilanSayisi": 38
-    },
-    {
-      "isim": "Osmanağa",
-      "ilce": "Kadıköy",
-      "kira": 42655,
-      "ilanSayisi": 139
-    },
-    {
-      "isim": "Muradiye",
-      "ilce": "Beşiktaş",
-      "kira": 42447,
-      "ilanSayisi": 68
-    },
-    {
-      "isim": "Fatih",
-      "ilce": "Küçükçekmece",
-      "kira": 42311,
-      "ilanSayisi": 82
-    },
-    {
-      "isim": "Bahçeşehir 2. Kısım",
-      "ilce": "Başakşehir",
-      "kira": 42293,
-      "ilanSayisi": 710
-    },
-    {
-      "isim": "Ekinoba",
-      "ilce": "Büyükçekmece",
-      "kira": 42109,
-      "ilanSayisi": 68
-    },
-    {
-      "isim": "Beştelsiz",
-      "ilce": "Zeytinburnu",
-      "kira": 42102,
-      "ilanSayisi": 16
-    },
-    {
-      "isim": "İstinye",
-      "ilce": "Sarıyer",
-      "kira": 42090,
-      "ilanSayisi": 91
-    },
-    {
-      "isim": "Kayabaşı",
-      "ilce": "Başakşehir",
-      "kira": 42002,
-      "ilanSayisi": 466
-    },
-    {
-      "isim": "Harmandere",
-      "ilce": "Pendik",
-      "kira": 41935,
-      "ilanSayisi": 120
-    },
-    {
-      "isim": "Karlıktepe",
-      "ilce": "Kartal",
-      "kira": 41723,
-      "ilanSayisi": 116
-    },
-    {
-      "isim": "İnkılap",
-      "ilce": "Ümraniye",
-      "kira": 41674,
-      "ilanSayisi": 126
-    },
-    {
-      "isim": "Mecidiye",
-      "ilce": "Beşiktaş",
-      "kira": 41646,
-      "ilanSayisi": 116
-    },
-    {
-      "isim": "Tahtakale",
-      "ilce": "Avcılar",
-      "kira": 41606,
-      "ilanSayisi": 546
-    },
-    {
-      "isim": "Sinanoba",
-      "ilce": "Büyükçekmece",
-      "kira": 41197,
-      "ilanSayisi": 71
-    },
-    {
-      "isim": "Rasimpaşa",
-      "ilce": "Kadıköy",
-      "kira": 41193,
-      "ilanSayisi": 115
-    },
-    {
-      "isim": "Reşitpaşa",
-      "ilce": "Sarıyer",
-      "kira": 41191,
-      "ilanSayisi": 58
-    },
-    {
-      "isim": "Abdurrahman Nafiz Gürman",
-      "ilce": "Güngören",
-      "kira": 41156,
-      "ilanSayisi": 43
-    },
-    {
-      "isim": "Sinanpaşa",
-      "ilce": "Beşiktaş",
-      "kira": 41101,
-      "ilanSayisi": 34
-    },
-    {
-      "isim": "Yeşilbağlar",
-      "ilce": "Pendik",
-      "kira": 41046,
-      "ilanSayisi": 25
-    },
-    {
-      "isim": "Yalı",
-      "ilce": "Kartal",
-      "kira": 41045,
-      "ilanSayisi": 60
-    },
-    {
-      "isim": "Doğu",
-      "ilce": "Pendik",
-      "kira": 41017,
-      "ilanSayisi": 89
-    },
-    {
-      "isim": "Küçükçekmece İkitelliosb",
-      "ilce": "Küçükçekmece",
-      "kira": 40944,
-      "ilanSayisi": 5
-    },
-    {
-      "isim": "Seyrantepe",
-      "ilce": "Kağıthane",
-      "kira": 40911,
-      "ilanSayisi": 229
-    },
-    {
-      "isim": "Alacalı",
-      "ilce": "Şile",
-      "kira": 40745,
-      "ilanSayisi": 1
-    },
-    {
-      "isim": "Cevizli",
-      "ilce": "Kartal",
-      "kira": 40517,
-      "ilanSayisi": 80
-    },
-    {
-      "isim": "Kavacık",
-      "ilce": "Beykoz",
-      "kira": 40468,
-      "ilanSayisi": 157
-    },
-    {
-      "isim": "Barış",
-      "ilce": "Beylikdüzü",
-      "kira": 40429,
-      "ilanSayisi": 247
-    },
-    {
-      "isim": "Cihannüma",
-      "ilce": "Beşiktaş",
-      "kira": 40245,
-      "ilanSayisi": 80
-    },
-    {
-      "isim": "Veliefendi",
-      "ilce": "Zeytinburnu",
-      "kira": 39852,
-      "ilanSayisi": 19
-    },
-    {
-      "isim": "Mehmet Nesih Özmen",
-      "ilce": "Güngören",
-      "kira": 39773,
-      "ilanSayisi": 11
-    },
-    {
-      "isim": "Zeytinlik",
-      "ilce": "Bakırköy",
-      "kira": 39723,
-      "ilanSayisi": 26
-    },
-    {
-      "isim": "Hasanpaşa",
-      "ilce": "Kadıköy",
-      "kira": 39599,
-      "ilanSayisi": 89
-    },
-    {
-      "isim": "Pınartepe",
-      "ilce": "Büyükçekmece",
-      "kira": 39539,
-      "ilanSayisi": 144
-    },
-    {
-      "isim": "Adnan Kahveci",
-      "ilce": "Beylikdüzü",
-      "kira": 39500,
-      "ilanSayisi": 478
-    },
-    {
-      "isim": "Sapan Bağları",
-      "ilce": "Pendik",
-      "kira": 39465,
-      "ilanSayisi": 31
-    },
-    {
-      "isim": "Türkali",
-      "ilce": "Beşiktaş",
-      "kira": 39414,
-      "ilanSayisi": 159
-    },
-    {
-      "isim": "Selimiye",
-      "ilce": "Üsküdar",
-      "kira": 39381,
-      "ilanSayisi": 24
-    },
-    {
-      "isim": "Güngören",
-      "ilce": "Çekmeköy",
-      "kira": 39316,
-      "ilanSayisi": 117
-    },
-    {
-      "isim": "Büyükdere",
-      "ilce": "Sarıyer",
-      "kira": 39312,
-      "ilanSayisi": 68
-    },
-    {
-      "isim": "Çubuklu",
-      "ilce": "Beykoz",
-      "kira": 39293,
-      "ilanSayisi": 59
-    },
-    {
-      "isim": "Yenimahalle",
-      "ilce": "Bağcılar",
-      "kira": 39219,
-      "ilanSayisi": 121
-    },
-    {
-      "isim": "Mehmet Akif",
-      "ilce": "Ümraniye",
-      "kira": 39057,
-      "ilanSayisi": 111
-    },
-    {
-      "isim": "Emek",
-      "ilce": "Sancaktepe",
-      "kira": 39039,
-      "ilanSayisi": 160
-    },
-    {
-      "isim": "Ergenekon",
-      "ilce": "Şişli",
-      "kira": 39000,
-      "ilanSayisi": 49
-    },
-    {
-      "isim": "Yakacık Çarşı",
-      "ilce": "Kartal",
-      "kira": 38964,
-      "ilanSayisi": 67
-    },
-    {
-      "isim": "Sarıyer Merkez",
-      "ilce": "Sarıyer",
-      "kira": 38918,
-      "ilanSayisi": 52
+      "kira": 40352,
+      "ilanSayisi": 36
     },
     {
       "isim": "İcadiye",
       "ilce": "Üsküdar",
-      "kira": 38876,
-      "ilanSayisi": 59
+      "kira": 40336,
+      "ilanSayisi": 65
     },
     {
-      "isim": "Örnek",
-      "ilce": "Ataşehir",
-      "kira": 38786,
-      "ilanSayisi": 166
+      "isim": "Türkali",
+      "ilce": "Beşiktaş",
+      "kira": 40331,
+      "ilanSayisi": 174
     },
     {
-      "isim": "Çamlık",
-      "ilce": "Pendik",
-      "kira": 38750,
-      "ilanSayisi": 121
+      "isim": "Adnan Kahveci",
+      "ilce": "Beylikdüzü",
+      "kira": 40279,
+      "ilanSayisi": 528
     },
     {
-      "isim": "Küçük Çamlıca",
-      "ilce": "Üsküdar",
-      "kira": 38732,
-      "ilanSayisi": 53
+      "isim": "Pınartepe",
+      "ilce": "Büyükçekmece",
+      "kira": 40112,
+      "ilanSayisi": 139
     },
     {
       "isim": "Yeni",
       "ilce": "Pendik",
-      "kira": 38726,
-      "ilanSayisi": 41
-    },
-    {
-      "isim": "Girne",
-      "ilce": "Maltepe",
-      "kira": 38584,
-      "ilanSayisi": 84
-    },
-    {
-      "isim": "Çınardere",
-      "ilce": "Pendik",
-      "kira": 38470,
-      "ilanSayisi": 136
-    },
-    {
-      "isim": "Bozkurt",
-      "ilce": "Şişli",
-      "kira": 38444,
-      "ilanSayisi": 96
-    },
-    {
-      "isim": "Abbasağa",
-      "ilce": "Beşiktaş",
-      "kira": 38372,
-      "ilanSayisi": 82
-    },
-    {
-      "isim": "Ferah",
-      "ilce": "Üsküdar",
-      "kira": 38364,
-      "ilanSayisi": 125
-    },
-    {
-      "isim": "Şehit Muhtar",
-      "ilce": "Beyoğlu",
-      "kira": 38350,
-      "ilanSayisi": 26
-    },
-    {
-      "isim": "Esenşehir",
-      "ilce": "Ümraniye",
-      "kira": 38104,
-      "ilanSayisi": 79
-    },
-    {
-      "isim": "İmrenli",
-      "ilce": "Şile",
-      "kira": 38036,
-      "ilanSayisi": 6
-    },
-    {
-      "isim": "Bulgurlu",
-      "ilce": "Üsküdar",
-      "kira": 37997,
-      "ilanSayisi": 188
-    },
-    {
-      "isim": "Cumhuriyet",
-      "ilce": "Büyükçekmece",
-      "kira": 37948,
-      "ilanSayisi": 58
-    },
-    {
-      "isim": "Yunus",
-      "ilce": "Kartal",
-      "kira": 37939,
-      "ilanSayisi": 40
-    },
-    {
-      "isim": "Yenidoğan",
-      "ilce": "Zeytinburnu",
-      "kira": 37925,
-      "ilanSayisi": 11
-    },
-    {
-      "isim": "Çiğdem",
-      "ilce": "Beykoz",
-      "kira": 37852,
-      "ilanSayisi": 38
-    },
-    {
-      "isim": "Kartaltepe",
-      "ilce": "Küçükçekmece",
-      "kira": 37805,
-      "ilanSayisi": 79
-    },
-    {
-      "isim": "Madenler",
-      "ilce": "Ümraniye",
-      "kira": 37652,
-      "ilanSayisi": 83
-    },
-    {
-      "isim": "Yakacık Yeni",
-      "ilce": "Kartal",
-      "kira": 37646,
-      "ilanSayisi": 76
-    },
-    {
-      "isim": "Çamlıtepe",
-      "ilce": "Sarıyer",
-      "kira": 37558,
-      "ilanSayisi": 22
-    },
-    {
-      "isim": "Göztepe",
-      "ilce": "Bağcılar",
-      "kira": 37507,
-      "ilanSayisi": 120
-    },
-    {
-      "isim": "Kısıklı",
-      "ilce": "Üsküdar",
-      "kira": 37387,
-      "ilanSayisi": 79
-    },
-    {
-      "isim": "Aydınevler",
-      "ilce": "Maltepe",
-      "kira": 37369,
-      "ilanSayisi": 186
-    },
-    {
-      "isim": "İçerenköy",
-      "ilce": "Ataşehir",
-      "kira": 37366,
-      "ilanSayisi": 289
-    },
-    {
-      "isim": "Fetih",
-      "ilce": "Ataşehir",
-      "kira": 37319,
-      "ilanSayisi": 41
-    },
-    {
-      "isim": "İnönü",
-      "ilce": "Şişli",
-      "kira": 37178,
-      "ilanSayisi": 75
-    },
-    {
-      "isim": "Yenişehir",
-      "ilce": "Pendik",
-      "kira": 37156,
-      "ilanSayisi": 654
-    },
-    {
-      "isim": "Cevizlik",
-      "ilce": "Bakırköy",
-      "kira": 37154,
-      "ilanSayisi": 21
-    },
-    {
-      "isim": "Duatepe",
-      "ilce": "Şişli",
-      "kira": 37125,
-      "ilanSayisi": 60
-    },
-    {
-      "isim": "Çavuş",
-      "ilce": "Şile",
-      "kira": 37076,
-      "ilanSayisi": 145
+      "kira": 40059,
+      "ilanSayisi": 46
     },
     {
       "isim": "Ptt Evleri",
       "ilce": "Sarıyer",
-      "kira": 37076,
-      "ilanSayisi": 13
+      "kira": 40023,
+      "ilanSayisi": 23
     },
     {
-      "isim": "Veysel Karani",
-      "ilce": "Sancaktepe",
-      "kira": 37069,
-      "ilanSayisi": 112
+      "isim": "Çiftlikköy",
+      "ilce": "Çatalca",
+      "kira": 40000,
+      "ilanSayisi": 1
     },
     {
-      "isim": "Halkalı Merkez",
-      "ilce": "Küçükçekmece",
-      "kira": 37052,
-      "ilanSayisi": 235
+      "isim": "Girne",
+      "ilce": "Maltepe",
+      "kira": 39966,
+      "ilanSayisi": 100
     },
     {
-      "isim": "Kocatepe",
-      "ilce": "Bayrampaşa",
-      "kira": 37034,
-      "ilanSayisi": 45
-    },
-    {
-      "isim": "Balibey",
-      "ilce": "Şile",
-      "kira": 36939,
-      "ilanSayisi": 52
+      "isim": "Yunus",
+      "ilce": "Kartal",
+      "kira": 39746,
+      "ilanSayisi": 56
     },
     {
       "isim": "Başak",
       "ilce": "Başakşehir",
-      "kira": 36906,
-      "ilanSayisi": 185
+      "kira": 39686,
+      "ilanSayisi": 198
     },
     {
-      "isim": "Rüzgarlıbahçe",
+      "isim": "Çubuklu",
       "ilce": "Beykoz",
-      "kira": 36818,
-      "ilanSayisi": 11
+      "kira": 39628,
+      "ilanSayisi": 72
     },
     {
-      "isim": "Atatürk",
-      "ilce": "Ümraniye",
-      "kira": 36769,
-      "ilanSayisi": 123
+      "isim": "Sapan Bağları",
+      "ilce": "Pendik",
+      "kira": 39571,
+      "ilanSayisi": 34
+    },
+    {
+      "isim": "Yakacık Çarşı",
+      "ilce": "Kartal",
+      "kira": 39533,
+      "ilanSayisi": 75
     },
     {
       "isim": "Gümüşpınar",
       "ilce": "Kartal",
-      "kira": 36768,
-      "ilanSayisi": 66
-    },
-    {
-      "isim": "Parseller",
-      "ilce": "Ümraniye",
-      "kira": 36671,
-      "ilanSayisi": 44
-    },
-    {
-      "isim": "Alibeyköy",
-      "ilce": "Eyüpsultan",
-      "kira": 36581,
-      "ilanSayisi": 67
-    },
-    {
-      "isim": "Orta",
-      "ilce": "Kartal",
-      "kira": 36577,
-      "ilanSayisi": 76
-    },
-    {
-      "isim": "Atakent",
-      "ilce": "Ümraniye",
-      "kira": 36555,
-      "ilanSayisi": 70
-    },
-    {
-      "isim": "Yayla",
-      "ilce": "Tuzla",
-      "kira": 36417,
-      "ilanSayisi": 199
-    },
-    {
-      "isim": "Katipmustafa Çelebi",
-      "ilce": "Beyoğlu",
-      "kira": 36390,
-      "ilanSayisi": 18
-    },
-    {
-      "isim": "Emniyet Evleri",
-      "ilce": "Kağıthane",
-      "kira": 36345,
-      "ilanSayisi": 108
-    },
-    {
-      "isim": "Feriköy",
-      "ilce": "Şişli",
-      "kira": 36265,
-      "ilanSayisi": 87
-    },
-    {
-      "isim": "Gürpınar",
-      "ilce": "Beylikdüzü",
-      "kira": 36200,
-      "ilanSayisi": 95
-    },
-    {
-      "isim": "Cumhuriyet",
-      "ilce": "Sarıyer",
-      "kira": 36178,
-      "ilanSayisi": 80
-    },
-    {
-      "isim": "Yalıköy",
-      "ilce": "Beykoz",
-      "kira": 36136,
-      "ilanSayisi": 21
-    },
-    {
-      "isim": "Cumhuriyet",
-      "ilce": "Üsküdar",
-      "kira": 35924,
-      "ilanSayisi": 222
-    },
-    {
-      "isim": "Mimar Sinan",
-      "ilce": "Üsküdar",
-      "kira": 35855,
-      "ilanSayisi": 117
-    },
-    {
-      "isim": "Mimarsinan",
-      "ilce": "Büyükçekmece",
-      "kira": 35845,
-      "ilanSayisi": 50
-    },
-    {
-      "isim": "Cumhuriyet",
-      "ilce": "Kartal",
-      "kira": 35830,
-      "ilanSayisi": 142
-    },
-    {
-      "isim": "Talatpaşa",
-      "ilce": "Kağıthane",
-      "kira": 35764,
-      "ilanSayisi": 294
-    },
-    {
-      "isim": "Dereağzı",
-      "ilce": "Beylikdüzü",
-      "kira": 35512,
-      "ilanSayisi": 112
-    },
-    {
-      "isim": "Merkez",
-      "ilce": "Bağcılar",
-      "kira": 35510,
-      "ilanSayisi": 35
-    },
-    {
-      "isim": "Bahçelievler",
-      "ilce": "Pendik",
-      "kira": 35493,
-      "ilanSayisi": 38
-    },
-    {
-      "isim": "Site",
-      "ilce": "Ümraniye",
-      "kira": 35490,
-      "ilanSayisi": 153
-    },
-    {
-      "isim": "Esenevler",
-      "ilce": "Ümraniye",
-      "kira": 35466,
-      "ilanSayisi": 140
-    },
-    {
-      "isim": "Muratreis",
-      "ilce": "Üsküdar",
-      "kira": 35464,
-      "ilanSayisi": 77
-    },
-    {
-      "isim": "Bağlar",
-      "ilce": "Bağcılar",
-      "kira": 35150,
-      "ilanSayisi": 141
-    },
-    {
-      "isim": "Cennet",
-      "ilce": "Küçükçekmece",
-      "kira": 35131,
-      "ilanSayisi": 119
-    },
-    {
-      "isim": "Evliya Çelebi",
-      "ilce": "Tuzla",
-      "kira": 35118,
+      "kira": 39473,
       "ilanSayisi": 64
     },
     {
-      "isim": "Yenimahalle",
-      "ilce": "Bakırköy",
-      "kira": 35086,
-      "ilanSayisi": 15
-    },
-    {
-      "isim": "Aydıntepe",
-      "ilce": "Tuzla",
-      "kira": 35080,
-      "ilanSayisi": 199
-    },
-    {
-      "isim": "Abdurrahmangazi",
-      "ilce": "Sancaktepe",
-      "kira": 34963,
-      "ilanSayisi": 300
-    },
-    {
-      "isim": "Kavaklı",
-      "ilce": "Beylikdüzü",
-      "kira": 34893,
-      "ilanSayisi": 414
-    },
-    {
-      "isim": "İnönü",
-      "ilce": "Ataşehir",
-      "kira": 34886,
-      "ilanSayisi": 282
-    },
-    {
-      "isim": "Atatürk",
-      "ilce": "Büyükçekmece",
-      "kira": 34882,
-      "ilanSayisi": 109
-    },
-    {
-      "isim": "Sanayi",
-      "ilce": "Güngören",
-      "kira": 34801,
-      "ilanSayisi": 9
-    },
-    {
-      "isim": "Karadeniz",
-      "ilce": "Gaziosmanpaşa",
-      "kira": 34747,
-      "ilanSayisi": 313
-    },
-    {
-      "isim": "Nuripaşa",
-      "ilce": "Zeytinburnu",
-      "kira": 34549,
-      "ilanSayisi": 15
-    },
-    {
-      "isim": "Namık Kemal",
-      "ilce": "Ümraniye",
-      "kira": 34447,
-      "ilanSayisi": 113
-    },
-    {
-      "isim": "Taşdelen",
-      "ilce": "Çekmeköy",
-      "kira": 34410,
-      "ilanSayisi": 100
-    },
-    {
-      "isim": "Karaburun",
-      "ilce": "Arnavutköy",
-      "kira": 34331,
-      "ilanSayisi": 5
-    },
-    {
-      "isim": "Esenkent",
-      "ilce": "Esenyurt",
-      "kira": 34257,
-      "ilanSayisi": 60
-    },
-    {
-      "isim": "Elmalıkent",
-      "ilce": "Ümraniye",
-      "kira": 34248,
-      "ilanSayisi": 68
-    },
-    {
-      "isim": "Esatpaşa",
-      "ilce": "Ataşehir",
-      "kira": 34242,
-      "ilanSayisi": 153
-    },
-    {
-      "isim": "Çırçır",
-      "ilce": "Eyüpsultan",
-      "kira": 34210,
-      "ilanSayisi": 147
-    },
-    {
-      "isim": "Göksu",
+      "isim": "Çiğdem",
       "ilce": "Beykoz",
-      "kira": 34158,
-      "ilanSayisi": 7
+      "kira": 39422,
+      "ilanSayisi": 39
     },
     {
-      "isim": "Anadolu Kavağı",
-      "ilce": "Beykoz",
-      "kira": 34148,
-      "ilanSayisi": 1
+      "isim": "Kısıklı",
+      "ilce": "Üsküdar",
+      "kira": 39199,
+      "ilanSayisi": 85
     },
     {
-      "isim": "Armağanevler",
-      "ilce": "Ümraniye",
-      "kira": 34119,
-      "ilanSayisi": 245
+      "isim": "Kocatepe",
+      "ilce": "Bayrampaşa",
+      "kira": 39177,
+      "ilanSayisi": 48
     },
     {
-      "isim": "Aşağı Dudullu",
-      "ilce": "Ümraniye",
-      "kira": 34004,
-      "ilanSayisi": 47
+      "isim": "Bulgurlu",
+      "ilce": "Üsküdar",
+      "kira": 39153,
+      "ilanSayisi": 215
     },
     {
-      "isim": "Halide Edip Adıvar",
+      "isim": "Bozkurt",
       "ilce": "Şişli",
-      "kira": 33957,
-      "ilanSayisi": 112
+      "kira": 39111,
+      "ilanSayisi": 111
+    },
+    {
+      "isim": "Hasanpaşa",
+      "ilce": "Kadıköy",
+      "kira": 39108,
+      "ilanSayisi": 95
+    },
+    {
+      "isim": "Sarıyer Merkez",
+      "ilce": "Sarıyer",
+      "kira": 39092,
+      "ilanSayisi": 65
+    },
+    {
+      "isim": "Kartaltepe",
+      "ilce": "Küçükçekmece",
+      "kira": 39090,
+      "ilanSayisi": 83
+    },
+    {
+      "isim": "Esenşehir",
+      "ilce": "Ümraniye",
+      "kira": 38981,
+      "ilanSayisi": 103
     },
     {
       "isim": "Çiftlik",
       "ilce": "Beykoz",
-      "kira": 33868,
-      "ilanSayisi": 14
-    },
-    {
-      "isim": "Alemdağ",
-      "ilce": "Çekmeköy",
-      "kira": 33824,
-      "ilanSayisi": 78
-    },
-    {
-      "isim": "Mahmutbey",
-      "ilce": "Bağcılar",
-      "kira": 33752,
-      "ilanSayisi": 165
-    },
-    {
-      "isim": "Yıldırım",
-      "ilce": "Bayrampaşa",
-      "kira": 33743,
-      "ilanSayisi": 100
-    },
-    {
-      "isim": "Fatih",
-      "ilce": "Beykoz",
-      "kira": 33734,
-      "ilanSayisi": 28
-    },
-    {
-      "isim": "Çamlık",
-      "ilce": "Ümraniye",
-      "kira": 33704,
-      "ilanSayisi": 201
-    },
-    {
-      "isim": "Gökalp",
-      "ilce": "Zeytinburnu",
-      "kira": 33696,
-      "ilanSayisi": 19
-    },
-    {
-      "isim": "Sultançiftliği",
-      "ilce": "Çekmeköy",
-      "kira": 33429,
-      "ilanSayisi": 135
-    },
-    {
-      "isim": "İstiklal",
-      "ilce": "Ümraniye",
-      "kira": 33385,
-      "ilanSayisi": 152
-    },
-    {
-      "isim": "15 Temmuz",
-      "ilce": "Bağcılar",
-      "kira": 33274,
-      "ilanSayisi": 226
-    },
-    {
-      "isim": "Mimar Sinan",
-      "ilce": "Çekmeköy",
-      "kira": 33249,
-      "ilanSayisi": 142
-    },
-    {
-      "isim": "Düğmeciler",
-      "ilce": "Eyüpsultan",
-      "kira": 33189,
-      "ilanSayisi": 53
-    },
-    {
-      "isim": "Kartaltepe",
-      "ilce": "Bayrampaşa",
-      "kira": 33070,
-      "ilanSayisi": 92
-    },
-    {
-      "isim": "Selami Ali",
-      "ilce": "Üsküdar",
-      "kira": 33021,
-      "ilanSayisi": 55
-    },
-    {
-      "isim": "Nurtepe",
-      "ilce": "Kağıthane",
-      "kira": 33007,
-      "ilanSayisi": 166
-    },
-    {
-      "isim": "Merkez",
-      "ilce": "Avcılar",
-      "kira": 32969,
-      "ilanSayisi": 127
-    },
-    {
-      "isim": "Hürriyet",
-      "ilce": "Bahçelievler",
-      "kira": 32899,
-      "ilanSayisi": 105
-    },
-    {
-      "isim": "Mecidiyeköy",
-      "ilce": "Şişli",
-      "kira": 32809,
-      "ilanSayisi": 433
-    },
-    {
-      "isim": "Cumhuriyet",
-      "ilce": "Küçükçekmece",
-      "kira": 32771,
-      "ilanSayisi": 134
-    },
-    {
-      "isim": "Hacı Kasım",
-      "ilce": "Şile",
-      "kira": 32681,
+      "kira": 38917,
       "ilanSayisi": 15
     },
     {
-      "isim": "İçmeler",
-      "ilce": "Tuzla",
-      "kira": 32532,
-      "ilanSayisi": 53
+      "isim": "Ortaköy",
+      "ilce": "Silivri",
+      "kira": 38880,
+      "ilanSayisi": 9
     },
     {
-      "isim": "Paşa",
+      "isim": "İçerenköy",
+      "ilce": "Ataşehir",
+      "kira": 38877,
+      "ilanSayisi": 320
+    },
+    {
+      "isim": "Halkalı Merkez",
+      "ilce": "Küçükçekmece",
+      "kira": 38854,
+      "ilanSayisi": 251
+    },
+    {
+      "isim": "Emek",
+      "ilce": "Sancaktepe",
+      "kira": 38849,
+      "ilanSayisi": 181
+    },
+    {
+      "isim": "Ergenekon",
       "ilce": "Şişli",
-      "kira": 32510,
-      "ilanSayisi": 150
+      "kira": 38780,
+      "ilanSayisi": 52
     },
     {
-      "isim": "Topselvi",
+      "isim": "Madenler",
+      "ilce": "Ümraniye",
+      "kira": 38716,
+      "ilanSayisi": 78
+    },
+    {
+      "isim": "Güngören",
+      "ilce": "Çekmeköy",
+      "kira": 38654,
+      "ilanSayisi": 136
+    },
+    {
+      "isim": "Balibey",
+      "ilce": "Şile",
+      "kira": 38635,
+      "ilanSayisi": 68
+    },
+    {
+      "isim": "Göztepe",
+      "ilce": "Bağcılar",
+      "kira": 38626,
+      "ilanSayisi": 129
+    },
+    {
+      "isim": "Çamlık",
+      "ilce": "Pendik",
+      "kira": 38593,
+      "ilanSayisi": 155
+    },
+    {
+      "isim": "Alacalı",
+      "ilce": "Şile",
+      "kira": 38559,
+      "ilanSayisi": 1
+    },
+    {
+      "isim": "Çınardere",
+      "ilce": "Pendik",
+      "kira": 38531,
+      "ilanSayisi": 133
+    },
+    {
+      "isim": "Aydınevler",
+      "ilce": "Maltepe",
+      "kira": 38503,
+      "ilanSayisi": 194
+    },
+    {
+      "isim": "İnönü",
+      "ilce": "Şişli",
+      "kira": 38222,
+      "ilanSayisi": 82
+    },
+    {
+      "isim": "Duatepe",
+      "ilce": "Şişli",
+      "kira": 38192,
+      "ilanSayisi": 59
+    },
+    {
+      "isim": "Atakent",
+      "ilce": "Ümraniye",
+      "kira": 38182,
+      "ilanSayisi": 72
+    },
+    {
+      "isim": "Sanayi",
+      "ilce": "Güngören",
+      "kira": 38140,
+      "ilanSayisi": 8
+    },
+    {
+      "isim": "Ferah",
+      "ilce": "Üsküdar",
+      "kira": 37963,
+      "ilanSayisi": 145
+    },
+    {
+      "isim": "Çavuş",
+      "ilce": "Şile",
+      "kira": 37938,
+      "ilanSayisi": 154
+    },
+    {
+      "isim": "Küçük Çamlıca",
+      "ilce": "Üsküdar",
+      "kira": 37899,
+      "ilanSayisi": 56
+    },
+    {
+      "isim": "Cumhuriyet",
+      "ilce": "Büyükçekmece",
+      "kira": 37840,
+      "ilanSayisi": 69
+    },
+    {
+      "isim": "Bahçelievler",
+      "ilce": "Pendik",
+      "kira": 37818,
+      "ilanSayisi": 41
+    },
+    {
+      "isim": "Büyükdere",
+      "ilce": "Sarıyer",
+      "kira": 37811,
+      "ilanSayisi": 74
+    },
+    {
+      "isim": "Atatürk",
+      "ilce": "Ümraniye",
+      "kira": 37762,
+      "ilanSayisi": 113
+    },
+    {
+      "isim": "Katipmustafa Çelebi",
+      "ilce": "Beyoğlu",
+      "kira": 37679,
+      "ilanSayisi": 18
+    },
+    {
+      "isim": "İmrenli",
+      "ilce": "Şile",
+      "kira": 37467,
+      "ilanSayisi": 9
+    },
+    {
+      "isim": "Emniyet Evleri",
+      "ilce": "Kağıthane",
+      "kira": 37466,
+      "ilanSayisi": 132
+    },
+    {
+      "isim": "Yayla",
+      "ilce": "Tuzla",
+      "kira": 37365,
+      "ilanSayisi": 198
+    },
+    {
+      "isim": "Yenişehir",
+      "ilce": "Pendik",
+      "kira": 37279,
+      "ilanSayisi": 708
+    },
+    {
+      "isim": "Mimarsinan",
+      "ilce": "Büyükçekmece",
+      "kira": 37254,
+      "ilanSayisi": 56
+    },
+    {
+      "isim": "Mehmet Nesih Özmen",
+      "ilce": "Güngören",
+      "kira": 37169,
+      "ilanSayisi": 9
+    },
+    {
+      "isim": "Cumhuriyet",
+      "ilce": "Sarıyer",
+      "kira": 37154,
+      "ilanSayisi": 95
+    },
+    {
+      "isim": "Orta",
       "ilce": "Kartal",
-      "kira": 32498,
-      "ilanSayisi": 42
+      "kira": 37072,
+      "ilanSayisi": 72
+    },
+    {
+      "isim": "Yalıköy",
+      "ilce": "Beykoz",
+      "kira": 37033,
+      "ilanSayisi": 24
+    },
+    {
+      "isim": "Nuripaşa",
+      "ilce": "Zeytinburnu",
+      "kira": 36993,
+      "ilanSayisi": 15
     },
     {
       "isim": "Yeşiltepe",
       "ilce": "Zeytinburnu",
-      "kira": 32332,
-      "ilanSayisi": 6
+      "kira": 36989,
+      "ilanSayisi": 10
     },
     {
-      "isim": "Kabakça",
-      "ilce": "Çatalca",
-      "kira": 32256,
-      "ilanSayisi": 1
-    },
-    {
-      "isim": "Küplüce",
-      "ilce": "Üsküdar",
-      "kira": 32252,
-      "ilanSayisi": 72
+      "isim": "Veysel Karani",
+      "ilce": "Sancaktepe",
+      "kira": 36841,
+      "ilanSayisi": 116
     },
     {
       "isim": "Bahçeköy Kemer",
       "ilce": "Sarıyer",
-      "kira": 32209,
+      "kira": 36738,
+      "ilanSayisi": 11
+    },
+    {
+      "isim": "Alibeyköy",
+      "ilce": "Eyüpsultan",
+      "kira": 36661,
+      "ilanSayisi": 86
+    },
+    {
+      "isim": "Fetih",
+      "ilce": "Ataşehir",
+      "kira": 36632,
+      "ilanSayisi": 41
+    },
+    {
+      "isim": "Yenimahalle",
+      "ilce": "Bakırköy",
+      "kira": 36617,
+      "ilanSayisi": 19
+    },
+    {
+      "isim": "Elmalı",
+      "ilce": "Beykoz",
+      "kira": 36616,
+      "ilanSayisi": 6
+    },
+    {
+      "isim": "Evliya Çelebi",
+      "ilce": "Tuzla",
+      "kira": 36584,
+      "ilanSayisi": 77
+    },
+    {
+      "isim": "Gürpınar",
+      "ilce": "Beylikdüzü",
+      "kira": 36544,
+      "ilanSayisi": 98
+    },
+    {
+      "isim": "Mimar Sinan",
+      "ilce": "Üsküdar",
+      "kira": 36503,
+      "ilanSayisi": 123
+    },
+    {
+      "isim": "Aşağı Dudullu",
+      "ilce": "Ümraniye",
+      "kira": 36450,
+      "ilanSayisi": 60
+    },
+    {
+      "isim": "Cennet",
+      "ilce": "Küçükçekmece",
+      "kira": 36406,
+      "ilanSayisi": 113
+    },
+    {
+      "isim": "Feriköy",
+      "ilce": "Şişli",
+      "kira": 36270,
+      "ilanSayisi": 100
+    },
+    {
+      "isim": "Esenevler",
+      "ilce": "Ümraniye",
+      "kira": 36246,
+      "ilanSayisi": 140
+    },
+    {
+      "isim": "Site",
+      "ilce": "Ümraniye",
+      "kira": 36226,
+      "ilanSayisi": 182
+    },
+    {
+      "isim": "Merkez",
+      "ilce": "Bağcılar",
+      "kira": 36156,
+      "ilanSayisi": 32
+    },
+    {
+      "isim": "Parseller",
+      "ilce": "Ümraniye",
+      "kira": 36154,
+      "ilanSayisi": 54
+    },
+    {
+      "isim": "Cumhuriyet",
+      "ilce": "Kartal",
+      "kira": 35928,
+      "ilanSayisi": 140
+    },
+    {
+      "isim": "Kavaklı",
+      "ilce": "Beylikdüzü",
+      "kira": 35906,
+      "ilanSayisi": 462
+    },
+    {
+      "isim": "Talatpaşa",
+      "ilce": "Kağıthane",
+      "kira": 35864,
+      "ilanSayisi": 315
+    },
+    {
+      "isim": "İnönü",
+      "ilce": "Ataşehir",
+      "kira": 35857,
+      "ilanSayisi": 315
+    },
+    {
+      "isim": "Bağlar",
+      "ilce": "Bağcılar",
+      "kira": 35675,
+      "ilanSayisi": 176
+    },
+    {
+      "isim": "Gökalp",
+      "ilce": "Zeytinburnu",
+      "kira": 35588,
+      "ilanSayisi": 19
+    },
+    {
+      "isim": "Taşdelen",
+      "ilce": "Çekmeköy",
+      "kira": 35497,
+      "ilanSayisi": 118
+    },
+    {
+      "isim": "Göksu",
+      "ilce": "Beykoz",
+      "kira": 35388,
+      "ilanSayisi": 7
+    },
+    {
+      "isim": "Elmalıkent",
+      "ilce": "Ümraniye",
+      "kira": 35322,
+      "ilanSayisi": 71
+    },
+    {
+      "isim": "Halide Edip Adıvar",
+      "ilce": "Şişli",
+      "kira": 35235,
+      "ilanSayisi": 137
+    },
+    {
+      "isim": "Cumhuriyet",
+      "ilce": "Küçükçekmece",
+      "kira": 35180,
+      "ilanSayisi": 127
+    },
+    {
+      "isim": "Abdurrahmangazi",
+      "ilce": "Sancaktepe",
+      "kira": 35109,
+      "ilanSayisi": 314
+    },
+    {
+      "isim": "Dereağzı",
+      "ilce": "Beylikdüzü",
+      "kira": 35019,
+      "ilanSayisi": 125
+    },
+    {
+      "isim": "Rüzgarlıbahçe",
+      "ilce": "Beykoz",
+      "kira": 35007,
+      "ilanSayisi": 15
+    },
+    {
+      "isim": "Mahmutbey",
+      "ilce": "Bağcılar",
+      "kira": 34929,
+      "ilanSayisi": 193
+    },
+    {
+      "isim": "Aydıntepe",
+      "ilce": "Tuzla",
+      "kira": 34864,
+      "ilanSayisi": 251
+    },
+    {
+      "isim": "Armağanevler",
+      "ilce": "Ümraniye",
+      "kira": 34828,
+      "ilanSayisi": 267
+    },
+    {
+      "isim": "Atatürk",
+      "ilce": "Büyükçekmece",
+      "kira": 34807,
+      "ilanSayisi": 93
+    },
+    {
+      "isim": "Yıldırım",
+      "ilce": "Bayrampaşa",
+      "kira": 34735,
+      "ilanSayisi": 90
+    },
+    {
+      "isim": "Cumhuriyet",
+      "ilce": "Üsküdar",
+      "kira": 34672,
+      "ilanSayisi": 233
+    },
+    {
+      "isim": "Esenkent",
+      "ilce": "Esenyurt",
+      "kira": 34641,
+      "ilanSayisi": 62
+    },
+    {
+      "isim": "Karaburun",
+      "ilce": "Arnavutköy",
+      "kira": 34569,
+      "ilanSayisi": 7
+    },
+    {
+      "isim": "Namık Kemal",
+      "ilce": "Ümraniye",
+      "kira": 34532,
+      "ilanSayisi": 119
+    },
+    {
+      "isim": "Eski Habipler",
+      "ilce": "Sultangazi",
+      "kira": 34514,
+      "ilanSayisi": 53
+    },
+    {
+      "isim": "Çamlık",
+      "ilce": "Ümraniye",
+      "kira": 34494,
+      "ilanSayisi": 222
+    },
+    {
+      "isim": "Karadeniz",
+      "ilce": "Gaziosmanpaşa",
+      "kira": 34483,
+      "ilanSayisi": 333
+    },
+    {
+      "isim": "Yeniköy",
+      "ilce": "Arnavutköy",
+      "kira": 34478,
+      "ilanSayisi": 3
+    },
+    {
+      "isim": "Topselvi",
+      "ilce": "Kartal",
+      "kira": 34427,
+      "ilanSayisi": 43
+    },
+    {
+      "isim": "Mimar Sinan",
+      "ilce": "Çekmeköy",
+      "kira": 34184,
+      "ilanSayisi": 150
+    },
+    {
+      "isim": "Alemdağ",
+      "ilce": "Çekmeköy",
+      "kira": 34173,
+      "ilanSayisi": 85
+    },
+    {
+      "isim": "15 Temmuz",
+      "ilce": "Bağcılar",
+      "kira": 34151,
+      "ilanSayisi": 243
+    },
+    {
+      "isim": "Muratreis",
+      "ilce": "Üsküdar",
+      "kira": 34135,
+      "ilanSayisi": 72
+    },
+    {
+      "isim": "Kirazlı",
+      "ilce": "Bağcılar",
+      "kira": 34117,
+      "ilanSayisi": 83
+    },
+    {
+      "isim": "Çırçır",
+      "ilce": "Eyüpsultan",
+      "kira": 34058,
+      "ilanSayisi": 150
+    },
+    {
+      "isim": "Selami Ali",
+      "ilce": "Üsküdar",
+      "kira": 33974,
+      "ilanSayisi": 53
+    },
+    {
+      "isim": "Nurtepe",
+      "ilce": "Kağıthane",
+      "kira": 33967,
+      "ilanSayisi": 168
+    },
+    {
+      "isim": "Yukarı",
+      "ilce": "Kartal",
+      "kira": 33957,
+      "ilanSayisi": 26
+    },
+    {
+      "isim": "İçmeler",
+      "ilce": "Tuzla",
+      "kira": 33928,
+      "ilanSayisi": 64
+    },
+    {
+      "isim": "Merkez",
+      "ilce": "Avcılar",
+      "kira": 33775,
+      "ilanSayisi": 137
+    },
+    {
+      "isim": "Sultançiftliği",
+      "ilce": "Çekmeköy",
+      "kira": 33772,
+      "ilanSayisi": 140
+    },
+    {
+      "isim": "Mecidiyeköy",
+      "ilce": "Şişli",
+      "kira": 33719,
+      "ilanSayisi": 458
+    },
+    {
+      "isim": "İkitelli Osb",
+      "ilce": "Başakşehir",
+      "kira": 33631,
+      "ilanSayisi": 3
+    },
+    {
+      "isim": "İstiklal",
+      "ilce": "Ümraniye",
+      "kira": 33620,
+      "ilanSayisi": 164
+    },
+    {
+      "isim": "Esatpaşa",
+      "ilce": "Ataşehir",
+      "kira": 33598,
+      "ilanSayisi": 174
+    },
+    {
+      "isim": "Sütlüce",
+      "ilce": "Beyoğlu",
+      "kira": 33469,
+      "ilanSayisi": 48
+    },
+    {
+      "isim": "Kocataş",
+      "ilce": "Sarıyer",
+      "kira": 33406,
+      "ilanSayisi": 19
+    },
+    {
+      "isim": "Hürriyet",
+      "ilce": "Bahçelievler",
+      "kira": 33362,
+      "ilanSayisi": 107
+    },
+    {
+      "isim": "Paşa",
+      "ilce": "Şişli",
+      "kira": 33357,
+      "ilanSayisi": 174
+    },
+    {
+      "isim": "Hacı Kasım",
+      "ilce": "Şile",
+      "kira": 33326,
+      "ilanSayisi": 14
+    },
+    {
+      "isim": "Yavuz Selim",
+      "ilce": "Beykoz",
+      "kira": 33275,
+      "ilanSayisi": 25
+    },
+    {
+      "isim": "İstasyon",
+      "ilce": "Küçükçekmece",
+      "kira": 32979,
+      "ilanSayisi": 152
+    },
+    {
+      "isim": "Anadolu Kavağı",
+      "ilce": "Beykoz",
+      "kira": 32977,
+      "ilanSayisi": 1
+    },
+    {
+      "isim": "Molla Gürani",
+      "ilce": "Fatih",
+      "kira": 32960,
+      "ilanSayisi": 82
+    },
+    {
+      "isim": "Düğmeciler",
+      "ilce": "Eyüpsultan",
+      "kira": 32843,
+      "ilanSayisi": 62
+    },
+    {
+      "isim": "Kartaltepe",
+      "ilce": "Bayrampaşa",
+      "kira": 32775,
+      "ilanSayisi": 85
+    },
+    {
+      "isim": "Çatma Mescit",
+      "ilce": "Beyoğlu",
+      "kira": 32738,
+      "ilanSayisi": 10
+    },
+    {
+      "isim": "Baltalimanı",
+      "ilce": "Sarıyer",
+      "kira": 32721,
+      "ilanSayisi": 15
+    },
+    {
+      "isim": "Yeşilova",
+      "ilce": "Küçükçekmece",
+      "kira": 32572,
+      "ilanSayisi": 87
+    },
+    {
+      "isim": "Yeni Mahalle",
+      "ilce": "Küçükçekmece",
+      "kira": 32457,
+      "ilanSayisi": 51
+    },
+    {
+      "isim": "Poligon",
+      "ilce": "Sarıyer",
+      "kira": 32439,
+      "ilanSayisi": 40
+    },
+    {
+      "isim": "Merkez",
+      "ilce": "Çekmeköy",
+      "kira": 32422,
+      "ilanSayisi": 251
+    },
+    {
+      "isim": "Büyükşehir",
+      "ilce": "Beylikdüzü",
+      "kira": 32401,
+      "ilanSayisi": 89
+    },
+    {
+      "isim": "Piripaşa",
+      "ilce": "Beyoğlu",
+      "kira": 32360,
+      "ilanSayisi": 70
+    },
+    {
+      "isim": "19 Mayıs",
+      "ilce": "Büyükçekmece",
+      "kira": 32212,
+      "ilanSayisi": 16
+    },
+    {
+      "isim": "Akbaba",
+      "ilce": "Beykoz",
+      "kira": 32181,
       "ilanSayisi": 9
     },
     {
       "isim": "Kınalıada",
       "ilce": "Adalar",
       "kira": 32143,
-      "ilanSayisi": 5
-    },
-    {
-      "isim": "İstasyon",
-      "ilce": "Küçükçekmece",
-      "kira": 32073,
-      "ilanSayisi": 154
-    },
-    {
-      "isim": "Baltalimanı",
-      "ilce": "Sarıyer",
-      "kira": 31960,
-      "ilanSayisi": 16
-    },
-    {
-      "isim": "Kirazlı",
-      "ilce": "Bağcılar",
-      "kira": 31914,
-      "ilanSayisi": 102
-    },
-    {
-      "isim": "Eski Habipler",
-      "ilce": "Sultangazi",
-      "kira": 31911,
-      "ilanSayisi": 50
-    },
-    {
-      "isim": "Büyükşehir",
-      "ilce": "Beylikdüzü",
-      "kira": 31836,
-      "ilanSayisi": 84
-    },
-    {
-      "isim": "İkitelli Osb",
-      "ilce": "Başakşehir",
-      "kira": 31754,
-      "ilanSayisi": 3
-    },
-    {
-      "isim": "Poligon",
-      "ilce": "Sarıyer",
-      "kira": 31636,
-      "ilanSayisi": 28
-    },
-    {
-      "isim": "Molla Gürani",
-      "ilce": "Fatih",
-      "kira": 31629,
-      "ilanSayisi": 78
-    },
-    {
-      "isim": "Yeşilce",
-      "ilce": "Kağıthane",
-      "kira": 31594,
-      "ilanSayisi": 60
-    },
-    {
-      "isim": "Mevlana",
-      "ilce": "Ataşehir",
-      "kira": 31536,
-      "ilanSayisi": 35
-    },
-    {
-      "isim": "Piripaşa",
-      "ilce": "Beyoğlu",
-      "kira": 31522,
-      "ilanSayisi": 65
-    },
-    {
-      "isim": "Akbaba",
-      "ilce": "Beykoz",
-      "kira": 31445,
-      "ilanSayisi": 8
-    },
-    {
-      "isim": "Çatma Mescit",
-      "ilce": "Beyoğlu",
-      "kira": 31349,
-      "ilanSayisi": 12
-    },
-    {
-      "isim": "Paşabahçe",
-      "ilce": "Beykoz",
-      "kira": 31332,
-      "ilanSayisi": 23
-    },
-    {
-      "isim": "Cevatpaşa",
-      "ilce": "Bayrampaşa",
-      "kira": 31209,
-      "ilanSayisi": 30
-    },
-    {
-      "isim": "Karadolap",
-      "ilce": "Eyüpsultan",
-      "kira": 31109,
-      "ilanSayisi": 109
-    },
-    {
-      "isim": "Katip Kasım",
-      "ilce": "Fatih",
-      "kira": 31083,
-      "ilanSayisi": 1
-    },
-    {
-      "isim": "Merkez",
-      "ilce": "Çekmeköy",
-      "kira": 31052,
-      "ilanSayisi": 235
-    },
-    {
-      "isim": "Yeni Mahalle",
-      "ilce": "Küçükçekmece",
-      "kira": 31040,
-      "ilanSayisi": 47
-    },
-    {
-      "isim": "Sütlüce",
-      "ilce": "Beyoğlu",
-      "kira": 30916,
-      "ilanSayisi": 46
-    },
-    {
-      "isim": "Çamlıbahçe",
-      "ilce": "Beykoz",
-      "kira": 30911,
-      "ilanSayisi": 17
-    },
-    {
-      "isim": "Büyük Çavuşlu",
-      "ilce": "Silivri",
-      "kira": 30911,
-      "ilanSayisi": null
-    },
-    {
-      "isim": "19 Mayıs",
-      "ilce": "Büyükçekmece",
-      "kira": 30904,
-      "ilanSayisi": 14
+      "ilanSayisi": 7
     },
     {
       "isim": "Hicret",
       "ilce": "Arnavutköy",
-      "kira": 30857,
-      "ilanSayisi": 27
+      "kira": 31967,
+      "ilanSayisi": 31
     },
     {
       "isim": "Haseki Sultan",
       "ilce": "Fatih",
-      "kira": 30702,
+      "kira": 31896,
+      "ilanSayisi": 48
+    },
+    {
+      "isim": "Küplüce",
+      "ilce": "Üsküdar",
+      "kira": 31827,
+      "ilanSayisi": 71
+    },
+    {
+      "isim": "Yeşilce",
+      "ilce": "Kağıthane",
+      "kira": 31785,
+      "ilanSayisi": 69
+    },
+    {
+      "isim": "Güneşli",
+      "ilce": "Bağcılar",
+      "kira": 31726,
+      "ilanSayisi": 74
+    },
+    {
+      "isim": "Mevlana",
+      "ilce": "Ataşehir",
+      "kira": 31422,
       "ilanSayisi": 54
     },
     {
-      "isim": "Kocataş",
-      "ilce": "Sarıyer",
-      "kira": 30618,
-      "ilanSayisi": 14
-    },
-    {
-      "isim": "Yayla",
-      "ilce": "Şişli",
-      "kira": 30592,
-      "ilanSayisi": 68
-    },
-    {
-      "isim": "Ali Kuşçu",
-      "ilce": "Fatih",
-      "kira": 30577,
-      "ilanSayisi": 27
-    },
-    {
-      "isim": "Güzeltepe",
-      "ilce": "Eyüpsultan",
-      "kira": 30567,
-      "ilanSayisi": 146
-    },
-    {
-      "isim": "Kazım Karabekir Paşa",
-      "ilce": "Sarıyer",
-      "kira": 30528,
-      "ilanSayisi": 36
-    },
-    {
-      "isim": "Sarıgöl",
-      "ilce": "Gaziosmanpaşa",
-      "kira": 30510,
-      "ilanSayisi": 88
-    },
-    {
-      "isim": "Ahmediye",
-      "ilce": "Üsküdar",
-      "kira": 30438,
-      "ilanSayisi": 51
-    },
-    {
-      "isim": "Balat",
-      "ilce": "Fatih",
-      "kira": 30411,
-      "ilanSayisi": 39
-    },
-    {
-      "isim": "Yukarı",
-      "ilce": "Kartal",
-      "kira": 30411,
-      "ilanSayisi": 27
-    },
-    {
-      "isim": "Ortabayır",
+      "isim": "Çağlayan",
       "ilce": "Kağıthane",
-      "kira": 30406,
-      "ilanSayisi": 221
+      "kira": 31364,
+      "ilanSayisi": 286
+    },
+    {
+      "isim": "Cevatpaşa",
+      "ilce": "Bayrampaşa",
+      "kira": 31212,
+      "ilanSayisi": 26
+    },
+    {
+      "isim": "Karadolap",
+      "ilce": "Eyüpsultan",
+      "kira": 31025,
+      "ilanSayisi": 111
     },
     {
       "isim": "Şeyhli",
       "ilce": "Pendik",
-      "kira": 30328,
-      "ilanSayisi": 75
+      "kira": 30991,
+      "ilanSayisi": 71
+    },
+    {
+      "isim": "Ali Kuşçu",
+      "ilce": "Fatih",
+      "kira": 30901,
+      "ilanSayisi": 26
     },
     {
       "isim": "Kayışdağı",
       "ilce": "Ataşehir",
-      "kira": 30296,
-      "ilanSayisi": 348
+      "kira": 30843,
+      "ilanSayisi": 364
     },
     {
       "isim": "Çeliktepe",
       "ilce": "Kağıthane",
-      "kira": 30256,
-      "ilanSayisi": 307
+      "kira": 30830,
+      "ilanSayisi": 328
     },
     {
       "isim": "Tozkoparan",
       "ilce": "Güngören",
-      "kira": 30185,
-      "ilanSayisi": 29
+      "kira": 30751,
+      "ilanSayisi": 30
     },
     {
-      "isim": "Yeşilova",
-      "ilce": "Küçükçekmece",
-      "kira": 30178,
-      "ilanSayisi": 85
-    },
-    {
-      "isim": "Gümüşsuyu",
+      "isim": "Fatih",
       "ilce": "Beykoz",
-      "kira": 30147,
-      "ilanSayisi": 20
+      "kira": 30711,
+      "ilanSayisi": 32
     },
     {
-      "isim": "Mareşal Fevzi Çakmak",
-      "ilce": "Arnavutköy",
-      "kira": 30087,
-      "ilanSayisi": 28
+      "isim": "Topkapı",
+      "ilce": "Fatih",
+      "kira": 30672,
+      "ilanSayisi": 59
+    },
+    {
+      "isim": "Pınar",
+      "ilce": "Sarıyer",
+      "kira": 30575,
+      "ilanSayisi": 49
+    },
+    {
+      "isim": "Gürsel",
+      "ilce": "Kağıthane",
+      "kira": 30543,
+      "ilanSayisi": 197
+    },
+    {
+      "isim": "Şehremini",
+      "ilce": "Fatih",
+      "kira": 30543,
+      "ilanSayisi": 104
+    },
+    {
+      "isim": "Güzeltepe",
+      "ilce": "Eyüpsultan",
+      "kira": 30516,
+      "ilanSayisi": 142
+    },
+    {
+      "isim": "Ahmediye",
+      "ilce": "Üsküdar",
+      "kira": 30515,
+      "ilanSayisi": 66
     },
     {
       "isim": "Mevlana",
       "ilce": "Gaziosmanpaşa",
-      "kira": 30073,
+      "kira": 30492,
       "ilanSayisi": 54
     },
     {
       "isim": "Çatalmeşe",
       "ilce": "Çekmeköy",
-      "kira": 29825,
-      "ilanSayisi": 100
+      "kira": 30341,
+      "ilanSayisi": 110
     },
     {
-      "isim": "Kalyoncu Kulluğu",
-      "ilce": "Beyoğlu",
-      "kira": 29803,
-      "ilanSayisi": 25
-    },
-    {
-      "isim": "Çağlayan",
+      "isim": "Ortabayır",
       "ilce": "Kağıthane",
-      "kira": 29775,
-      "ilanSayisi": 260
+      "kira": 30178,
+      "ilanSayisi": 249
     },
     {
-      "isim": "Örnekköy",
-      "ilce": "Beykoz",
-      "kira": 29735,
-      "ilanSayisi": 10
-    },
-    {
-      "isim": "Mimar Sinan",
-      "ilce": "Esenler",
-      "kira": 29675,
-      "ilanSayisi": 25
-    },
-    {
-      "isim": "Topkapı",
-      "ilce": "Fatih",
-      "kira": 29622,
-      "ilanSayisi": 55
-    },
-    {
-      "isim": "Merkez",
-      "ilce": "Beykoz",
-      "kira": 29565,
-      "ilanSayisi": 34
-    },
-    {
-      "isim": "Havaalanı",
-      "ilce": "Esenler",
-      "kira": 29521,
-      "ilanSayisi": 65
-    },
-    {
-      "isim": "Merkez",
-      "ilce": "Eyüpsultan",
-      "kira": 29428,
-      "ilanSayisi": 47
-    },
-    {
-      "isim": "Mehmet Akif Ersoy",
-      "ilce": "Kağıthane",
-      "kira": 29403,
-      "ilanSayisi": 34
-    },
-    {
-      "isim": "Gürsel",
-      "ilce": "Kağıthane",
-      "kira": 29348,
-      "ilanSayisi": 189
-    },
-    {
-      "isim": "Kuştepe",
-      "ilce": "Şişli",
-      "kira": 29229,
-      "ilanSayisi": 239
-    },
-    {
-      "isim": "Subaşı",
-      "ilce": "Çatalca",
-      "kira": 29208,
-      "ilanSayisi": 2
-    },
-    {
-      "isim": "Kızılca",
+      "isim": "Akçakese",
       "ilce": "Şile",
-      "kira": 29174,
-      "ilanSayisi": 3
+      "kira": 30175,
+      "ilanSayisi": 8
     },
     {
-      "isim": "Elmalı",
-      "ilce": "Beykoz",
-      "kira": 29061,
-      "ilanSayisi": 7
-    },
-    {
-      "isim": "Yahya Kemal",
-      "ilce": "Kağıthane",
-      "kira": 29060,
-      "ilanSayisi": 152
-    },
-    {
-      "isim": "Altıntepsi",
-      "ilce": "Bayrampaşa",
-      "kira": 28775,
-      "ilanSayisi": 75
-    },
-    {
-      "isim": "Güneşli",
-      "ilce": "Bağcılar",
-      "kira": 28667,
-      "ilanSayisi": 71
-    },
-    {
-      "isim": "Akşemsettin",
-      "ilce": "Fatih",
-      "kira": 28654,
-      "ilanSayisi": 72
-    },
-    {
-      "isim": "Şehremini",
-      "ilce": "Fatih",
-      "kira": 28590,
-      "ilanSayisi": 113
-    },
-    {
-      "isim": "İskenderpaşa",
-      "ilce": "Fatih",
-      "kira": 28526,
-      "ilanSayisi": 76
-    },
-    {
-      "isim": "Fatih",
-      "ilce": "Büyükçekmece",
-      "kira": 28493,
-      "ilanSayisi": 67
-    },
-    {
-      "isim": "Sultan Murat",
-      "ilce": "Küçükçekmece",
-      "kira": 28456,
-      "ilanSayisi": 38
-    },
-    {
-      "isim": "Selimpaşa",
-      "ilce": "Silivri",
-      "kira": 28409,
-      "ilanSayisi": 141
-    },
-    {
-      "isim": "Pınar",
-      "ilce": "Sarıyer",
-      "kira": 28372,
-      "ilanSayisi": 40
-    },
-    {
-      "isim": "Orta",
-      "ilce": "Bayrampaşa",
-      "kira": 28324,
-      "ilanSayisi": 45
-    },
-    {
-      "isim": "Yeniköy",
-      "ilce": "Arnavutköy",
-      "kira": 28301,
-      "ilanSayisi": 3
-    },
-    {
-      "isim": "Fevzi Çakmak",
-      "ilce": "Gaziosmanpaşa",
-      "kira": 28268,
+      "isim": "Yayla",
+      "ilce": "Şişli",
+      "kira": 30016,
       "ilanSayisi": 74
     },
     {
       "isim": "Çukur",
       "ilce": "Beyoğlu",
-      "kira": 28238,
-      "ilanSayisi": 10
+      "kira": 30014,
+      "ilanSayisi": 15
     },
     {
-      "isim": "Vatan",
-      "ilce": "Bayrampaşa",
-      "kira": 28205,
-      "ilanSayisi": 19
+      "isim": "Paşabahçe",
+      "ilce": "Beykoz",
+      "kira": 30003,
+      "ilanSayisi": 25
     },
     {
-      "isim": "Aksaray",
-      "ilce": "Fatih",
-      "kira": 28186,
-      "ilanSayisi": 46
-    },
-    {
-      "isim": "Murat Çesme",
-      "ilce": "Büyükçekmece",
-      "kira": 28097,
-      "ilanSayisi": 44
-    },
-    {
-      "isim": "Sultan Selim",
-      "ilce": "Kağıthane",
-      "kira": 28085,
-      "ilanSayisi": 251
-    },
-    {
-      "isim": "Eskişehir",
-      "ilce": "Şişli",
-      "kira": 28025,
-      "ilanSayisi": 105
+      "isim": "Kalyoncu Kulluğu",
+      "ilce": "Beyoğlu",
+      "kira": 29956,
+      "ilanSayisi": 32
     },
     {
       "isim": "Akşemsettin",
-      "ilce": "Eyüpsultan",
-      "kira": 28005,
-      "ilanSayisi": 116
-    },
-    {
-      "isim": "Muratpaşa",
-      "ilce": "Bayrampaşa",
-      "kira": 27783,
-      "ilanSayisi": 64
-    },
-    {
-      "isim": "Yukarı Dudullu",
-      "ilce": "Ümraniye",
-      "kira": 27720,
-      "ilanSayisi": 71
-    },
-    {
-      "isim": "Aşık Veysel",
-      "ilce": "Esenyurt",
-      "kira": 27691,
-      "ilanSayisi": 73
-    },
-    {
-      "isim": "Barbaros Hayrettin Paşa",
-      "ilce": "Esenyurt",
-      "kira": 27505,
-      "ilanSayisi": 258
-    },
-    {
-      "isim": "Yavuz Selim",
-      "ilce": "Beykoz",
-      "kira": 27462,
-      "ilanSayisi": 20
-    },
-    {
-      "isim": "Ortaköy",
-      "ilce": "Silivri",
-      "kira": 27356,
-      "ilanSayisi": 6
-    },
-    {
-      "isim": "Firuzköy",
-      "ilce": "Avcılar",
-      "kira": 27279,
-      "ilanSayisi": 48
-    },
-    {
-      "isim": "Zeyrek",
       "ilce": "Fatih",
-      "kira": 27076,
-      "ilanSayisi": 19
-    },
-    {
-      "isim": "Hürriyet",
-      "ilce": "Bağcılar",
-      "kira": 26838,
-      "ilanSayisi": 40
-    },
-    {
-      "isim": "Çakmaklı",
-      "ilce": "Büyükçekmece",
-      "kira": 26465,
-      "ilanSayisi": 31
-    },
-    {
-      "isim": "Huzur",
-      "ilce": "Ümraniye",
-      "kira": 26406,
-      "ilanSayisi": 33
-    },
-    {
-      "isim": "Yavuz Sultan Selim",
-      "ilce": "Fatih",
-      "kira": 26290,
-      "ilanSayisi": 33
-    },
-    {
-      "isim": "Kamer Hatun",
-      "ilce": "Beyoğlu",
-      "kira": 26280,
-      "ilanSayisi": 21
-    },
-    {
-      "isim": "İncirköy",
-      "ilce": "Beykoz",
-      "kira": 26045,
-      "ilanSayisi": 28
-    },
-    {
-      "isim": "Pazariçi",
-      "ilce": "Gaziosmanpaşa",
-      "kira": 25826,
-      "ilanSayisi": 23
-    },
-    {
-      "isim": "Yavuztürk",
-      "ilce": "Üsküdar",
-      "kira": 25597,
-      "ilanSayisi": 81
-    },
-    {
-      "isim": "Malkoçoğlu",
-      "ilce": "Sultangazi",
-      "kira": 25233,
-      "ilanSayisi": 18
+      "kira": 29949,
+      "ilanSayisi": 83
     },
     {
       "isim": "Yarımburgaz",
       "ilce": "Küçükçekmece",
-      "kira": 25224,
+      "kira": 29847,
+      "ilanSayisi": 11
+    },
+    {
+      "isim": "Havaalanı",
+      "ilce": "Esenler",
+      "kira": 29770,
+      "ilanSayisi": 67
+    },
+    {
+      "isim": "İskenderpaşa",
+      "ilce": "Fatih",
+      "kira": 29727,
+      "ilanSayisi": 76
+    },
+    {
+      "isim": "Mareşal Fevzi Çakmak",
+      "ilce": "Arnavutköy",
+      "kira": 29684,
+      "ilanSayisi": 31
+    },
+    {
+      "isim": "Örnekköy",
+      "ilce": "Beykoz",
+      "kira": 29639,
       "ilanSayisi": 10
     },
     {
-      "isim": "Nişancı",
-      "ilce": "Eyüpsultan",
-      "kira": 25042,
+      "isim": "Sultan Murat",
+      "ilce": "Küçükçekmece",
+      "kira": 29620,
+      "ilanSayisi": 43
+    },
+    {
+      "isim": "Mimar Sinan",
+      "ilce": "Esenler",
+      "kira": 29533,
+      "ilanSayisi": 17
+    },
+    {
+      "isim": "Katip Kasım",
+      "ilce": "Fatih",
+      "kira": 29503,
+      "ilanSayisi": 1
+    },
+    {
+      "isim": "Kazım Karabekir Paşa",
+      "ilce": "Sarıyer",
+      "kira": 29492,
       "ilanSayisi": 34
     },
     {
-      "isim": "Koza",
-      "ilce": "Esenyurt",
-      "kira": 24891,
-      "ilanSayisi": 484
+      "isim": "Merkez",
+      "ilce": "Eyüpsultan",
+      "kira": 29484,
+      "ilanSayisi": 48
     },
     {
-      "isim": "Ortaçeşme",
+      "isim": "Gümüşsuyu",
       "ilce": "Beykoz",
-      "kira": 24789,
+      "kira": 29374,
+      "ilanSayisi": 29
+    },
+    {
+      "isim": "Altıntepsi",
+      "ilce": "Bayrampaşa",
+      "kira": 29331,
+      "ilanSayisi": 79
+    },
+    {
+      "isim": "Kuştepe",
+      "ilce": "Şişli",
+      "kira": 29293,
+      "ilanSayisi": 225
+    },
+    {
+      "isim": "Selimpaşa",
+      "ilce": "Silivri",
+      "kira": 29224,
+      "ilanSayisi": 168
+    },
+    {
+      "isim": "Sarıgöl",
+      "ilce": "Gaziosmanpaşa",
+      "kira": 29175,
+      "ilanSayisi": 97
+    },
+    {
+      "isim": "Vatan",
+      "ilce": "Bayrampaşa",
+      "kira": 29044,
+      "ilanSayisi": 26
+    },
+    {
+      "isim": "Murat Çesme",
+      "ilce": "Büyükçekmece",
+      "kira": 29000,
+      "ilanSayisi": 45
+    },
+    {
+      "isim": "Yahya Kemal",
+      "ilce": "Kağıthane",
+      "kira": 28967,
+      "ilanSayisi": 159
+    },
+    {
+      "isim": "Fatih",
+      "ilce": "Büyükçekmece",
+      "kira": 28934,
+      "ilanSayisi": 71
+    },
+    {
+      "isim": "Akşemsettin",
+      "ilce": "Eyüpsultan",
+      "kira": 28931,
+      "ilanSayisi": 135
+    },
+    {
+      "isim": "Mehmet Akif Ersoy",
+      "ilce": "Kağıthane",
+      "kira": 28915,
+      "ilanSayisi": 42
+    },
+    {
+      "isim": "Sultan Selim",
+      "ilce": "Kağıthane",
+      "kira": 28789,
+      "ilanSayisi": 252
+    },
+    {
+      "isim": "Çamlıbahçe",
+      "ilce": "Beykoz",
+      "kira": 28676,
+      "ilanSayisi": 22
+    },
+    {
+      "isim": "Muratpaşa",
+      "ilce": "Bayrampaşa",
+      "kira": 28589,
+      "ilanSayisi": 70
+    },
+    {
+      "isim": "Aksaray",
+      "ilce": "Fatih",
+      "kira": 28412,
+      "ilanSayisi": 52
+    },
+    {
+      "isim": "Balat",
+      "ilce": "Fatih",
+      "kira": 28308,
+      "ilanSayisi": 49
+    },
+    {
+      "isim": "Hürriyet",
+      "ilce": "Bağcılar",
+      "kira": 28225,
+      "ilanSayisi": 37
+    },
+    {
+      "isim": "Yavuz Sultan Selim",
+      "ilce": "Fatih",
+      "kira": 28183,
+      "ilanSayisi": 32
+    },
+    {
+      "isim": "Firuzköy",
+      "ilce": "Avcılar",
+      "kira": 28156,
       "ilanSayisi": 43
+    },
+    {
+      "isim": "Fevzi Çakmak",
+      "ilce": "Gaziosmanpaşa",
+      "kira": 28130,
+      "ilanSayisi": 82
+    },
+    {
+      "isim": "Büyük Çavuşlu",
+      "ilce": "Silivri",
+      "kira": 28118,
+      "ilanSayisi": null
+    },
+    {
+      "isim": "Orta",
+      "ilce": "Bayrampaşa",
+      "kira": 28110,
+      "ilanSayisi": 42
+    },
+    {
+      "isim": "Eskişehir",
+      "ilce": "Şişli",
+      "kira": 28029,
+      "ilanSayisi": 116
+    },
+    {
+      "isim": "Aşık Veysel",
+      "ilce": "Esenyurt",
+      "kira": 27900,
+      "ilanSayisi": 89
+    },
+    {
+      "isim": "Huzur",
+      "ilce": "Ümraniye",
+      "kira": 27892,
+      "ilanSayisi": 31
+    },
+    {
+      "isim": "Barbaros Hayrettin Paşa",
+      "ilce": "Esenyurt",
+      "kira": 27770,
+      "ilanSayisi": 311
+    },
+    {
+      "isim": "Merkez",
+      "ilce": "Beykoz",
+      "kira": 27690,
+      "ilanSayisi": 41
+    },
+    {
+      "isim": "Çakmaklı",
+      "ilce": "Büyükçekmece",
+      "kira": 27512,
+      "ilanSayisi": 32
+    },
+    {
+      "isim": "Yukarı Dudullu",
+      "ilce": "Ümraniye",
+      "kira": 27461,
+      "ilanSayisi": 70
+    },
+    {
+      "isim": "Pazariçi",
+      "ilce": "Gaziosmanpaşa",
+      "kira": 27283,
+      "ilanSayisi": 30
+    },
+    {
+      "isim": "İncirköy",
+      "ilce": "Beykoz",
+      "kira": 27040,
+      "ilanSayisi": 31
+    },
+    {
+      "isim": "Zeyrek",
+      "ilce": "Fatih",
+      "kira": 26719,
+      "ilanSayisi": 24
+    },
+    {
+      "isim": "Malkoçoğlu",
+      "ilce": "Sultangazi",
+      "kira": 26685,
+      "ilanSayisi": 17
+    },
+    {
+      "isim": "Kamer Hatun",
+      "ilce": "Beyoğlu",
+      "kira": 26109,
+      "ilanSayisi": 23
     },
     {
       "isim": "Gökevler",
       "ilce": "Esenyurt",
-      "kira": 24562,
-      "ilanSayisi": 221
+      "kira": 25569,
+      "ilanSayisi": 254
     },
     {
-      "isim": "Atikali",
-      "ilce": "Fatih",
-      "kira": 24263,
-      "ilanSayisi": 18
-    },
-    {
-      "isim": "Zafer",
+      "isim": "Koza",
       "ilce": "Esenyurt",
-      "kira": 23513,
-      "ilanSayisi": 395
+      "kira": 24919,
+      "ilanSayisi": 606
     },
     {
-      "isim": "Gülsuyu",
-      "ilce": "Maltepe",
-      "kira": 22993,
-      "ilanSayisi": 23
+      "isim": "Nişancı",
+      "ilce": "Eyüpsultan",
+      "kira": 24891,
+      "ilanSayisi": 39
     },
     {
-      "isim": "Demirkapı",
-      "ilce": "Bağcılar",
-      "kira": 22671,
-      "ilanSayisi": 80
+      "isim": "Yavuztürk",
+      "ilce": "Üsküdar",
+      "kira": 24845,
+      "ilanSayisi": 92
     },
     {
       "isim": "Sanayi",
       "ilce": "Pendik",
-      "kira": 22355,
-      "ilanSayisi": 1
+      "kira": 24638,
+      "ilanSayisi": 3
+    },
+    {
+      "isim": "Atikali",
+      "ilce": "Fatih",
+      "kira": 24005,
+      "ilanSayisi": 19
+    },
+    {
+      "isim": "Gülsuyu",
+      "ilce": "Maltepe",
+      "kira": 23982,
+      "ilanSayisi": 21
+    },
+    {
+      "isim": "Subaşı",
+      "ilce": "Çatalca",
+      "kira": 23942,
+      "ilanSayisi": 2
+    },
+    {
+      "isim": "Zafer",
+      "ilce": "Esenyurt",
+      "kira": 23874,
+      "ilanSayisi": 451
+    },
+    {
+      "isim": "Demirkapı",
+      "ilce": "Bağcılar",
+      "kira": 23701,
+      "ilanSayisi": 75
+    },
+    {
+      "isim": "Paşamandıra",
+      "ilce": "Beykoz",
+      "kira": 23356,
+      "ilanSayisi": 3
+    },
+    {
+      "isim": "Ortaçeşme",
+      "ilce": "Beykoz",
+      "kira": 23202,
+      "ilanSayisi": 55
     },
     {
       "isim": "Gökçeali",
       "ilce": "Çatalca",
-      "kira": 22121,
+      "kira": 22980,
       "ilanSayisi": null
     },
     {
       "isim": "Cibali",
       "ilce": "Fatih",
-      "kira": 21664,
-      "ilanSayisi": 14
-    },
-    {
-      "isim": "Kazım Karabekir",
-      "ilce": "Ümraniye",
-      "kira": 21398,
-      "ilanSayisi": 30
+      "kira": 22967,
+      "ilanSayisi": 10
     },
     {
       "isim": "Akevler",
       "ilce": "Esenyurt",
-      "kira": 21324,
-      "ilanSayisi": 237
+      "kira": 21303,
+      "ilanSayisi": 230
     },
     {
       "isim": "Bülbül",
       "ilce": "Beyoğlu",
-      "kira": 21291,
-      "ilanSayisi": 10
+      "kira": 21210,
+      "ilanSayisi": 12
     },
     {
       "isim": "Anadolufeneri",
@@ -2943,34 +2961,28 @@
       "ilanSayisi": 1
     },
     {
-      "isim": "Büyük Sinekli",
-      "ilce": "Silivri",
-      "kira": 20846,
-      "ilanSayisi": null
-    },
-    {
-      "isim": "Paşamandıra",
-      "ilce": "Beykoz",
-      "kira": 20766,
-      "ilanSayisi": 5
+      "isim": "Kazım Karabekir",
+      "ilce": "Ümraniye",
+      "kira": 20260,
+      "ilanSayisi": 28
     },
     {
       "isim": "Dereseki",
       "ilce": "Beykoz",
-      "kira": 19759,
-      "ilanSayisi": 8
+      "kira": 19987,
+      "ilanSayisi": 9
     },
     {
       "isim": "Yeşilkent",
       "ilce": "Avcılar",
-      "kira": 17990,
-      "ilanSayisi": 108
+      "kira": 17950,
+      "ilanSayisi": 114
     },
     {
       "isim": "Çanakça",
       "ilce": "Çatalca",
-      "kira": 14626,
-      "ilanSayisi": 1
+      "kira": 15426,
+      "ilanSayisi": 2
     }
   ]
 }
