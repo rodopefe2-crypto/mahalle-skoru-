@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { ChevronLeft, Share2 } from 'lucide-react'
 import { supabase } from '@/lib/supabase'
 import { Ilce } from '@/lib/types'
+import { insightUret } from '@/lib/mahalleInsight'
 import { SosyalImkanlar } from '@/components/sosyal/SosyalImkanlar'
 import { UnifiedParametreListesi } from '@/components/unified/UnifiedParametreListesi'
 import dynamic from 'next/dynamic'
@@ -57,10 +58,17 @@ export default function DetailPage({ params }: DetailPageProps) {
   const [tumIlceler, setTumIlceler] = useState<Ilce[]>([])
   const [mahalleler, setMahalleler]               = useState<any[]>([])
   const [mahalleYukleniyor, setMahalleYukleniyor] = useState(false)
+  const [mahalleSayisi, setMahalleSayisi]         = useState<number | null>(null)
 
   useEffect(() => {
     supabase.from('ilceler').select('*').eq('slug', slug).single()
-      .then(({ data }) => setIlce(data))
+      .then(({ data }) => {
+        setIlce(data)
+        if (data?.id) {
+          supabase.from('mahalleler').select('id', { count: 'exact', head: true }).eq('ilce_id', data.id)
+            .then(({ count }) => setMahalleSayisi(count))
+        }
+      })
     supabase.from('ilceler').select('*')
       .then(({ data }) => setTumIlceler(data || []))
   }, [slug])
@@ -191,6 +199,129 @@ export default function DetailPage({ params }: DetailPageProps) {
       </div>
 
       <div style={{ maxWidth: 960, margin: '0 auto', padding: '32px 24px 0' }}>
+
+        {/* ─── İSTATİSTİK KARTLARI ─── */}
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
+          gap: 12,
+          marginBottom: 24,
+        }}>
+          {[
+            {
+              label: 'Nüfus',
+              value: (ilce as any).nufus ? (ilce as any).nufus.toLocaleString('tr-TR') + ' kişi' : 'Veri yok',
+              ikon: '👥',
+              renk: '#3b82f6',
+            },
+            {
+              label: 'Yüzölçümü',
+              value: (ilce as any).alan_km2 ? (ilce as any).alan_km2.toLocaleString('tr-TR') + ' km²' : 'Veri yok',
+              ikon: '📐',
+              renk: '#10b981',
+            },
+            {
+              label: 'Nüfus Yoğunluğu',
+              value: ((ilce as any).nufus && (ilce as any).alan_km2)
+                ? Math.round((ilce as any).nufus / (ilce as any).alan_km2).toLocaleString('tr-TR') + ' kişi/km²'
+                : 'Veri yok',
+              ikon: '📊',
+              renk: '#f59e0b',
+            },
+            {
+              label: 'Mahalle Sayısı',
+              value: mahalleSayisi !== null ? mahalleSayisi + ' mahalle' : 'Veri yok',
+              ikon: '🏘️',
+              renk: '#8b5cf6',
+            },
+          ].map(stat => (
+            <div key={stat.label} style={{
+              background: '#f8fafc',
+              border: '1px solid #e2e8f0',
+              borderRadius: 12,
+              padding: '12px 16px',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: 4,
+            }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                <span style={{ fontSize: 18 }}>{stat.ikon}</span>
+                <span style={{ fontSize: 11, color: '#64748b', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                  {stat.label}
+                </span>
+              </div>
+              <div style={{ fontSize: 16, fontWeight: 700, color: stat.renk }}>
+                {stat.value}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* ─── INSIGHT KARTI ─── */}
+        {(() => {
+          const insight = insightUret(ilce.isim, 'ilce', {
+            genel:     ilce.genel_skor                  || 0,
+            ulasim:    ilce.ulasim_skoru                || 0,
+            guvenlik:  ilce.guvenlik_skoru              || 0,
+            imkanlar:  ilce.imkanlar_skoru              || 0,
+            egitim:    ilce.egitim_skoru                || 0,
+            saglik:    ilce.saglik_skoru                || 0,
+            yesil_alan: ilce.yesil_alan_skoru           || 0,
+            kultur:    ilce.kultur_skoru                || 0,
+            sakinlik:  ilce.sakin_memnuniyeti_skoru     || 0,
+          })
+          return (
+            <div style={{
+              background: 'white', borderRadius: 16,
+              padding: '20px 24px', marginBottom: 24,
+              border: '1px solid #e2e8f0',
+              boxShadow: '0 1px 3px rgba(0,0,0,0.04)',
+            }}>
+              <p style={{
+                fontSize: 15, color: '#374151', lineHeight: 1.7,
+                marginBottom: 16, fontStyle: 'italic',
+              }}>
+                &ldquo;{insight.ozet}&rdquo;
+              </p>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+                <div>
+                  {insight.artilar.map((a, i) => (
+                    <div key={i} style={{
+                      display: 'flex', alignItems: 'center',
+                      gap: 8, padding: '6px 0',
+                      fontSize: 13, color: '#16a34a',
+                    }}>
+                      <span style={{
+                        width: 20, height: 20, background: '#dcfce7',
+                        borderRadius: '50%', display: 'flex',
+                        alignItems: 'center', justifyContent: 'center',
+                        fontSize: 11, flexShrink: 0,
+                      }}>✓</span>
+                      {a}
+                    </div>
+                  ))}
+                </div>
+                <div>
+                  {insight.eksiler.map((e, i) => (
+                    <div key={i} style={{
+                      display: 'flex', alignItems: 'center',
+                      gap: 8, padding: '6px 0',
+                      fontSize: 13, color: '#dc2626',
+                    }}>
+                      <span style={{
+                        width: 20, height: 20, background: '#fee2e2',
+                        borderRadius: '50%', display: 'flex',
+                        alignItems: 'center', justifyContent: 'center',
+                        fontSize: 11, flexShrink: 0,
+                      }}>✗</span>
+                      {e}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )
+        })()}
 
         {/* ─── ANALİZ PANELİ ─── */}
         {card(

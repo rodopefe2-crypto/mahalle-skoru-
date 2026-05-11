@@ -1,26 +1,22 @@
 export interface QuizSorusu {
   id: string
+  bolum: string
   soru: string
-  altBaslik: string
-  tip: 'single' | 'multi' | 'slider'
-  secenekler?: QuizSecenegi[]
-  sliderMin?: number
-  sliderMax?: number
-  sliderBirim?: string
-  parametre: string
+  ikon: string
+  secenekler: QuizSecenegi[]
 }
 
 export interface QuizSecenegi {
-  id: string
-  etiket: string
-  ikon: string
+  label: string
+  value: string
   agirlik: Record<string, number>
+  kira_max?: number
 }
 
 export interface QuizCevap {
-  soruId: string
-  secenekIds?: string[]
-  sliderDeger?: number
+  value: string
+  agirlik: Record<string, number>
+  kira_max?: number
 }
 
 export interface IlceUyumSkoru {

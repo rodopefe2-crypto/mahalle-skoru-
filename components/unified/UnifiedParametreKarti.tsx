@@ -14,12 +14,51 @@ interface DepremVeri {
   guncellendi: string | null
 }
 
+import type { TesisItem } from './UnifiedParametreListesi'
+
+const TESIS_IKON: Record<string, string> = {
+  hospital:      '🏥',
+  clinic:        '🏥',
+  pharmacy:      '💊',
+  dentist:       '🦷',
+  doctors:       '👨‍⚕️',
+  school:        '🏫',
+  university:    '🎓',
+  college:       '🎓',
+  kindergarten:  '👶',
+  library:       '📚',
+  museum:        '🏛️',
+  art_gallery:   '🎨',
+  movie_theater: '🎬',
+  park:          '🌳',
+  cinema:        '🎬',
+  theatre:       '🎭',
+  gallery:       '🖼️',
+  arts_centre:   '🎨',
+  sports_centre: '🏋️',
+  playground:    '🎠',
+  garden:        '🌿',
+  // Türkçe keyler
+  hastane:       '🏥',
+  eczane:        '💊',
+  klinik:        '🩺',
+  okul:          '🏫',
+  universite:    '🎓',
+  anaokulu:      '👶',
+  kutuphane:     '📚',
+  muze:          '🏛️',
+  sinema:        '🎬',
+  tiyatro:       '🎭',
+  galeri:        '🖼️',
+}
+
 interface Props {
   parametre:       UnifiedParametre
   varsayilanAcik?: boolean
   index:           number
   depremVeri?:     DepremVeri
   ilceSlug?:       string
+  tesisListesi?:   Record<string, TesisItem[]>  // alt_kategori → TesisItem[]
 }
 
 function skorRengi(skor: number): string {
@@ -37,10 +76,45 @@ function skorEtiketi(skor: number): string {
   return 'Gelişime Açık'
 }
 
+const KAT_TANIMLAR: Record<string, { key: string; label: string; ikon: string; renk: string; bg: string }[]> = {
+  saglik: [
+    { key: 'hospital', label: 'Hastane',     ikon: '🏥', renk: '#ef4444', bg: '#fef2f2' },
+    { key: 'clinic',   label: 'Klinik',      ikon: '🩺', renk: '#f97316', bg: '#fff7ed' },
+    { key: 'pharmacy', label: 'Eczane',      ikon: '💊', renk: '#10b981', bg: '#ecfdf5' },
+    { key: 'dentist',  label: 'Diş Hekimi',  ikon: '🦷', renk: '#06b6d4', bg: '#ecfeff' },
+    { key: 'doctors',  label: 'Doktor',      ikon: '👨‍⚕️', renk: '#8b5cf6', bg: '#f5f3ff' },
+  ],
+  egitim: [
+    { key: 'kindergarten', label: 'Anaokulu',      ikon: '👶', renk: '#f59e0b', bg: '#fffbeb' },
+    { key: 'school',       label: 'İlk/Orta/Lise', ikon: '🏫', renk: '#3b82f6', bg: '#eff6ff' },
+    { key: 'university',   label: 'Üniversite',    ikon: '🎓', renk: '#8b5cf6', bg: '#f5f3ff' },
+    { key: 'college',      label: 'Kolej',         ikon: '🏛️', renk: '#06b6d4', bg: '#ecfeff' },
+    { key: 'library',      label: 'Kütüphane',     ikon: '📚', renk: '#10b981', bg: '#ecfdf5' },
+  ],
+  kultur: [
+    { key: 'museum',         label: 'Müze',       ikon: '🏛️', renk: '#f59e0b', bg: '#fffbeb' },
+    { key: 'art_gallery',    label: 'Galeri',     ikon: '🎨', renk: '#ec4899', bg: '#fdf2f8' },
+    { key: 'movie_theater',  label: 'Sinema',     ikon: '🎬', renk: '#6366f1', bg: '#eef2ff' },
+    { key: 'library',        label: 'Kütüphane',  ikon: '📚', renk: '#10b981', bg: '#ecfdf5' },
+    { key: 'theatre',        label: 'Tiyatro',    ikon: '🎭', renk: '#8b5cf6', bg: '#f5f3ff' },
+  ],
+  yesil: [
+    { key: 'park',            label: 'Park',       ikon: '🌳', renk: '#22c55e', bg: '#f0fdf4' },
+    { key: 'natural_feature', label: 'Doğal Alan', ikon: '🏔️', renk: '#84cc16', bg: '#f7fee7' },
+    { key: 'playground',      label: 'Oyun Alanı', ikon: '🎠', renk: '#f59e0b', bg: '#fffbeb' },
+    { key: 'sports_centre',   label: 'Spor Mrk.',  ikon: '🏋️', renk: '#3b82f6', bg: '#eff6ff' },
+    { key: 'garden',          label: 'Bahçe',      ikon: '🌿', renk: '#10b981', bg: '#ecfdf5' },
+  ],
+}
+
 export function UnifiedParametreKarti({
-  parametre, varsayilanAcik = false, index, depremVeri, ilceSlug,
+  parametre, varsayilanAcik = false, index, depremVeri, ilceSlug, tesisListesi = {},
 }: Props) {
-  const [acik, setAcik] = useState(varsayilanAcik)
+  const [acik, setAcik]                 = useState(varsayilanAcik)
+  const [acikKategori, setAcikKategori] = useState<string | null>(null)
+
+  const toggleKategori = (key: string) =>
+    setAcikKategori(prev => (prev === key ? null : key))
 
   const sRenk   = skorRengi(parametre.skor)
   const sEtiket = skorEtiketi(parametre.skor)
@@ -392,6 +466,99 @@ export function UnifiedParametreKarti({
               />
             </div>
           )}
+
+          {/* Tesis accordion — saglik/egitim/kultur/yesil */}
+          {KAT_TANIMLAR[parametre.id] && (() => {
+            const herhangiVar = KAT_TANIMLAR[parametre.id].some(
+              kat => (tesisListesi[kat.key] || []).length > 0
+            )
+            if (!herhangiVar) return (
+              <div style={{ marginTop: 16, borderTop: '1px solid #f0f2f5', paddingTop: 12,
+                fontSize: 13, color: '#9ca3af', textAlign: 'center' }}>
+                Tesis verisi henüz mevcut değil
+              </div>
+            )
+            return (
+            <div style={{ marginTop: 16, borderTop: '1px solid #f0f2f5', paddingTop: 16 }}>
+              <div style={{
+                fontSize: 10, fontWeight: 700, color: '#9ca3af',
+                textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 12,
+              }}>
+                Tesisler
+              </div>
+              {KAT_TANIMLAR[parametre.id].map(kat => {
+                const liste = tesisListesi[kat.key] || []
+                if (liste.length === 0) return null
+                const katAcik = acikKategori === kat.key
+                return (
+                  <div key={kat.key} style={{
+                    marginBottom: 8, borderRadius: 12, overflow: 'hidden',
+                    border: `1px solid ${katAcik ? kat.renk + '40' : '#e5e7eb'}`,
+                    transition: 'border-color 200ms',
+                  }}>
+                    <button
+                      onClick={() => toggleKategori(kat.key)}
+                      style={{
+                        width: '100%', display: 'flex', alignItems: 'center',
+                        justifyContent: 'space-between', padding: '11px 14px',
+                        background: katAcik ? kat.bg : 'white',
+                        border: 'none', cursor: 'pointer', transition: 'background 200ms',
+                      }}
+                    >
+                      <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                        <span style={{
+                          width: 30, height: 30, background: kat.bg,
+                          borderRadius: 8, display: 'flex',
+                          alignItems: 'center', justifyContent: 'center', fontSize: 15,
+                        }}>
+                          {kat.ikon}
+                        </span>
+                        <span style={{ fontSize: 13, fontWeight: 600, color: '#111827' }}>
+                          {kat.label}
+                        </span>
+                      </div>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                        <span style={{
+                          background: kat.renk, color: 'white',
+                          fontSize: 11, fontWeight: 700,
+                          padding: '2px 9px', borderRadius: 20,
+                        }}>
+                          {liste.length}
+                        </span>
+                        <span style={{
+                          fontSize: 11, color: '#9ca3af',
+                          display: 'inline-block',
+                          transform: katAcik ? 'rotate(180deg)' : 'rotate(0deg)',
+                          transition: 'transform 200ms',
+                        }}>▼</span>
+                      </div>
+                    </button>
+                    {katAcik && (
+                      <div style={{
+                        background: 'white',
+                        borderTop: `1px solid ${kat.renk}20`,
+                        maxHeight: 280, overflowY: 'auto',
+                      }}>
+                        {liste.map((t, i) => (
+                          <div key={i} style={{
+                            display: 'flex', alignItems: 'center', gap: 10,
+                            padding: '9px 14px',
+                            borderBottom: i < liste.length - 1 ? '1px solid #f9fafb' : 'none',
+                          }}>
+                            <span style={{ fontSize: 14, flexShrink: 0 }}>{kat.ikon}</span>
+                            <span style={{ fontSize: 13, color: '#374151', lineHeight: 1.4 }}>
+                              {t.isim}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                )
+              })}
+            </div>
+            )
+          })()}
 
           {/* Toplam özet */}
           {parametre.toplamSayi !== undefined && parametre.toplamSayi > 0 && (

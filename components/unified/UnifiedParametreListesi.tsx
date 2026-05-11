@@ -188,9 +188,14 @@ interface DepremVeri {
   guncellendi: string | null
 }
 
+export type TesisItem = { alt_kategori: string; isim: string; lat: number; lng: number }
+// tesisListesi[kategori][alt_kategori] = TesisItem[]
+type TesisListesiMap = Record<string, Record<string, TesisItem[]>>
+
 export function UnifiedParametreListesi({ slug, tip, skorlar, depremVeri }: Props) {
-  const [tesisVeri, setTesisVeri] = useState<Record<string, Record<string, number>>>({})
-  const [yukleniyor, setYukleniyor] = useState(true)
+  const [tesisVeri, setTesisVeri]         = useState<Record<string, Record<string, number>>>({})
+  const [tesisListesi, setTesisListesi]   = useState<TesisListesiMap>({})
+  const [yukleniyor, setYukleniyor]       = useState(true)
 
   useEffect(() => {
     const endpoint = tip === 'ilce'
@@ -200,6 +205,7 @@ export function UnifiedParametreListesi({ slug, tip, skorlar, depremVeri }: Prop
     fetch(endpoint)
       .then(r => r.json())
       .then(d => {
+        if (d.tesisListesi) setTesisListesi(d.tesisListesi)
         const raw = d.istatistikler || {}
 
         // Tüm kategoriler için boş başlangıç
@@ -297,6 +303,7 @@ export function UnifiedParametreListesi({ slug, tip, skorlar, depremVeri }: Prop
             index={idx}
             ilceSlug={tip === 'ilce' ? slug : undefined}
             depremVeri={p.id === 'deprem_direnci' ? depremVeri : undefined}
+            tesisListesi={tesisListesi[p.id] || {}}
           />
         ))}
       </div>

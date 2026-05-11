@@ -36,7 +36,12 @@
     "veri:guvenlik-mahalle": "npx tsx scripts/guvenlikSkoru.ts",
     "veri:osm-mahalle": "npx tsx scripts/osm_mahalle_saglik_egitim.ts",
     "veri:osm-skor": "npx tsx scripts/osmSaglikEgitimSkor.ts",
-    "veri:mesafe-skor": "npx tsx scripts/mesafeBazliSkorHesapla.ts"
+    "veri:mesafe-skor": "npx tsx scripts/mesafeBazliSkorHesapla.ts",
+    "veri:poligon-yukle": "npx tsx scripts/mahallePoligonYukle.ts",
+    "veri:mahalle-nufus": "node scripts/mahalleNufusCek.mjs",
+    "veri:sakinlik-skor": "node scripts/sakinlikSkoruHesapla.mjs",
+    "veri:osm-ticari": "npx tsx scripts/osmTicariYogunluk.ts",
+    "veri:imkanlar-skor": "node scripts/imkanlarSkoruHesapla.mjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

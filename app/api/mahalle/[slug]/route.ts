@@ -22,10 +22,12 @@ export async function GET(
       guvenlik_skoru, deprem_skoru,
       yasam_maliyeti_skoru,
       sakin_memnuniyeti_skoru,
+      yesil_alan_skoru, kultur_skoru,
       genel_skor, ilce_id,
       deprem_yorum, deprem_fay_mesafe,
       deprem_son_yil, deprem_max_mag,
-      deprem_guncellendi
+      deprem_guncellendi,
+      nufus, alan_km2, kira_ortalama
     `)
     .eq('slug', slug)
     .single()
