@@ -41,7 +41,8 @@
     "veri:mahalle-nufus": "node scripts/mahalleNufusCek.mjs",
     "veri:sakinlik-skor": "node scripts/sakinlikSkoruHesapla.mjs",
     "veri:osm-ticari": "npx tsx scripts/osmTicariYogunluk.ts",
-    "veri:imkanlar-skor": "node scripts/imkanlarSkoruHesapla.mjs"
+    "veri:imkanlar-skor": "node scripts/imkanlarSkoruHesapla.mjs",
+    "veri:poligon-overpass": "npx tsx scripts/mahallePoligonOverpass.ts"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
